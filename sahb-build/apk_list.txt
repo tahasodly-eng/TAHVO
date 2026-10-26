@@ -1,14 +1,14 @@
 app/build/outputs/apk/debug/:
 total 17688
-drwxr-xr-x 2 runner runner     4096 Oct 26 18:00 .
-drwxr-xr-x 4 runner runner     4096 Oct 26 18:01 ..
--rw-r--r-- 1 runner runner 18098015 Oct 26 18:00 app-debug.apk
--rw-r--r-- 1 runner runner      395 Oct 26 18:00 output-metadata.json
+drwxr-xr-x 2 runner runner     4096 Oct 26 18:09 .
+drwxr-xr-x 4 runner runner     4096 Oct 26 18:09 ..
+-rw-r--r-- 1 runner runner 18098015 Oct 26 18:09 app-debug.apk
+-rw-r--r-- 1 runner runner      395 Oct 26 18:09 output-metadata.json
 
 app/build/outputs/apk/release/:
 total 14820
-drwxr-xr-x 3 runner runner     4096 Oct 26 18:01 .
-drwxr-xr-x 4 runner runner     4096 Oct 26 18:01 ..
--rw-r--r-- 1 runner runner 15159137 Oct 26 18:01 app-release-unsigned.apk
-drwxr-xr-x 4 runner runner     4096 Oct 26 18:01 baselineProfiles
--rw-r--r-- 1 runner runner      728 Oct 26 18:01 output-metadata.json
+drwxr-xr-x 3 runner runner     4096 Oct 26 18:09 .
+drwxr-xr-x 4 runner runner     4096 Oct 26 18:09 ..
+-rw-r--r-- 1 runner runner 15159137 Oct 26 18:09 app-release-unsigned.apk
+drwxr-xr-x 4 runner runner     4096 Oct 26 18:09 baselineProfiles
+-rw-r--r-- 1 runner runner      728 Oct 26 18:09 output-metadata.json
