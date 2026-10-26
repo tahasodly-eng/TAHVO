@@ -1,6 +1,14 @@
 + find test_out/files -type f
 + sort
 + read -r f
+++ basename test_out/files/Download/doc_merged.pdf
+++ stat -c%s test_out/files/Download/doc_merged.pdf
++ echo '--- doc_merged.pdf (2564 B)'
+--- doc_merged.pdf (2564 B)
++ case "$f" in
++ python3 -c 'import re,sys;d=open(sys.argv[1],'\''rb'\'').read();print('\''pages:'\'',len(re.findall(rb'\''/Type\s*/Page[^s]'\'',d)))' test_out/files/Download/doc_merged.pdf
+pages: 5
++ read -r f
 ++ basename test_out/files/Download/doc_p2-3.pdf
 ++ stat -c%s test_out/files/Download/doc_p2-3.pdf
 + echo '--- doc_p2-3.pdf (1094 B)'

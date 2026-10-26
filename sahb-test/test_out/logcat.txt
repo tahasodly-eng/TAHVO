@@ -1,300 +1,300 @@
-10-26 19:47:44.986 E/Sahb    ( 7826): 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
-10-26 19:47:44.986 E/Sahb    ( 7826): 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
-10-26 19:47:44.986 E/Sahb    ( 7826): Caused by: android.system.ErrnoException: open failed: EACCES (Permission denied)
-10-26 19:47:44.986 E/Sahb    ( 7826): 	at libcore.io.Linux.open(Native Method)
-10-26 19:47:44.986 E/Sahb    ( 7826): 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
-10-26 19:47:44.986 E/Sahb    ( 7826): 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
-10-26 19:47:44.986 E/Sahb    ( 7826): 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
-10-26 19:47:44.986 E/Sahb    ( 7826): 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8063)
-10-26 19:47:44.986 E/Sahb    ( 7826): 	at libcore.io.IoBridge.open(IoBridge.java:560)
-10-26 19:47:44.986 E/Sahb    ( 7826): 	... 17 more
-10-26 19:47:44.996 I/SahbJob ( 7826): FAIL FileNotFoundException: /sdcard/Android/data/com.taha.sahb/files/sample.png: open failed: EACCES (Permission denied)
-10-26 19:47:52.250 I/SahbRing( 8728): slice 0 ضغط 540 952
-10-26 19:47:52.250 I/SahbRing( 8728): slice 1 الحجم 826 1117
-10-26 19:47:52.250 I/SahbRing( 8728): slice 2 قص الإطار 826 1448
-10-26 19:47:52.250 I/SahbRing( 8728): slice 3 علامة مائية 540 1613
-10-26 19:47:52.250 I/SahbRing( 8728): slice 4 حذف البيانات 253 1448
-10-26 19:47:52.250 I/SahbRing( 8728): slice 5 ZIP 253 1117
-10-26 19:47:52.250 I/SahbRing( 8728): center 540 1283
-10-26 19:47:58.755 I/SahbRing( 8914): slice 0 MP4 540 952
-10-26 19:47:58.755 I/SahbRing( 8914): slice 1 M4A 826 1448
-10-26 19:47:58.755 I/SahbRing( 8914): slice 2 لقطة 253 1448
-10-26 19:47:58.755 I/SahbRing( 8914): center 540 1283
-10-26 19:48:14.690 I/SahbRing( 9102): slice 0 JPG 540 952
-10-26 19:48:14.691 I/SahbRing( 9102): slice 1 PNG 540 1613
-10-26 19:48:14.691 I/SahbRing( 9102): center 540 1283
-10-26 19:48:21.806 I/SahbRing( 9152): slice 0 JPG 540 952
-10-26 19:48:21.806 I/SahbRing( 9152): slice 1 PNG 870 1283
-10-26 19:48:21.806 I/SahbRing( 9152): slice 2 WEBP 540 1613
-10-26 19:48:21.807 I/SahbRing( 9152): slice 3 PDF 209 1283
-10-26 19:48:21.807 I/SahbRing( 9152): center 540 1283
-10-26 19:48:23.810 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Download/Sahb/.pending-1793648903-sample.pdf. Uid: 10192
-10-26 19:48:23.815 D/MediaProvider( 5538): Moving /storage/emulated/0/Download/Sahb/.pending-1793648903-sample.pdf to /storage/emulated/0/Download/Sahb/sample.pdf
-10-26 19:48:23.889 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Download/Sahb/sample.pdf. Uid: 10192
-10-26 19:48:23.890 I/SahbJob ( 9152): OK content://media/external/downloads/1000000019
-10-26 19:48:28.517 I/SahbRing( 9206): slice 0 ضغط 540 952
-10-26 19:48:28.517 I/SahbRing( 9206): slice 1 الحجم 826 1117
-10-26 19:48:28.517 I/SahbRing( 9206): slice 2 قص الإطار 826 1448
-10-26 19:48:28.517 I/SahbRing( 9206): slice 3 علامة مائية 540 1613
-10-26 19:48:28.517 I/SahbRing( 9206): slice 4 حذف البيانات 253 1448
-10-26 19:48:28.517 I/SahbRing( 9206): slice 5 ZIP 253 1117
-10-26 19:48:28.517 I/SahbRing( 9206): center 540 1283
-10-26 19:48:30.525 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Pictures/Sahb/.pending-1793648910-sample_small.webp. Uid: 10192
-10-26 19:48:30.529 D/MediaProvider( 5538): Moving /storage/emulated/0/Pictures/Sahb/.pending-1793648910-sample_small.webp to /storage/emulated/0/Pictures/Sahb/sample_small.webp
-10-26 19:48:30.637 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Pictures/Sahb/sample_small.webp. Uid: 10192
-10-26 19:48:30.638 I/SahbJob ( 9206): OK content://media/external/images/media/1000000021
-10-26 19:48:35.117 I/SahbRing( 9263): slice 0 ضغط 540 952
-10-26 19:48:35.117 I/SahbRing( 9263): slice 1 الحجم 826 1117
-10-26 19:48:35.117 I/SahbRing( 9263): slice 2 قص الإطار 826 1448
-10-26 19:48:35.118 I/SahbRing( 9263): slice 3 علامة مائية 540 1613
-10-26 19:48:35.118 I/SahbRing( 9263): slice 4 حذف البيانات 253 1448
-10-26 19:48:35.118 I/SahbRing( 9263): slice 5 ZIP 253 1117
-10-26 19:48:35.118 I/SahbRing( 9263): center 540 1283
-10-26 19:48:39.133 D/AndroidRuntime( 9302): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-26 19:48:39.138 I/AndroidRuntime( 9302): Using default boot image
-10-26 19:48:39.138 I/AndroidRuntime( 9302): Leaving lock profiling enabled
-10-26 19:48:39.269 D/AndroidRuntime( 9302): Calling main entry com.android.commands.uiautomator.Launcher
-10-26 19:48:40.342 D/AndroidRuntime( 9302): Shutting down VM
-10-26 19:48:41.422 D/AndroidRuntime( 9330): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-26 19:48:41.429 I/AndroidRuntime( 9330): Using default boot image
-10-26 19:48:41.429 I/AndroidRuntime( 9330): Leaving lock profiling enabled
-10-26 19:48:41.649 D/AndroidRuntime( 9330): Calling main entry com.android.commands.uiautomator.Launcher
-10-26 19:48:42.776 D/AndroidRuntime( 9330): Shutting down VM
-10-26 19:48:44.180 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Pictures/Sahb/.pending-1793648924-sample_16x9.png. Uid: 10192
-10-26 19:48:44.185 D/MediaProvider( 5538): Moving /storage/emulated/0/Pictures/Sahb/.pending-1793648924-sample_16x9.png to /storage/emulated/0/Pictures/Sahb/sample_16x9.png
-10-26 19:48:44.197 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Pictures/Sahb/sample_16x9.png. Uid: 10192
-10-26 19:48:44.198 I/SahbJob ( 9263): OK content://media/external/images/media/1000000022
-10-26 19:48:48.958 I/SahbRing( 9377): slice 0 ضغط 540 952
-10-26 19:48:48.958 I/SahbRing( 9377): slice 1 الحجم 826 1117
-10-26 19:48:48.959 I/SahbRing( 9377): slice 2 قص الإطار 826 1448
-10-26 19:48:48.959 I/SahbRing( 9377): slice 3 علامة مائية 540 1613
-10-26 19:48:48.959 I/SahbRing( 9377): slice 4 حذف البيانات 253 1448
-10-26 19:48:48.959 I/SahbRing( 9377): slice 5 ZIP 253 1117
-10-26 19:48:48.959 I/SahbRing( 9377): center 540 1283
-10-26 19:48:52.795 D/AndroidRuntime( 9501): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-26 19:48:52.800 I/AndroidRuntime( 9501): Using default boot image
-10-26 19:48:52.800 I/AndroidRuntime( 9501): Leaving lock profiling enabled
-10-26 19:48:52.880 D/AndroidRuntime( 9501): Calling main entry com.android.commands.uiautomator.Launcher
-10-26 19:48:53.936 D/AndroidRuntime( 9501): Shutting down VM
-10-26 19:49:00.591 D/AndroidRuntime( 9580): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-26 19:49:00.595 I/AndroidRuntime( 9580): Using default boot image
-10-26 19:49:00.596 I/AndroidRuntime( 9580): Leaving lock profiling enabled
-10-26 19:49:00.678 D/AndroidRuntime( 9580): Calling main entry com.android.commands.uiautomator.Launcher
-10-26 19:49:01.745 D/AndroidRuntime( 9580): Shutting down VM
-10-26 19:49:03.641 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Pictures/Sahb/.pending-1793648943-sample_watermark.png. Uid: 10192
-10-26 19:49:03.646 D/MediaProvider( 5538): Moving /storage/emulated/0/Pictures/Sahb/.pending-1793648943-sample_watermark.png to /storage/emulated/0/Pictures/Sahb/sample_watermark.png
-10-26 19:49:03.662 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Pictures/Sahb/sample_watermark.png. Uid: 10192
-10-26 19:49:03.665 I/SahbJob ( 9377): OK content://media/external/images/media/1000000023
-10-26 19:49:07.278 I/SahbRing( 9632): slice 0 MP4 540 952
-10-26 19:49:07.278 I/SahbRing( 9632): slice 1 M4A 826 1448
-10-26 19:49:07.278 I/SahbRing( 9632): slice 2 لقطة 253 1448
-10-26 19:49:07.278 I/SahbRing( 9632): center 540 1283
-10-26 19:49:10.273 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Movies/Sahb/.pending-1793648950-sample_h264.mp4. Uid: 10192
-10-26 19:49:10.293 D/MediaProvider( 5538): Moving /storage/emulated/0/Movies/Sahb/.pending-1793648950-sample_h264.mp4 to /storage/emulated/0/Movies/Sahb/sample_h264.mp4
-10-26 19:49:10.328 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Movies/Sahb/sample_h264.mp4. Uid: 10192
-10-26 19:49:10.330 I/SahbJob ( 9632): OK content://media/external/video/media/1000000025
-10-26 19:49:13.804 I/SahbRing( 9718): slice 0 MP4 540 952
-10-26 19:49:13.804 I/SahbRing( 9718): slice 1 M4A 826 1448
-10-26 19:49:13.804 I/SahbRing( 9718): slice 2 لقطة 253 1448
-10-26 19:49:13.804 I/SahbRing( 9718): center 540 1283
-10-26 19:49:16.119 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Music/Sahb/.pending-1793648956-sample.m4a. Uid: 10192
-10-26 19:49:16.123 D/MediaProvider( 5538): Moving /storage/emulated/0/Music/Sahb/.pending-1793648956-sample.m4a to /storage/emulated/0/Music/Sahb/sample.m4a
-10-26 19:49:16.133 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Music/Sahb/sample.m4a. Uid: 10192
-10-26 19:49:16.134 I/SahbJob ( 9718): OK content://media/external/audio/media/1000000027
-10-26 19:49:20.244 I/SahbRing( 9785): slice 0 MP4 540 952
-10-26 19:49:20.244 I/SahbRing( 9785): slice 1 M4A 826 1448
-10-26 19:49:20.244 I/SahbRing( 9785): slice 2 لقطة 253 1448
-10-26 19:49:20.244 I/SahbRing( 9785): center 540 1283
-10-26 19:49:22.386 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Pictures/Sahb/.pending-1793648962-sample_frame.jpg. Uid: 10192
-10-26 19:49:22.391 D/MediaProvider( 5538): Moving /storage/emulated/0/Pictures/Sahb/.pending-1793648962-sample_frame.jpg to /storage/emulated/0/Pictures/Sahb/sample_frame.jpg
-10-26 19:49:22.441 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Pictures/Sahb/sample_frame.jpg. Uid: 10192
-10-26 19:49:22.442 I/SahbJob ( 9785): OK content://media/external/images/media/1000000028
-10-26 19:49:26.752 I/SahbRing( 9850): slice 0 ضغط 540 952
-10-26 19:49:26.753 I/SahbRing( 9850): slice 1 الحجم 798 1077
-10-26 19:49:26.753 I/SahbRing( 9850): slice 2 قص الإطار 862 1356
-10-26 19:49:26.753 I/SahbRing( 9850): slice 3 اقتطاع 683 1580
-10-26 19:49:26.753 I/SahbRing( 9850): slice 4 كتم الصوت 396 1580
-10-26 19:49:26.753 I/SahbRing( 9850): slice 5 حذف البيانات 217 1356
-10-26 19:49:26.753 I/SahbRing( 9850): slice 6 ZIP 281 1077
-10-26 19:49:26.753 I/SahbRing( 9850): center 540 1283
-10-26 19:49:30.863 D/AndroidRuntime( 9896): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-26 19:49:30.866 I/AndroidRuntime( 9896): Using default boot image
-10-26 19:49:30.866 I/AndroidRuntime( 9896): Leaving lock profiling enabled
-10-26 19:49:30.955 D/AndroidRuntime( 9896): Calling main entry com.android.commands.uiautomator.Launcher
-10-26 19:49:32.033 D/AndroidRuntime( 9896): Shutting down VM
-10-26 19:49:35.483 D/AndroidRuntime( 9941): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-26 19:49:35.487 I/AndroidRuntime( 9941): Using default boot image
-10-26 19:49:35.487 I/AndroidRuntime( 9941): Leaving lock profiling enabled
-10-26 19:49:35.618 D/AndroidRuntime( 9941): Calling main entry com.android.commands.uiautomator.Launcher
-10-26 19:49:36.675 D/AndroidRuntime( 9941): Shutting down VM
-10-26 19:49:41.239 D/AndroidRuntime( 9987): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-26 19:49:41.243 I/AndroidRuntime( 9987): Using default boot image
-10-26 19:49:41.243 I/AndroidRuntime( 9987): Leaving lock profiling enabled
-10-26 19:49:41.368 D/AndroidRuntime( 9987): Calling main entry com.android.commands.uiautomator.Launcher
-10-26 19:49:42.408 D/AndroidRuntime( 9987): Shutting down VM
-10-26 19:49:48.751 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Movies/Sahb/.pending-1793648988-sample_cut.mp4. Uid: 10192
-10-26 19:49:48.759 D/MediaProvider( 5538): Moving /storage/emulated/0/Movies/Sahb/.pending-1793648988-sample_cut.mp4 to /storage/emulated/0/Movies/Sahb/sample_cut.mp4
-10-26 19:49:48.794 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Movies/Sahb/sample_cut.mp4. Uid: 10192
-10-26 19:49:48.797 I/SahbJob ( 9850): OK content://media/external/video/media/1000000029
-10-26 19:49:52.493 I/SahbRing(10137): slice 0 ضغط 540 952
-10-26 19:49:52.493 I/SahbRing(10137): slice 1 الحجم 798 1077
-10-26 19:49:52.493 I/SahbRing(10137): slice 2 قص الإطار 862 1356
-10-26 19:49:52.493 I/SahbRing(10137): slice 3 اقتطاع 683 1580
-10-26 19:49:52.493 I/SahbRing(10137): slice 4 كتم الصوت 396 1580
-10-26 19:49:52.493 I/SahbRing(10137): slice 5 حذف البيانات 217 1356
-10-26 19:49:52.493 I/SahbRing(10137): slice 6 ZIP 281 1077
-10-26 19:49:52.493 I/SahbRing(10137): center 540 1283
-10-26 19:49:54.827 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Movies/Sahb/.pending-1793648994-sample_mute.mp4. Uid: 10192
-10-26 19:49:54.837 D/MediaProvider( 5538): Moving /storage/emulated/0/Movies/Sahb/.pending-1793648994-sample_mute.mp4 to /storage/emulated/0/Movies/Sahb/sample_mute.mp4
-10-26 19:49:54.868 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Movies/Sahb/sample_mute.mp4. Uid: 10192
-10-26 19:49:54.869 I/SahbJob (10137): OK content://media/external/video/media/1000000030
-10-26 19:49:59.052 I/SahbRing(10202): slice 0 ضغط 540 952
-10-26 19:49:59.052 I/SahbRing(10202): slice 1 الحجم 798 1077
-10-26 19:49:59.053 I/SahbRing(10202): slice 2 قص الإطار 862 1356
-10-26 19:49:59.053 I/SahbRing(10202): slice 3 اقتطاع 683 1580
-10-26 19:49:59.053 I/SahbRing(10202): slice 4 كتم الصوت 396 1580
-10-26 19:49:59.053 I/SahbRing(10202): slice 5 حذف البيانات 217 1356
-10-26 19:49:59.053 I/SahbRing(10202): slice 6 ZIP 281 1077
-10-26 19:49:59.057 I/SahbRing(10202): center 540 1283
-10-26 19:50:01.465 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Movies/Sahb/.pending-1793649001-sample_clean.mp4. Uid: 10192
-10-26 19:50:01.476 D/MediaProvider( 5538): Moving /storage/emulated/0/Movies/Sahb/.pending-1793649001-sample_clean.mp4 to /storage/emulated/0/Movies/Sahb/sample_clean.mp4
-10-26 19:50:01.491 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Movies/Sahb/sample_clean.mp4. Uid: 10192
-10-26 19:50:01.492 I/SahbJob (10202): OK content://media/external/video/media/1000000031
-10-26 19:50:07.596 D/AndroidRuntime(10303): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-26 19:50:07.600 I/AndroidRuntime(10303): Using default boot image
-10-26 19:50:07.600 I/AndroidRuntime(10303): Leaving lock profiling enabled
-10-26 19:50:07.684 D/AndroidRuntime(10303): Calling main entry com.android.commands.uiautomator.Launcher
-10-26 19:50:08.735 D/AndroidRuntime(10303): Shutting down VM
-10-26 19:50:09.761 D/AndroidRuntime(10326): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-26 19:50:09.766 I/AndroidRuntime(10326): Using default boot image
-10-26 19:50:09.766 I/AndroidRuntime(10326): Leaving lock profiling enabled
-10-26 19:50:09.885 D/AndroidRuntime(10326): Calling main entry com.android.commands.uiautomator.Launcher
-10-26 19:50:11.626 D/AndroidRuntime(10326): Shutting down VM
-10-26 19:50:14.134 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Music/Sahb/.pending-1793649014-sample.m4a. Uid: 10192
-10-26 19:50:14.138 D/MediaProvider( 5538): Moving /storage/emulated/0/Music/Sahb/.pending-1793649014-sample.m4a to /storage/emulated/0/Music/Sahb/sample (1).m4a
-10-26 19:50:14.149 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Music/Sahb/sample (1).m4a. Uid: 10192
-10-26 19:50:14.150 I/SahbJob (10269): OK content://media/external/audio/media/1000000032
-10-26 19:50:16.973 I/SahbRing(10387): slice 0 JPG 540 952
-10-26 19:50:16.973 I/SahbRing(10387): slice 1 PNG 540 1613
-10-26 19:50:16.973 I/SahbRing(10387): center 540 1283
-10-26 19:50:19.090 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Pictures/Sahb/.pending-1793649019-doc_p1.jpg. Uid: 10192
-10-26 19:50:19.094 D/MediaProvider( 5538): Moving /storage/emulated/0/Pictures/Sahb/.pending-1793649019-doc_p1.jpg to /storage/emulated/0/Pictures/Sahb/doc_p1.jpg
-10-26 19:50:19.101 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Pictures/Sahb/doc_p1.jpg. Uid: 10192
-10-26 19:50:19.178 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Pictures/Sahb/.pending-1793649019-doc_p2.jpg. Uid: 10192
-10-26 19:50:19.187 D/MediaProvider( 5538): Moving /storage/emulated/0/Pictures/Sahb/.pending-1793649019-doc_p2.jpg to /storage/emulated/0/Pictures/Sahb/doc_p2.jpg
-10-26 19:50:19.204 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Pictures/Sahb/doc_p2.jpg. Uid: 10192
-10-26 19:50:19.291 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Pictures/Sahb/.pending-1793649019-doc_p3.jpg. Uid: 10192
-10-26 19:50:19.310 D/MediaProvider( 5538): Moving /storage/emulated/0/Pictures/Sahb/.pending-1793649019-doc_p3.jpg to /storage/emulated/0/Pictures/Sahb/doc_p3.jpg
-10-26 19:50:19.325 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Pictures/Sahb/doc_p3.jpg. Uid: 10192
-10-26 19:50:19.509 I/SahbJob (10387): OK content://media/external/images/media/1000000033, content://media/external/images/media/1000000034, content://media/external/images/media/1000000035
-10-26 19:50:23.521 I/SahbRing(10444): slice 0 ضغط 540 952
-10-26 19:50:23.521 I/SahbRing(10444): slice 1 صفحات 870 1283
-10-26 19:50:23.522 I/SahbRing(10444): slice 2 علامة مائية 540 1613
-10-26 19:50:23.522 I/SahbRing(10444): slice 3 ZIP 209 1283
-10-26 19:50:23.522 I/SahbRing(10444): center 540 1283
-10-26 19:50:25.597 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Download/Sahb/.pending-1793649025-doc_small.pdf. Uid: 10192
-10-26 19:50:25.602 D/MediaProvider( 5538): Moving /storage/emulated/0/Download/Sahb/.pending-1793649025-doc_small.pdf to /storage/emulated/0/Download/Sahb/doc_small.pdf
-10-26 19:50:25.611 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Download/Sahb/doc_small.pdf. Uid: 10192
-10-26 19:50:25.890 I/SahbJob (10444): OK content://media/external/downloads/1000000036
-10-26 19:50:29.920 I/SahbRing(10499): slice 0 ضغط 540 952
-10-26 19:50:29.921 I/SahbRing(10499): slice 1 صفحات 870 1283
-10-26 19:50:29.921 I/SahbRing(10499): slice 2 علامة مائية 540 1613
-10-26 19:50:29.921 I/SahbRing(10499): slice 3 ZIP 209 1283
-10-26 19:50:29.921 I/SahbRing(10499): center 540 1283
-10-26 19:50:33.963 D/AndroidRuntime(10537): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-26 19:50:33.967 I/AndroidRuntime(10537): Using default boot image
-10-26 19:50:33.967 I/AndroidRuntime(10537): Leaving lock profiling enabled
-10-26 19:50:34.051 D/AndroidRuntime(10537): Calling main entry com.android.commands.uiautomator.Launcher
-10-26 19:50:35.135 D/AndroidRuntime(10537): Shutting down VM
-10-26 19:50:38.620 D/AndroidRuntime(10592): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-26 19:50:38.625 I/AndroidRuntime(10592): Using default boot image
-10-26 19:50:38.625 I/AndroidRuntime(10592): Leaving lock profiling enabled
-10-26 19:50:38.731 D/AndroidRuntime(10592): Calling main entry com.android.commands.uiautomator.Launcher
-10-26 19:50:39.787 D/AndroidRuntime(10592): Shutting down VM
-10-26 19:50:43.115 D/AndroidRuntime(10634): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-26 19:50:43.118 I/AndroidRuntime(10634): Using default boot image
-10-26 19:50:43.118 I/AndroidRuntime(10634): Leaving lock profiling enabled
-10-26 19:50:43.196 D/AndroidRuntime(10634): Calling main entry com.android.commands.uiautomator.Launcher
-10-26 19:50:44.244 D/AndroidRuntime(10634): Shutting down VM
-10-26 19:50:45.842 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Download/Sahb/.pending-1793649045-doc_p2-3.pdf. Uid: 10192
-10-26 19:50:45.847 D/MediaProvider( 5538): Moving /storage/emulated/0/Download/Sahb/.pending-1793649045-doc_p2-3.pdf to /storage/emulated/0/Download/Sahb/doc_p2-3.pdf
-10-26 19:50:45.867 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Download/Sahb/doc_p2-3.pdf. Uid: 10192
-10-26 19:50:45.870 I/SahbJob (10499): OK content://media/external/downloads/1000000037
-10-26 19:50:49.819 I/SahbRing(10676): slice 0 ضغط 540 952
-10-26 19:50:49.823 I/SahbRing(10676): slice 1 صفحات 870 1283
-10-26 19:50:49.823 I/SahbRing(10676): slice 2 علامة مائية 540 1613
-10-26 19:50:49.823 I/SahbRing(10676): slice 3 ZIP 209 1283
-10-26 19:50:49.823 I/SahbRing(10676): center 540 1283
-10-26 19:50:53.798 D/AndroidRuntime(10718): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-26 19:50:53.802 I/AndroidRuntime(10718): Using default boot image
-10-26 19:50:53.802 I/AndroidRuntime(10718): Leaving lock profiling enabled
-10-26 19:50:53.882 D/AndroidRuntime(10718): Calling main entry com.android.commands.uiautomator.Launcher
-10-26 19:50:54.918 D/AndroidRuntime(10718): Shutting down VM
-10-26 19:50:59.749 D/AndroidRuntime(10768): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-26 19:50:59.753 I/AndroidRuntime(10768): Using default boot image
-10-26 19:50:59.753 I/AndroidRuntime(10768): Leaving lock profiling enabled
-10-26 19:50:59.876 D/AndroidRuntime(10768): Calling main entry com.android.commands.uiautomator.Launcher
-10-26 19:51:00.938 D/AndroidRuntime(10768): Shutting down VM
-10-26 19:51:02.694 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Download/Sahb/.pending-1793649062-doc_watermark.pdf. Uid: 10192
-10-26 19:51:02.697 D/MediaProvider( 5538): Moving /storage/emulated/0/Download/Sahb/.pending-1793649062-doc_watermark.pdf to /storage/emulated/0/Download/Sahb/doc_watermark.pdf
-10-26 19:51:02.710 I/MediaProvider( 5538): Open with lower FS for /storage/emulated/0/Download/Sahb/doc_watermark.pdf. Uid: 10192
-10-26 19:51:02.712 I/SahbJob (10676): OK content://media/external/downloads/1000000038
-10-26 19:51:06.547 I/SahbRing(10820): slice 0 JPG 540 952
-10-26 19:51:06.547 I/SahbRing(10820): slice 1 PNG 540 1613
-10-26 19:51:06.547 I/SahbRing(10820): center 540 1283
-10-26 19:54:17.095 I/SahbRing(11225): slice 0 ضغط 540 952
-10-26 19:54:17.095 I/SahbRing(11225): slice 1 الحجم 798 1077
-10-26 19:54:17.095 I/SahbRing(11225): slice 2 قص الإطار 862 1356
-10-26 19:54:17.095 I/SahbRing(11225): slice 3 اقتطاع 683 1580
-10-26 19:54:17.095 I/SahbRing(11225): slice 4 كتم الصوت 396 1580
-10-26 19:54:17.095 I/SahbRing(11225): slice 5 حذف البيانات 217 1356
-10-26 19:54:17.095 I/SahbRing(11225): slice 6 ZIP 281 1077
-10-26 19:54:17.096 I/SahbRing(11225): center 540 1283
-10-26 19:54:21.220 D/AndroidRuntime(11269): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-26 19:54:21.223 I/AndroidRuntime(11269): Using default boot image
-10-26 19:54:21.223 I/AndroidRuntime(11269): Leaving lock profiling enabled
-10-26 19:54:21.305 D/AndroidRuntime(11269): Calling main entry com.android.commands.uiautomator.Launcher
-10-26 19:54:22.409 D/AndroidRuntime(11269): Shutting down VM
-10-26 19:54:23.418 D/AndroidRuntime(11299): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-26 19:54:23.422 I/AndroidRuntime(11299): Using default boot image
-10-26 19:54:23.422 I/AndroidRuntime(11299): Leaving lock profiling enabled
-10-26 19:54:23.507 D/AndroidRuntime(11299): Calling main entry com.android.commands.uiautomator.Launcher
-10-26 19:54:24.699 D/AndroidRuntime(11299): Shutting down VM
-10-26 19:54:28.712 D/AndroidRuntime(11350): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-26 19:54:28.717 I/AndroidRuntime(11350): Using default boot image
-10-26 19:54:28.718 I/AndroidRuntime(11350): Leaving lock profiling enabled
-10-26 19:54:29.009 D/AndroidRuntime(11350): Calling main entry com.android.commands.uiautomator.Launcher
-10-26 19:54:35.654 D/AndroidRuntime(11350): Shutting down VM
-10-26 19:54:36.760 I/SahbJob (11225): CANCEL
-10-26 19:54:36.786 I/SahbRing(11225): slice 0 ضغط 540 952
-10-26 19:54:36.786 I/SahbRing(11225): slice 1 الحجم 798 1077
-10-26 19:54:36.786 I/SahbRing(11225): slice 2 قص الإطار 862 1356
-10-26 19:54:36.786 I/SahbRing(11225): slice 3 اقتطاع 683 1580
-10-26 19:54:36.786 I/SahbRing(11225): slice 4 كتم الصوت 396 1580
-10-26 19:54:36.787 I/SahbRing(11225): slice 5 حذف البيانات 217 1356
-10-26 19:54:36.787 I/SahbRing(11225): slice 6 ZIP 281 1077
-10-26 19:54:36.787 I/SahbRing(11225): center 540 1283
-10-26 19:54:41.043 D/AndroidRuntime(11558): >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
-10-26 19:54:41.047 I/AndroidRuntime(11558): Using default boot image
-10-26 19:54:41.047 I/AndroidRuntime(11558): Leaving lock profiling enabled
-10-26 19:54:43.953 I/AndroidRuntime(11830): VM exiting with result code 0, cleanup skipped.
-10-26 19:55:23.206 I/SahbRing(14872): slice 0 JPG 540 952
-10-26 19:55:23.209 I/SahbRing(14872): slice 1 PNG 870 1283
-10-26 19:55:23.209 I/SahbRing(14872): slice 2 WEBP 540 1613
-10-26 19:55:23.210 I/SahbRing(14872): slice 3 PDF 209 1283
-10-26 19:55:23.210 I/SahbRing(14872): center 540 1283
-10-26 19:55:34.509 I/SahbRing(15159): slice 0 Compress 540 952
-10-26 19:55:34.509 I/SahbRing(15159): slice 1 Resize 798 1077
-10-26 19:55:34.510 I/SahbRing(15159): slice 2 Crop 862 1356
-10-26 19:55:34.510 I/SahbRing(15159): slice 3 Trim 683 1580
-10-26 19:55:34.510 I/SahbRing(15159): slice 4 Mute 396 1580
-10-26 19:55:34.510 I/SahbRing(15159): slice 5 Clean 217 1356
-10-26 19:55:34.510 I/SahbRing(15159): slice 6 ZIP 281 1077
-10-26 19:55:34.510 I/SahbRing(15159): center 540 1283
-10-26 19:55:41.377 I/SahbRing(15221): slice 0 JPG 540 952
-10-26 19:55:41.378 I/SahbRing(15221): slice 1 PNG 540 1613
-10-26 19:55:41.378 I/SahbRing(15221): center 540 1283
-10-26 19:55:47.975 D/AndroidRuntime(15280): >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
-10-26 19:55:48.049 I/AndroidRuntime(15280): Using default boot image
-10-26 19:55:48.050 I/AndroidRuntime(15280): Leaving lock profiling enabled
-10-26 19:55:51.440 I/AndroidRuntime(15558): VM exiting with result code 0, cleanup skipped.
+10-26 20:37:02.394 I/SahbRing( 9465): slice 0 ضغط 540 952
+10-26 20:37:02.394 I/SahbRing( 9465): slice 1 الحجم 826 1117
+10-26 20:37:02.395 I/SahbRing( 9465): slice 2 قص الإطار 826 1448
+10-26 20:37:02.395 I/SahbRing( 9465): slice 3 علامة مائية 540 1613
+10-26 20:37:02.395 I/SahbRing( 9465): slice 4 حذف البيانات 253 1448
+10-26 20:37:02.395 I/SahbRing( 9465): slice 5 ZIP 253 1117
+10-26 20:37:02.395 I/SahbRing( 9465): center 540 1283
+10-26 20:37:04.507 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Pictures/Sahb/.pending-1793651824-sample_small.webp. Uid: 10192
+10-26 20:37:04.511 D/MediaProvider( 5968): Moving /storage/emulated/0/Pictures/Sahb/.pending-1793651824-sample_small.webp to /storage/emulated/0/Pictures/Sahb/sample_small.webp
+10-26 20:37:04.576 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Pictures/Sahb/sample_small.webp. Uid: 10192
+10-26 20:37:04.578 I/SahbJob ( 9465): OK content://media/external/images/media/1000000021
+10-26 20:37:08.468 I/SahbRing( 9524): slice 0 ضغط 540 952
+10-26 20:37:08.468 I/SahbRing( 9524): slice 1 الحجم 826 1117
+10-26 20:37:08.468 I/SahbRing( 9524): slice 2 قص الإطار 826 1448
+10-26 20:37:08.468 I/SahbRing( 9524): slice 3 علامة مائية 540 1613
+10-26 20:37:08.468 I/SahbRing( 9524): slice 4 حذف البيانات 253 1448
+10-26 20:37:08.468 I/SahbRing( 9524): slice 5 ZIP 253 1117
+10-26 20:37:08.468 I/SahbRing( 9524): center 540 1283
+10-26 20:37:12.522 D/AndroidRuntime( 9563): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-26 20:37:12.525 I/AndroidRuntime( 9563): Using default boot image
+10-26 20:37:12.525 I/AndroidRuntime( 9563): Leaving lock profiling enabled
+10-26 20:37:12.593 D/AndroidRuntime( 9563): Calling main entry com.android.commands.uiautomator.Launcher
+10-26 20:37:13.651 D/AndroidRuntime( 9563): Shutting down VM
+10-26 20:37:14.669 D/AndroidRuntime( 9590): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-26 20:37:14.673 I/AndroidRuntime( 9590): Using default boot image
+10-26 20:37:14.673 I/AndroidRuntime( 9590): Leaving lock profiling enabled
+10-26 20:37:14.820 D/AndroidRuntime( 9590): Calling main entry com.android.commands.uiautomator.Launcher
+10-26 20:37:15.992 D/AndroidRuntime( 9590): Shutting down VM
+10-26 20:37:17.002 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Pictures/Sahb/.pending-1793651836-sample_16x9.png. Uid: 10192
+10-26 20:37:17.004 D/MediaProvider( 5968): Moving /storage/emulated/0/Pictures/Sahb/.pending-1793651836-sample_16x9.png to /storage/emulated/0/Pictures/Sahb/sample_16x9.png
+10-26 20:37:17.010 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Pictures/Sahb/sample_16x9.png. Uid: 10192
+10-26 20:37:17.069 I/SahbJob ( 9524): OK content://media/external/images/media/1000000022
+10-26 20:37:21.188 I/SahbRing( 9636): slice 0 ضغط 540 952
+10-26 20:37:21.191 I/SahbRing( 9636): slice 1 الحجم 826 1117
+10-26 20:37:21.191 I/SahbRing( 9636): slice 2 قص الإطار 826 1448
+10-26 20:37:21.191 I/SahbRing( 9636): slice 3 علامة مائية 540 1613
+10-26 20:37:21.191 I/SahbRing( 9636): slice 4 حذف البيانات 253 1448
+10-26 20:37:21.191 I/SahbRing( 9636): slice 5 ZIP 253 1117
+10-26 20:37:21.191 I/SahbRing( 9636): center 540 1283
+10-26 20:37:25.219 D/AndroidRuntime( 9676): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-26 20:37:25.222 I/AndroidRuntime( 9676): Using default boot image
+10-26 20:37:25.222 I/AndroidRuntime( 9676): Leaving lock profiling enabled
+10-26 20:37:25.291 D/AndroidRuntime( 9676): Calling main entry com.android.commands.uiautomator.Launcher
+10-26 20:37:26.375 D/AndroidRuntime( 9676): Shutting down VM
+10-26 20:37:32.014 D/AndroidRuntime( 9770): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-26 20:37:32.017 I/AndroidRuntime( 9770): Using default boot image
+10-26 20:37:32.017 I/AndroidRuntime( 9770): Leaving lock profiling enabled
+10-26 20:37:32.082 D/AndroidRuntime( 9770): Calling main entry com.android.commands.uiautomator.Launcher
+10-26 20:37:33.140 D/AndroidRuntime( 9770): Shutting down VM
+10-26 20:37:34.579 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Pictures/Sahb/.pending-1793651854-sample_watermark.png. Uid: 10192
+10-26 20:37:34.589 D/MediaProvider( 5968): Moving /storage/emulated/0/Pictures/Sahb/.pending-1793651854-sample_watermark.png to /storage/emulated/0/Pictures/Sahb/sample_watermark.png
+10-26 20:37:34.602 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Pictures/Sahb/sample_watermark.png. Uid: 10192
+10-26 20:37:34.603 I/SahbJob ( 9636): OK content://media/external/images/media/1000000023
+10-26 20:37:38.153 I/SahbRing( 9827): slice 0 MP4 540 952
+10-26 20:37:38.153 I/SahbRing( 9827): slice 1 M4A 826 1448
+10-26 20:37:38.153 I/SahbRing( 9827): slice 2 لقطة 253 1448
+10-26 20:37:38.153 I/SahbRing( 9827): center 540 1283
+10-26 20:37:40.731 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Movies/Sahb/.pending-1793651860-sample_h264.mp4. Uid: 10192
+10-26 20:37:40.756 D/MediaProvider( 5968): Moving /storage/emulated/0/Movies/Sahb/.pending-1793651860-sample_h264.mp4 to /storage/emulated/0/Movies/Sahb/sample_h264.mp4
+10-26 20:37:40.780 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Movies/Sahb/sample_h264.mp4. Uid: 10192
+10-26 20:37:40.781 I/SahbJob ( 9827): OK content://media/external/video/media/1000000025
+10-26 20:37:44.329 I/SahbRing( 9909): slice 0 MP4 540 952
+10-26 20:37:44.329 I/SahbRing( 9909): slice 1 M4A 826 1448
+10-26 20:37:44.329 I/SahbRing( 9909): slice 2 لقطة 253 1448
+10-26 20:37:44.329 I/SahbRing( 9909): center 540 1283
+10-26 20:37:46.564 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Music/Sahb/.pending-1793651866-sample.m4a. Uid: 10192
+10-26 20:37:46.570 D/MediaProvider( 5968): Moving /storage/emulated/0/Music/Sahb/.pending-1793651866-sample.m4a to /storage/emulated/0/Music/Sahb/sample.m4a
+10-26 20:37:46.583 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Music/Sahb/sample.m4a. Uid: 10192
+10-26 20:37:46.584 I/SahbJob ( 9909): OK content://media/external/audio/media/1000000027
+10-26 20:37:50.661 I/SahbRing( 9981): slice 0 MP4 540 952
+10-26 20:37:50.661 I/SahbRing( 9981): slice 1 M4A 826 1448
+10-26 20:37:50.661 I/SahbRing( 9981): slice 2 لقطة 253 1448
+10-26 20:37:50.661 I/SahbRing( 9981): center 540 1283
+10-26 20:37:52.763 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Pictures/Sahb/.pending-1793651872-sample_frame.jpg. Uid: 10192
+10-26 20:37:52.767 D/MediaProvider( 5968): Moving /storage/emulated/0/Pictures/Sahb/.pending-1793651872-sample_frame.jpg to /storage/emulated/0/Pictures/Sahb/sample_frame.jpg
+10-26 20:37:52.775 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Pictures/Sahb/sample_frame.jpg. Uid: 10192
+10-26 20:37:52.780 I/SahbJob ( 9981): OK content://media/external/images/media/1000000028
+10-26 20:37:56.772 I/SahbRing(10061): slice 0 ضغط 540 952
+10-26 20:37:56.772 I/SahbRing(10061): slice 1 الحجم 798 1077
+10-26 20:37:56.772 I/SahbRing(10061): slice 2 قص الإطار 862 1356
+10-26 20:37:56.772 I/SahbRing(10061): slice 3 اقتطاع 683 1580
+10-26 20:37:56.772 I/SahbRing(10061): slice 4 كتم الصوت 396 1580
+10-26 20:37:56.772 I/SahbRing(10061): slice 5 حذف البيانات 217 1356
+10-26 20:37:56.772 I/SahbRing(10061): slice 6 ZIP 281 1077
+10-26 20:37:56.772 I/SahbRing(10061): center 540 1283
+10-26 20:38:00.876 D/AndroidRuntime(10103): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-26 20:38:00.879 I/AndroidRuntime(10103): Using default boot image
+10-26 20:38:00.879 I/AndroidRuntime(10103): Leaving lock profiling enabled
+10-26 20:38:00.948 D/AndroidRuntime(10103): Calling main entry com.android.commands.uiautomator.Launcher
+10-26 20:38:02.007 D/AndroidRuntime(10103): Shutting down VM
+10-26 20:38:05.418 D/AndroidRuntime(10148): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-26 20:38:05.421 I/AndroidRuntime(10148): Using default boot image
+10-26 20:38:05.421 I/AndroidRuntime(10148): Leaving lock profiling enabled
+10-26 20:38:05.486 D/AndroidRuntime(10148): Calling main entry com.android.commands.uiautomator.Launcher
+10-26 20:38:06.580 D/AndroidRuntime(10148): Shutting down VM
+10-26 20:38:11.052 D/AndroidRuntime(10193): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-26 20:38:11.055 I/AndroidRuntime(10193): Using default boot image
+10-26 20:38:11.055 I/AndroidRuntime(10193): Leaving lock profiling enabled
+10-26 20:38:11.124 D/AndroidRuntime(10193): Calling main entry com.android.commands.uiautomator.Launcher
+10-26 20:38:12.174 D/AndroidRuntime(10193): Shutting down VM
+10-26 20:38:16.787 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Movies/Sahb/.pending-1793651896-sample_cut.mp4. Uid: 10192
+10-26 20:38:16.790 D/MediaProvider( 5968): Moving /storage/emulated/0/Movies/Sahb/.pending-1793651896-sample_cut.mp4 to /storage/emulated/0/Movies/Sahb/sample_cut.mp4
+10-26 20:38:16.810 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Movies/Sahb/sample_cut.mp4. Uid: 10192
+10-26 20:38:16.811 I/SahbJob (10061): OK content://media/external/video/media/1000000029
+10-26 20:38:19.218 I/SahbRing(10321): slice 0 ضغط 540 952
+10-26 20:38:19.218 I/SahbRing(10321): slice 1 الحجم 798 1077
+10-26 20:38:19.218 I/SahbRing(10321): slice 2 قص الإطار 862 1356
+10-26 20:38:19.218 I/SahbRing(10321): slice 3 اقتطاع 683 1580
+10-26 20:38:19.219 I/SahbRing(10321): slice 4 كتم الصوت 396 1580
+10-26 20:38:19.219 I/SahbRing(10321): slice 5 حذف البيانات 217 1356
+10-26 20:38:19.219 I/SahbRing(10321): slice 6 ZIP 281 1077
+10-26 20:38:19.219 I/SahbRing(10321): center 540 1283
+10-26 20:38:21.480 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Movies/Sahb/.pending-1793651901-sample_mute.mp4. Uid: 10192
+10-26 20:38:21.490 D/MediaProvider( 5968): Moving /storage/emulated/0/Movies/Sahb/.pending-1793651901-sample_mute.mp4 to /storage/emulated/0/Movies/Sahb/sample_mute.mp4
+10-26 20:38:21.512 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Movies/Sahb/sample_mute.mp4. Uid: 10192
+10-26 20:38:21.513 I/SahbJob (10321): OK content://media/external/video/media/1000000030
+10-26 20:38:25.238 I/SahbRing(10389): slice 0 ضغط 540 952
+10-26 20:38:25.239 I/SahbRing(10389): slice 1 الحجم 798 1077
+10-26 20:38:25.239 I/SahbRing(10389): slice 2 قص الإطار 862 1356
+10-26 20:38:25.239 I/SahbRing(10389): slice 3 اقتطاع 683 1580
+10-26 20:38:25.239 I/SahbRing(10389): slice 4 كتم الصوت 396 1580
+10-26 20:38:25.239 I/SahbRing(10389): slice 5 حذف البيانات 217 1356
+10-26 20:38:25.239 I/SahbRing(10389): slice 6 ZIP 281 1077
+10-26 20:38:25.239 I/SahbRing(10389): center 540 1283
+10-26 20:38:27.664 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Movies/Sahb/.pending-1793651907-sample_clean.mp4. Uid: 10192
+10-26 20:38:27.669 D/MediaProvider( 5968): Moving /storage/emulated/0/Movies/Sahb/.pending-1793651907-sample_clean.mp4 to /storage/emulated/0/Movies/Sahb/sample_clean.mp4
+10-26 20:38:27.685 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Movies/Sahb/sample_clean.mp4. Uid: 10192
+10-26 20:38:27.686 I/SahbJob (10389): OK content://media/external/video/media/1000000031
+10-26 20:38:33.551 D/AndroidRuntime(10492): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-26 20:38:33.553 I/AndroidRuntime(10492): Using default boot image
+10-26 20:38:33.553 I/AndroidRuntime(10492): Leaving lock profiling enabled
+10-26 20:38:33.622 D/AndroidRuntime(10492): Calling main entry com.android.commands.uiautomator.Launcher
+10-26 20:38:34.670 D/AndroidRuntime(10492): Shutting down VM
+10-26 20:38:35.614 D/AndroidRuntime(10514): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-26 20:38:35.619 I/AndroidRuntime(10514): Using default boot image
+10-26 20:38:35.619 I/AndroidRuntime(10514): Leaving lock profiling enabled
+10-26 20:38:35.770 D/AndroidRuntime(10514): Calling main entry com.android.commands.uiautomator.Launcher
+10-26 20:38:37.286 D/AndroidRuntime(10514): Shutting down VM
+10-26 20:38:39.418 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Music/Sahb/.pending-1793651919-sample.m4a. Uid: 10192
+10-26 20:38:39.421 D/MediaProvider( 5968): Moving /storage/emulated/0/Music/Sahb/.pending-1793651919-sample.m4a to /storage/emulated/0/Music/Sahb/sample (1).m4a
+10-26 20:38:39.431 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Music/Sahb/sample (1).m4a. Uid: 10192
+10-26 20:38:39.432 I/SahbJob (10457): OK content://media/external/audio/media/1000000032
+10-26 20:38:42.287 I/SahbRing(10574): slice 0 JPG 540 952
+10-26 20:38:42.287 I/SahbRing(10574): slice 1 PNG 540 1613
+10-26 20:38:42.287 I/SahbRing(10574): center 540 1283
+10-26 20:38:44.286 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Pictures/Sahb/.pending-1793651924-doc_p1.jpg. Uid: 10192
+10-26 20:38:44.289 D/MediaProvider( 5968): Moving /storage/emulated/0/Pictures/Sahb/.pending-1793651924-doc_p1.jpg to /storage/emulated/0/Pictures/Sahb/doc_p1.jpg
+10-26 20:38:44.297 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Pictures/Sahb/doc_p1.jpg. Uid: 10192
+10-26 20:38:44.379 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Pictures/Sahb/.pending-1793651924-doc_p2.jpg. Uid: 10192
+10-26 20:38:44.382 D/MediaProvider( 5968): Moving /storage/emulated/0/Pictures/Sahb/.pending-1793651924-doc_p2.jpg to /storage/emulated/0/Pictures/Sahb/doc_p2.jpg
+10-26 20:38:44.393 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Pictures/Sahb/doc_p2.jpg. Uid: 10192
+10-26 20:38:44.458 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Pictures/Sahb/.pending-1793651924-doc_p3.jpg. Uid: 10192
+10-26 20:38:44.472 D/MediaProvider( 5968): Moving /storage/emulated/0/Pictures/Sahb/.pending-1793651924-doc_p3.jpg to /storage/emulated/0/Pictures/Sahb/doc_p3.jpg
+10-26 20:38:44.482 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Pictures/Sahb/doc_p3.jpg. Uid: 10192
+10-26 20:38:44.601 I/SahbJob (10574): OK content://media/external/images/media/1000000033, content://media/external/images/media/1000000034, content://media/external/images/media/1000000035
+10-26 20:38:48.340 I/SahbRing(10635): slice 0 ضغط 540 952
+10-26 20:38:48.340 I/SahbRing(10635): slice 1 صفحات 870 1283
+10-26 20:38:48.340 I/SahbRing(10635): slice 2 علامة مائية 540 1613
+10-26 20:38:48.340 I/SahbRing(10635): slice 3 ZIP 209 1283
+10-26 20:38:48.340 I/SahbRing(10635): center 540 1283
+10-26 20:38:50.518 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Download/Sahb/.pending-1793651930-doc_small.pdf. Uid: 10192
+10-26 20:38:50.521 D/MediaProvider( 5968): Moving /storage/emulated/0/Download/Sahb/.pending-1793651930-doc_small.pdf to /storage/emulated/0/Download/Sahb/doc_small.pdf
+10-26 20:38:50.529 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Download/Sahb/doc_small.pdf. Uid: 10192
+10-26 20:38:50.633 I/SahbJob (10635): OK content://media/external/downloads/1000000036
+10-26 20:38:54.386 I/SahbRing(10689): slice 0 ضغط 540 952
+10-26 20:38:54.386 I/SahbRing(10689): slice 1 صفحات 870 1283
+10-26 20:38:54.386 I/SahbRing(10689): slice 2 علامة مائية 540 1613
+10-26 20:38:54.386 I/SahbRing(10689): slice 3 ZIP 209 1283
+10-26 20:38:54.386 I/SahbRing(10689): center 540 1283
+10-26 20:38:58.394 D/AndroidRuntime(10728): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-26 20:38:58.397 I/AndroidRuntime(10728): Using default boot image
+10-26 20:38:58.397 I/AndroidRuntime(10728): Leaving lock profiling enabled
+10-26 20:38:58.463 D/AndroidRuntime(10728): Calling main entry com.android.commands.uiautomator.Launcher
+10-26 20:38:59.499 D/AndroidRuntime(10728): Shutting down VM
+10-26 20:39:02.787 D/AndroidRuntime(10769): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-26 20:39:02.790 I/AndroidRuntime(10769): Using default boot image
+10-26 20:39:02.790 I/AndroidRuntime(10769): Leaving lock profiling enabled
+10-26 20:39:02.855 D/AndroidRuntime(10769): Calling main entry com.android.commands.uiautomator.Launcher
+10-26 20:39:03.891 D/AndroidRuntime(10769): Shutting down VM
+10-26 20:39:07.162 D/AndroidRuntime(10810): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-26 20:39:07.165 I/AndroidRuntime(10810): Using default boot image
+10-26 20:39:07.165 I/AndroidRuntime(10810): Leaving lock profiling enabled
+10-26 20:39:07.231 D/AndroidRuntime(10810): Calling main entry com.android.commands.uiautomator.Launcher
+10-26 20:39:08.266 D/AndroidRuntime(10810): Shutting down VM
+10-26 20:39:09.614 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Download/Sahb/.pending-1793651949-doc_p2-3.pdf. Uid: 10192
+10-26 20:39:09.622 D/MediaProvider( 5968): Moving /storage/emulated/0/Download/Sahb/.pending-1793651949-doc_p2-3.pdf to /storage/emulated/0/Download/Sahb/doc_p2-3.pdf
+10-26 20:39:09.625 E/StorageManager( 5968): Failed to open /storage/emulated/0/Download/Sahb/.pending-1793651949-doc_p2-3.pdf to set project id.: No such file or directory
+10-26 20:39:09.641 W/MediaProvider( 5968): Failed to update quota type for /storage/emulated/0/Download/Sahb/.pending-1793651949-doc_p2-3.pdf
+10-26 20:39:09.641 W/MediaProvider( 5968): java.io.IOException: Failed to update quota type for /storage/emulated/0/Download/Sahb/.pending-1793651949-doc_p2-3.pdf
+10-26 20:39:09.647 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Download/Sahb/doc_p2-3.pdf. Uid: 10192
+10-26 20:39:09.648 I/SahbJob (10689): OK content://media/external/downloads/1000000037
+10-26 20:39:13.312 I/SahbRing(10854): slice 0 ضغط 540 952
+10-26 20:39:13.312 I/SahbRing(10854): slice 1 صفحات 870 1283
+10-26 20:39:13.312 I/SahbRing(10854): slice 2 علامة مائية 540 1613
+10-26 20:39:13.312 I/SahbRing(10854): slice 3 ZIP 209 1283
+10-26 20:39:13.312 I/SahbRing(10854): center 540 1283
+10-26 20:39:17.372 D/AndroidRuntime(10895): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-26 20:39:17.375 I/AndroidRuntime(10895): Using default boot image
+10-26 20:39:17.375 I/AndroidRuntime(10895): Leaving lock profiling enabled
+10-26 20:39:17.443 D/AndroidRuntime(10895): Calling main entry com.android.commands.uiautomator.Launcher
+10-26 20:39:18.471 D/AndroidRuntime(10895): Shutting down VM
+10-26 20:39:22.573 D/AndroidRuntime(10943): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-26 20:39:22.576 I/AndroidRuntime(10943): Using default boot image
+10-26 20:39:22.576 I/AndroidRuntime(10943): Leaving lock profiling enabled
+10-26 20:39:22.640 D/AndroidRuntime(10943): Calling main entry com.android.commands.uiautomator.Launcher
+10-26 20:39:23.686 D/AndroidRuntime(10943): Shutting down VM
+10-26 20:39:25.301 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Download/Sahb/.pending-1793651965-doc_watermark.pdf. Uid: 10192
+10-26 20:39:25.303 D/MediaProvider( 5968): Moving /storage/emulated/0/Download/Sahb/.pending-1793651965-doc_watermark.pdf to /storage/emulated/0/Download/Sahb/doc_watermark.pdf
+10-26 20:39:25.312 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Download/Sahb/doc_watermark.pdf. Uid: 10192
+10-26 20:39:25.313 I/SahbJob (10854): OK content://media/external/downloads/1000000038
+10-26 20:39:28.772 I/SahbRing(10990): slice 0 JPG 540 952
+10-26 20:39:28.772 I/SahbRing(10990): slice 1 PNG 826 1448
+10-26 20:39:28.772 I/SahbRing(10990): slice 2 دمج 253 1448
+10-26 20:39:28.772 I/SahbRing(10990): center 540 1283
+10-26 20:39:33.172 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Download/Sahb/.pending-1793651973-doc_merged.pdf. Uid: 10192
+10-26 20:39:33.174 D/MediaProvider( 5968): Moving /storage/emulated/0/Download/Sahb/.pending-1793651973-doc_merged.pdf to /storage/emulated/0/Download/Sahb/doc_merged.pdf
+10-26 20:39:33.189 I/MediaProvider( 5968): Open with lower FS for /storage/emulated/0/Download/Sahb/doc_merged.pdf. Uid: 10192
+10-26 20:39:33.203 I/SahbJob (10990): OK content://media/external/downloads/1000000039
+10-26 20:39:37.176 I/SahbRing(11048): slice 0 ضغط 540 952
+10-26 20:39:37.176 I/SahbRing(11048): slice 1 الحجم 798 1077
+10-26 20:39:37.176 I/SahbRing(11048): slice 2 قص الإطار 862 1356
+10-26 20:39:37.177 I/SahbRing(11048): slice 3 اقتطاع 683 1580
+10-26 20:39:37.177 I/SahbRing(11048): slice 4 كتم الصوت 396 1580
+10-26 20:39:37.177 I/SahbRing(11048): slice 5 حذف البيانات 217 1356
+10-26 20:39:37.177 I/SahbRing(11048): slice 6 ZIP 281 1077
+10-26 20:39:37.177 I/SahbRing(11048): center 540 1283
+10-26 20:39:41.259 D/AndroidRuntime(11135): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-26 20:39:41.262 I/AndroidRuntime(11135): Using default boot image
+10-26 20:39:41.262 I/AndroidRuntime(11135): Leaving lock profiling enabled
+10-26 20:39:41.330 D/AndroidRuntime(11135): Calling main entry com.android.commands.uiautomator.Launcher
+10-26 20:39:42.430 D/AndroidRuntime(11135): Shutting down VM
+10-26 20:39:43.426 D/AndroidRuntime(11166): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-26 20:39:43.430 I/AndroidRuntime(11166): Using default boot image
+10-26 20:39:43.430 I/AndroidRuntime(11166): Leaving lock profiling enabled
+10-26 20:39:43.652 D/AndroidRuntime(11166): Calling main entry com.android.commands.uiautomator.Launcher
+10-26 20:39:44.758 D/AndroidRuntime(11166): Shutting down VM
+10-26 20:39:48.549 D/AndroidRuntime(11217): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-26 20:39:48.552 I/AndroidRuntime(11217): Using default boot image
+10-26 20:39:48.553 I/AndroidRuntime(11217): Leaving lock profiling enabled
+10-26 20:39:48.646 D/AndroidRuntime(11217): Calling main entry com.android.commands.uiautomator.Launcher
+10-26 20:39:54.851 D/AndroidRuntime(11217): Shutting down VM
+10-26 20:39:55.919 I/SahbJob (11048): CANCEL
+10-26 20:39:55.963 I/SahbRing(11048): slice 0 ضغط 540 952
+10-26 20:39:55.963 I/SahbRing(11048): slice 1 الحجم 798 1077
+10-26 20:39:55.963 I/SahbRing(11048): slice 2 قص الإطار 862 1356
+10-26 20:39:55.963 I/SahbRing(11048): slice 3 اقتطاع 683 1580
+10-26 20:39:55.963 I/SahbRing(11048): slice 4 كتم الصوت 396 1580
+10-26 20:39:55.963 I/SahbRing(11048): slice 5 حذف البيانات 217 1356
+10-26 20:39:55.963 I/SahbRing(11048): slice 6 ZIP 281 1077
+10-26 20:39:55.963 I/SahbRing(11048): center 540 1283
+10-26 20:40:00.206 D/AndroidRuntime(11523): >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+10-26 20:40:00.208 I/AndroidRuntime(11523): Using default boot image
+10-26 20:40:00.208 I/AndroidRuntime(11523): Leaving lock profiling enabled
+10-26 20:40:02.842 I/AndroidRuntime(11796): VM exiting with result code 0, cleanup skipped.
+10-26 20:40:39.321 I/SahbRing(14945): slice 0 JPG 540 952
+10-26 20:40:39.322 I/SahbRing(14945): slice 1 PNG 870 1283
+10-26 20:40:39.322 I/SahbRing(14945): slice 2 WEBP 540 1613
+10-26 20:40:39.322 I/SahbRing(14945): slice 3 PDF 209 1283
+10-26 20:40:39.322 I/SahbRing(14945): center 540 1283
+10-26 20:40:50.259 I/SahbRing(15075): slice 0 Compress 540 952
+10-26 20:40:50.259 I/SahbRing(15075): slice 1 Resize 798 1077
+10-26 20:40:50.259 I/SahbRing(15075): slice 2 Crop 862 1356
+10-26 20:40:50.259 I/SahbRing(15075): slice 3 Trim 683 1580
+10-26 20:40:50.259 I/SahbRing(15075): slice 4 Mute 396 1580
+10-26 20:40:50.259 I/SahbRing(15075): slice 5 Clean 217 1356
+10-26 20:40:50.259 I/SahbRing(15075): slice 6 ZIP 281 1077
+10-26 20:40:50.259 I/SahbRing(15075): center 540 1283
+10-26 20:40:56.592 I/SahbRing(15139): slice 0 JPG 540 952
+10-26 20:40:56.593 I/SahbRing(15139): slice 1 PNG 540 1613
+10-26 20:40:56.593 I/SahbRing(15139): center 540 1283
+10-26 20:41:03.226 D/AndroidRuntime(15196): >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+10-26 20:41:03.253 I/AndroidRuntime(15196): Using default boot image
+10-26 20:41:03.253 I/AndroidRuntime(15196): Leaving lock profiling enabled
+10-26 20:41:06.038 I/AndroidRuntime(15479): VM exiting with result code 0, cleanup skipped.
+10-26 20:41:08.112 D/AndroidRuntime(15448): Shutting down VM
+10-26 20:41:08.113 E/AndroidRuntime(15448): FATAL EXCEPTION: main
+10-26 20:41:08.113 E/AndroidRuntime(15448): Process: com.android.systemui, PID: 15448
+10-26 20:41:08.113 E/AndroidRuntime(15448): java.lang.IllegalArgumentException: subscriptionId 1 is not in the list of valid subscriptions
+10-26 20:41:08.113 E/AndroidRuntime(15448): 	at com.android.systemui.statusbar.pipeline.mobile.data.repository.prod.MobileConnectionsRepositoryImpl.getRepoForSubId(go/retraceme 19693c2b0a8439b7183751b64d60893829dbf56dc1e08e0669fc0cfc55754948:7)
+10-26 20:41:08.113 E/AndroidRuntime(15448): 	at com.android.systemui.statusbar.pipeline.mobile.data.repository.MobileRepositorySwitcher.getRepoForSubId(go/retraceme 19693c2b0a8439b7183751b64d60893829dbf56dc1e08e0669fc0cfc55754948:24)
+10-26 20:41:08.113 E/AndroidRuntime(15448): 	at com.android.systemui.statusbar.pipeline.mobile.ui.viewmodel.MobileIconsViewModel.commonViewModelForSub(go/retraceme 19693c2b0a8439b7183751b64d60893829dbf56dc1e08e0669fc0cfc55754948:51)
+10-26 20:41:08.113 E/AndroidRuntime(15448): 	at com.android.systemui.statusbar.pipeline.mobile.ui.viewmodel.MobileIconsViewModel.viewModelForSub(go/retraceme 19693c2b0a8439b7183751b64d60893829dbf56dc1e08e0669fc0cfc55754948:1)
+10-26 20:41:08.113 E/AndroidRuntime(15448): 	at com.android.systemui.statusbar.phone.StatusBarIconController$IconManager.addHolder(go/retraceme 19693c2b0a8439b7183751b64d60893829dbf56dc1e08e0669fc0cfc55754948:91)
+10-26 20:41:08.113 E/AndroidRuntime(15448): 	at com.android.systemui.statusbar.phone.StatusBarIconController$DarkIconManager.onIconAdded(go/retraceme 19693c2b0a8439b7183751b64d60893829dbf56dc1e08e0669fc0cfc55754948:1)
+10-26 20:41:08.113 E/AndroidRuntime(15448): 	at com.android.systemui.statusbar.phone.StatusBarIconControllerImpl.addIconGroup(go/retraceme 19693c2b0a8439b7183751b64d60893829dbf56dc1e08e0669fc0cfc55754948:91)
+10-26 20:41:08.113 E/AndroidRuntime(15448): 	at com.android.systemui.statusbar.phone.fragment.CollapsedStatusBarFragment.onViewCreated(go/retraceme 19693c2b0a8439b7183751b64d60893829dbf56dc1e08e0669fc0cfc55754948:315)
+10-26 20:41:08.113 E/AndroidRuntime(15448): 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1313)
+10-26 20:41:08.113 E/AndroidRuntime(15448): 	at android.app.FragmentManagerImpl.addAddedFragments(FragmentManager.java:2431)
+10-26 20:41:08.113 E/AndroidRuntime(15448): 	at android.app.FragmentManagerImpl.executeOpsTogether(FragmentManager.java:2210)
+10-26 20:41:08.113 E/AndroidRuntime(15448): 	at android.app.FragmentManagerImpl.removeRedundantOperationsAndExecute(FragmentManager.java:2166)
+10-26 20:41:08.113 E/AndroidRuntime(15448): 	at android.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:2067)
+10-26 20:41:08.113 E/AndroidRuntime(15448): 	at android.app.FragmentManagerImpl$1.run(FragmentManager.java:742)
+10-26 20:41:08.113 E/AndroidRuntime(15448): 	at android.os.Handler.handleCallback(Handler.java:958)
+10-26 20:41:08.113 E/AndroidRuntime(15448): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-26 20:41:08.113 E/AndroidRuntime(15448): 	at android.os.Looper.loopOnce(Looper.java:205)
+10-26 20:41:08.113 E/AndroidRuntime(15448): 	at android.os.Looper.loop(Looper.java:294)
+10-26 20:41:08.113 E/AndroidRuntime(15448): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+10-26 20:41:08.113 E/AndroidRuntime(15448): 	at java.lang.reflect.Method.invoke(Native Method)
+10-26 20:41:08.113 E/AndroidRuntime(15448): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+10-26 20:41:08.113 E/AndroidRuntime(15448): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
