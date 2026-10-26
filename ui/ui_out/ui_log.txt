@@ -1,17 +1,58 @@
 Performing Streamed Install
 Success
-system locale -> ar-EG
+dismissed ANR dialog
+09:13:26 app locale requested: ar -> now: Locales for com.tahatube.app for user 0 are [ar]
 Starting: Intent { cmp=com.tahatube.app/com.deniscerri.ytdl.MainActivity }
 Status: ok
 LaunchState: COLD
 Activity: com.tahatube.app/com.deniscerri.ytdl.MainActivity
-TotalTime: 4201
-WaitTime: 4232
+TotalTime: 4835
+WaitTime: 4887
 Complete
-shot 01_home_ar
+dismissed ANR dialog
+09:13:54 shot 01_home_ar
+dismissed ANR dialog
 NOT FOUND: 'Allow'
+dismissed ANR dialog
 NOT FOUND: 'السماح'
-shot 02_home_ar_after_dialogs
-tap 'ألصق رابط الفيديو' at 540 608
-tap 'تحليل الرابط' at 540 932
-shot 03_invalid_link_ar
+dismissed ANR dialog
+09:14:26 shot 02_home_ar_after_dialogs
+dismissed ANR dialog
+NOT FOUND: 'ألصق رابط الفيديو'
+dismissed ANR dialog
+NOT FOUND: 'تحليل الرابط'
+dismissed ANR dialog
+09:14:54 shot 03_invalid_link_ar
+dismissed ANR dialog
+NOT FOUND: 'not-a-link'
+dismissed ANR dialog
+NOT FOUND: 'ألصق رابط الفيديو'
+dismissed ANR dialog
+NOT FOUND: 'تحليل الرابط'
+dismissed ANR dialog
+09:15:33 shot 04_analyzing_ar
+dismissed ANR dialog
+09:16:20 shot 05_after_analyze_ar
+dismissed ANR dialog
+NOT FOUND: 'التنزيلات'
+dismissed ANR dialog
+NOT FOUND: 'المكتبة'
+dismissed ANR dialog
+NOT FOUND: 'الأدوات'
+dismissed ANR dialog
+NOT FOUND: 'الرئيسية'
+09:17:01 app locale requested: en -> now: Locales for com.tahatube.app for user 0 are [en]
+Starting: Intent { cmp=com.tahatube.app/com.deniscerri.ytdl.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.tahatube.app/com.deniscerri.ytdl.MainActivity
+TotalTime: 3060
+WaitTime: 3079
+Complete
+dismissed ANR dialog
+09:17:23 shot 10_home_en_dark
+dismissed ANR dialog
+NOT FOUND: 'Tools'
+dismissed ANR dialog
+NOT FOUND: 'Home'
+09:17:50 shot 13_app_drawer
