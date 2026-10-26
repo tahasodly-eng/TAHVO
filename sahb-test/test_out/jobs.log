@@ -8,8 +8,8 @@ OK frame content://media/external/images/media/1000000027
 OK small content://media/external/video/media/1000000028
 DIALOG trim
 DIALOG trim duration=6023
-FAIL cut ExportException: Asset loader error
-FAIL mute JobCancellationException: Job was cancelled
-FAIL clean JobCancellationException: Job was cancelled
-FAIL media JobCancellationException: Job was cancelled
-OK jpg content://media/external/images/media/1000000029
+OK cut content://media/external/video/media/1000000029
+OK mute content://media/external/video/media/1000000030
+OK clean content://media/external/video/media/1000000031
+OK media content://media/external/audio/media/1000000032
+OK jpg content://media/external/images/media/1000000033

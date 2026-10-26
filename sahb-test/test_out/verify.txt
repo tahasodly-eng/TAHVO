@@ -2,6 +2,25 @@
 == outputs
 + find test_out/files -type f
 + read -r f
+++ basename test_out/files/Movies/sample_clean.mp4
+++ stat -c%s test_out/files/Movies/sample_clean.mp4
++ echo '--- sample_clean.mp4 (2318712 B)'
+--- sample_clean.mp4 (2318712 B)
++ case "$f" in
++ ffprobe -v error -show_entries format=duration:format_tags=comment,title:stream=codec_name,width,height -of compact test_out/files/Movies/sample_clean.mp4
+stream|codec_name=h264|width=1280|height=720
+stream|codec_name=aac
+format|duration=6.037188
++ read -r f
+++ basename test_out/files/Movies/sample_mute.mp4
+++ stat -c%s test_out/files/Movies/sample_mute.mp4
++ echo '--- sample_mute.mp4 (2264879 B)'
+--- sample_mute.mp4 (2264879 B)
++ case "$f" in
++ ffprobe -v error -show_entries format=duration:format_tags=comment,title:stream=codec_name,width,height -of compact test_out/files/Movies/sample_mute.mp4
+stream|codec_name=h264|width=1280|height=720
+format|duration=5.967067
++ read -r f
 ++ basename test_out/files/Movies/sample_h264.mp4
 ++ stat -c%s test_out/files/Movies/sample_h264.mp4
 + echo '--- sample_h264.mp4 (2318712 B)'
@@ -21,6 +40,25 @@ format|duration=6.037188
 stream|codec_name=aac
 stream|codec_name=h264|width=1280|height=720
 format|duration=6.037188
++ read -r f
+++ basename test_out/files/Movies/sample_cut.mp4
+++ stat -c%s test_out/files/Movies/sample_cut.mp4
++ echo '--- sample_cut.mp4 (976178 B)'
+--- sample_cut.mp4 (976178 B)
++ case "$f" in
++ ffprobe -v error -show_entries format=duration:format_tags=comment,title:stream=codec_name,width,height -of compact test_out/files/Movies/sample_cut.mp4
+stream|codec_name=aac
+stream|codec_name=h264|width=1280|height=720
+format|duration=2.018617
++ read -r f
+++ basename 'test_out/files/Music/sample (1).m4a'
+++ stat -c%s 'test_out/files/Music/sample (1).m4a'
++ echo '--- sample (1).m4a (101384 B)'
+--- sample (1).m4a (101384 B)
++ case "$f" in
++ ffprobe -v error -show_entries format=duration:format_tags=comment,title:stream=codec_name,width,height -of compact 'test_out/files/Music/sample (1).m4a'
+stream|codec_name=aac
+format|duration=5.990748
 + read -r f
 ++ basename test_out/files/Music/sample.m4a
 ++ stat -c%s test_out/files/Music/sample.m4a
