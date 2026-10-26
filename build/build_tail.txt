@@ -36,7 +36,6 @@ Unable to strip the following libraries, packaging them as they are: libandroidx
 > Task :app:processGithubReleaseMainManifest
 > Task :app:dataBindingGenBaseClassesGithubRelease
 > Task :app:processGithubReleaseManifest
-> Task :app:processGithubReleaseManifestForPackage
 > Task :app:javaPreCompileGithubRelease
 > Task :app:extractProguardFiles
 > Task :app:mergeGithubReleaseStartupProfile
@@ -44,6 +43,7 @@ Unable to strip the following libraries, packaging them as they are: libandroidx
 > Task :app:compileGithubReleaseShaders NO-SOURCE
 > Task :app:generateGithubReleaseAssets UP-TO-DATE
 > Task :app:mergeGithubReleaseAssets
+> Task :app:processGithubReleaseManifestForPackage
 > Task :app:compressGithubReleaseAssets
 > Task :app:extractGithubReleaseVersionControlInfo
 > Task :app:validateSigningGithubRelease
@@ -296,5 +296,5 @@ w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/deniscerri/ytdl/wo
 
 [Incubating] Problems report is available at: file:///home/runner/work/TAHVO/TAHVO/build/reports/problems/problems-report.html
 
-BUILD SUCCESSFUL in 6m 31s
+BUILD SUCCESSFUL in 6m 12s
 57 actionable tasks: 57 executed
