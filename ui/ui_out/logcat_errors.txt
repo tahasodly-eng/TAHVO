@@ -1,22 +1,19 @@
 --------- beginning of main
-10-26 09:02:45.262   523   551 E system_server: No package ID 7f found for resource ID 0x7f08019b.
-10-26 09:02:45.268   523   551 E system_server: No package ID 7f found for resource ID 0x7f14032e.
-10-26 09:02:45.268   523   551 E system_server: No package ID 7f found for resource ID 0x7f14032e.
-10-26 09:02:45.268   523   551 E system_server: No package ID 7f found for resource ID 0x7f08015e.
-10-26 09:02:45.268   523   551 E system_server: No package ID 7f found for resource ID 0x7f1400f9.
-10-26 09:02:45.268   523   551 E system_server: No package ID 7f found for resource ID 0x7f1400f9.
-10-26 09:02:45.268   523   551 E system_server: No package ID 7f found for resource ID 0x7f080093.
-10-26 09:02:45.269   523   551 E system_server: No package ID 7f found for resource ID 0x7f1400f2.
-10-26 09:02:45.269   523   551 E system_server: No package ID 7f found for resource ID 0x7f1400f2.
-10-26 09:02:45.269   523   551 E system_server: No package ID 7f found for resource ID 0x7f0801a8.
-10-26 09:02:45.269   523   551 E system_server: No package ID 7f found for resource ID 0x7f1403a9.
-10-26 09:02:45.269   523   551 E system_server: No package ID 7f found for resource ID 0x7f1403a9.
+10-26 09:05:05.082  9901  9980 E OpenGLRenderer: Unable to match the desired swap behavior.
+10-26 09:05:06.262  9708  9740 E system_server: No package ID 7f found for resource ID 0x7f08019b.
+10-26 09:05:06.262  9708  9740 E system_server: No package ID 7f found for resource ID 0x7f14032e.
+10-26 09:05:06.262  9708  9740 E system_server: No package ID 7f found for resource ID 0x7f14032e.
+10-26 09:05:06.262  9708  9740 E system_server: No package ID 7f found for resource ID 0x7f08015e.
+10-26 09:05:06.262  9708  9740 E system_server: No package ID 7f found for resource ID 0x7f1400f9.
+10-26 09:05:06.262  9708  9740 E system_server: No package ID 7f found for resource ID 0x7f1400f9.
+10-26 09:05:06.262  9708  9740 E system_server: No package ID 7f found for resource ID 0x7f080093.
+10-26 09:05:06.262  9708  9740 E system_server: No package ID 7f found for resource ID 0x7f1400f2.
+10-26 09:05:06.262  9708  9740 E system_server: No package ID 7f found for resource ID 0x7f1400f2.
+10-26 09:05:06.262  9708  9740 E system_server: No package ID 7f found for resource ID 0x7f0801a8.
+10-26 09:05:06.262  9708  9740 E system_server: No package ID 7f found for resource ID 0x7f1403a9.
+10-26 09:05:06.262  9708  9740 E system_server: No package ID 7f found for resource ID 0x7f1403a9.
+10-26 09:05:06.316   397   816 E IPCThreadState: Binder transaction failure: 1031513/29189/-22
+10-26 09:05:06.991 10674 10674 E Widget.RecentlyPlayed: Filling bundle but recently played items are EMPTY.
 --------- beginning of system
-10-26 09:02:46.052   523  1737 E ClipboardService: Denying clipboard access to com.tahatube.app, application is not in focus nor is it a system service for user 0
-10-26 09:02:46.450  6725  6775 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(wmsSync-VRI[NexusLauncherActivity]#0) as ready
-10-26 09:02:46.452  6725  6775 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(VRI[NexusLauncherActivity]#1) as ready
-10-26 09:02:46.651   838   917 E OpenGLRenderer: Unable to match the desired swap behavior.
-10-26 09:02:47.485  6725  6742 E OpenGLRenderer: Unable to match the desired swap behavior.
-10-26 09:02:47.725   523   551 E system_server: No package ID 7f found for resource ID 0x7f080107.
-10-26 09:02:47.725   523   551 E system_server: No package ID 7f found for resource ID 0x7f150560.
-10-26 09:02:47.917  6725  6742 E FrameEvents: updateAcquireFence: Did not find frame.
+10-26 09:05:07.336  9708 11696 E ClipboardService: Denying clipboard access to com.tahatube.app, application is not in focus nor is it a system service for user 0
+10-26 09:05:11.048 10635 10635 E GsaVoiceSerConnection: gsaVis null binding
