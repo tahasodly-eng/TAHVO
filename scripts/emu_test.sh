@@ -71,7 +71,7 @@ ring sample.mp4; pick 2; J=$((J+1)); wait_jobs $J; close
 ring sample.mp4 1; shot 08_ring_video_tools 3
 pick 0 1; J=$((J+1)); wait_jobs $J; close
 ring sample.mp4 1; pick 3 1
-for _ in $(seq 1 15); do
+for _ in $(seq 1 40); do
 adb shell uiautomator dump /sdcard/ui.xml >/dev/null; adb pull /sdcard/ui.xml /tmp/ui.xml >/dev/null
 grep -q 'android.widget.EditText' /tmp/ui.xml && break; sleep 1; done
 python3 - <<'PY' > /tmp/fields.txt
@@ -84,6 +84,7 @@ f1=$(sed -n 1p /tmp/fields.txt); f2=$(sed -n 2p /tmp/fields.txt)
 adb shell input tap $f1; adb shell input keyevent KEYCODE_MOVE_END; for i in 1 2 3 4; do adb shell input keyevent 67; done; adb shell input text 1
 adb shell input tap $f2; adb shell input keyevent KEYCODE_MOVE_END; for i in 1 2 3 4; do adb shell input keyevent 67; done; adb shell input text 3
 shot 09_trim_dialog 1
+cp /tmp/ui.xml "$OUT/09_trim_ui.xml"
 tap_text "تنفيذ" || tap_text "Apply"; J=$((J+1)); wait_jobs $J; close
 ring sample.mp4 1; pick 4 1; J=$((J+1)); wait_jobs $J; close
 ring sample.mp4 1; pick 5 1; J=$((J+1)); wait_jobs $J; close

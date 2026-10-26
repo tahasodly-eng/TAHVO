@@ -235,7 +235,15 @@ class RingActivity : AppCompatActivity() {
 
     private fun askTrimImpl(then: (Long, Long) -> Unit) {
         debugLog("DIALOG trim")
-        val durMs = Engine.info(this, srcs[0]).first
+        // read the duration off the main thread, then show the dialog
+        lifecycleScope.launch {
+            val durMs = kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) { Engine.info(this@RingActivity, srcs[0]).first }
+            debugLog("DIALOG trim duration=$durMs")
+            showTrimDialog(durMs, then)
+        }
+    }
+
+    private fun showTrimDialog(durMs: Long, then: (Long, Long) -> Unit) {
         val pad = (20 * resources.displayMetrics.density).toInt()
         val box = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL; setPadding(pad, pad / 2, pad, 0) }
         box.addView(TextView(this).apply { text = getString(R.string.duration, fmt(durMs / 1000.0)) })
