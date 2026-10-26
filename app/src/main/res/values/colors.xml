@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sahb_violet">#7C4DFF</color>
+    <color name="sahb_cyan">#00C2FF</color>
+    <color name="sahb_ink">#18181F</color>
+    <color name="sahb_bg">#F6F4FF</color>
+    <color name="scrim">#B3000000</color>
+</resources>
