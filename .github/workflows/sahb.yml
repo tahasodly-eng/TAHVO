@@ -24,12 +24,12 @@ jobs:
 
       - uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: "8.7"
+          gradle-version: "8.11.1"
 
       - name: Build debug + release
         run: |
           set -o pipefail
-          gradle --no-daemon assembleDebug assembleRelease --stacktrace 2>&1 | tee build.log
+          gradle --no-daemon assembleDebug assembleRelease bundleRelease --stacktrace 2>&1 | tee build.log
 
       - name: Publish build log
         if: always()
@@ -43,7 +43,8 @@ jobs:
         run: |
           tag="sahb-${GITHUB_RUN_NUMBER}"
           cp app/build/outputs/apk/release/app-release-unsigned.apk Sahb-unsigned.apk
-          gh release create "$tag" Sahb-unsigned.apk --target "$GITHUB_SHA" --title "Sahb build ${GITHUB_RUN_NUMBER}" --notes "Automated build ${GITHUB_SHA} (unsigned)." --prerelease
+          cp app/build/outputs/bundle/release/app-release.aab Sahb-unsigned.aab
+          gh release create "$tag" Sahb-unsigned.apk Sahb-unsigned.aab --target "$GITHUB_SHA" --title "Sahb build ${GITHUB_RUN_NUMBER}" --notes "Automated build ${GITHUB_SHA} (unsigned)." --prerelease
 
       - name: Test tools
         run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg

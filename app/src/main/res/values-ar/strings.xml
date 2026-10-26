@@ -45,4 +45,6 @@
     <string name="s_frame">صورة</string>
     <string name="s_pages">صفحات</string>
     <string name="t_frame">لقطة</string>
+    <string name="credit">تطوير: طه مصطفى النفاتي</string>
+    <string name="privacy_note">لا يجمع التطبيق أي بيانات، ولا تغادر ملفاتك هاتفك.</string>
 </resources>

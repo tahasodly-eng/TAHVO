@@ -45,4 +45,6 @@
     <string name="s_frame">frame</string>
     <string name="s_pages">pages</string>
     <string name="t_frame">Frame</string>
+    <string name="credit">Made by Taha Mustafa Al-Nifati</string>
+    <string name="privacy_note">No data is collected. Files never leave your phone.</string>
 </resources>
