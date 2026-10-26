@@ -28,16 +28,16 @@ Unable to strip the following libraries, packaging them as they are: libandroidx
 > Task :app:generateGithubReleaseBuildConfig
 > Task :app:checkGithubReleaseAarMetadata
 > Task :app:processGithubReleaseNavigationResources
+> Task :app:compileGithubReleaseNavigationResources
 > Task :app:mapGithubReleaseSourceSetPaths
 > Task :app:createGithubReleaseCompatibleScreenManifests
 > Task :app:extractDeepLinksGithubRelease
-> Task :app:compileGithubReleaseNavigationResources
-> Task :app:mergeGithubReleaseResources
 > Task :app:processGithubReleaseMainManifest
-> Task :app:dataBindingGenBaseClassesGithubRelease
+> Task :app:mergeGithubReleaseResources
 > Task :app:processGithubReleaseManifest
-> Task :app:processGithubReleaseManifestForPackage
+> Task :app:dataBindingGenBaseClassesGithubRelease
 > Task :app:javaPreCompileGithubRelease
+> Task :app:processGithubReleaseManifestForPackage
 > Task :app:extractProguardFiles
 > Task :app:mergeGithubReleaseStartupProfile
 > Task :app:mergeGithubReleaseShaders
@@ -171,8 +171,8 @@ w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/deniscerri/ytdl/ui
 w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/deniscerri/ytdl/ui/downloads/SavedDownloadsFragment.kt:170:17 Condition is always 'true'.
 w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/deniscerri/ytdl/ui/downloads/SavedDownloadsFragment.kt:419:44 'constructor(p0: Context!, p1: Canvas!, p2: RecyclerView!, p3: RecyclerView.ViewHolder!, p4: Float, p5: Float, p6: Int, p7: Boolean): RecyclerViewSwipeDecorator.Builder' is deprecated. Deprecated in Java.
 w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/deniscerri/ytdl/ui/downloads/ScheduledDownloadsFragment.kt:410:44 'constructor(p0: Context!, p1: Canvas!, p2: RecyclerView!, p3: RecyclerView.ViewHolder!, p4: Float, p5: Float, p6: Int, p7: Boolean): RecyclerViewSwipeDecorator.Builder' is deprecated. Deprecated in Java.
-w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/deniscerri/ytdl/ui/home/HomeFragment.kt:433:37 There is more than one label with such a name in this scope.
-w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/deniscerri/ytdl/ui/home/HomeFragment.kt:930:48 The corresponding parameter in the supertype 'OnItemClickListener' is named 'isChecked'. This may cause problems when calling this function with named arguments.
+w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/deniscerri/ytdl/ui/home/HomeFragment.kt:438:37 There is more than one label with such a name in this scope.
+w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/deniscerri/ytdl/ui/home/HomeFragment.kt:975:48 The corresponding parameter in the supertype 'OnItemClickListener' is named 'isChecked'. This may cause problems when calling this function with named arguments.
 w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/deniscerri/ytdl/ui/more/CommandTemplatesFragment.kt:231:45 'val defaultDisplay: Display!' is deprecated. Deprecated in Java.
 w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/deniscerri/ytdl/ui/more/CommandTemplatesFragment.kt:231:60 'fun getMetrics(p0: DisplayMetrics!): Unit' is deprecated. Deprecated in Java.
 w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/deniscerri/ytdl/ui/more/CommandTemplatesFragment.kt:362:58 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Boolean'.
@@ -276,13 +276,13 @@ w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/deniscerri/ytdl/wo
 > Task :app:compileGithubReleaseJavaWithJavac
 > Task :app:mergeGithubReleaseGeneratedProguardFiles
 > Task :app:processGithubReleaseJavaRes
+> Task :app:generateGithubReleaseLintVitalReportModel
 > Task :app:expandGithubReleaseArtProfileWildcards
 > Task :app:mergeGithubReleaseJavaResource
 > Task :app:produceGithubReleaseComposeMapping
-> Task :app:generateGithubReleaseLintVitalReportModel
 > Task :app:reportGithubReleaseComposeMappingErrors
-> Task :app:minifyGithubReleaseWithR8
 > Task :app:lintVitalAnalyzeGithubRelease
+> Task :app:minifyGithubReleaseWithR8
 > Task :app:lintVitalReportGithubRelease
 > Task :app:lintVitalGithubRelease
 > Task :app:mergeGithubReleaseComposeMapping
@@ -296,5 +296,5 @@ w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/deniscerri/ytdl/wo
 
 [Incubating] Problems report is available at: file:///home/runner/work/TAHVO/TAHVO/build/reports/problems/problems-report.html
 
-BUILD SUCCESSFUL in 6m 27s
+BUILD SUCCESSFUL in 6m 33s
 57 actionable tasks: 57 executed
