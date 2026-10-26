@@ -3,15 +3,18 @@ name: Build TAHVO
 on:
   push:
     branches: [ main ]
+    paths-ignore: [ 'scripts/extractor_urls.txt', '.github/workflows/extractor-test.yml', 'README.md' ]
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
@@ -28,26 +31,24 @@ jobs:
           chmod +x gradlew
 
       - name: Build github release APK
-        run: ./gradlew assembleGithubRelease --stacktrace 2>&1 | tee build.log
+        id: build
+        run: |
+          set -o pipefail
+          ./gradlew assembleGithubRelease --stacktrace 2>&1 | tee build.log
 
-      - name: Fail if build failed
-        run: ls app/build/outputs/apk/github/release/*arm64*.apk
-
-      - name: Upload build log
+      - name: Publish build log (errors + tail)
         if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: build-log
-          path: build.log
+        run: |
+          grep -nE "^e: |error:|FAILURE|What went wrong|BUILD (SUCCESSFUL|FAILED)" build.log > build_errors.txt || true
+          tail -n 300 build.log > build_tail.txt
+          ls -la app/build/outputs/apk/github/release/ > apk_list.txt 2>&1 || true
+          scripts/publish_results.sh build build_errors.txt build_tail.txt apk_list.txt
 
-      - name: Upload arm64 APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: tahvo-arm64
-          path: app/build/outputs/apk/github/release/*arm64*.apk
-
-      - name: Upload universal APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: tahvo-universal
-          path: app/build/outputs/apk/github/release/*universal*.apk
+      - name: Publish APKs as release
+        if: success()
+        run: |
+          tag="build-${GITHUB_RUN_NUMBER}"
+          gh release create "$tag" app/build/outputs/apk/github/release/*.apk \
+            --title "TAHVO build ${GITHUB_RUN_NUMBER}" \
+            --notes "Automated build from ${GITHUB_SHA}. Unsigned for distribution (debug key); re-signed separately." \
+            --prerelease

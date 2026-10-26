@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   test:
@@ -50,14 +50,17 @@ jobs:
             else
               echo "RESULT: FAIL" | tee -a report.txt
             fi
-            grep -E "^\[debug\] yt-dlp version|ERROR|WARNING|Destination|has already been downloaded|Merging" log.txt | head -20 | tee -a report.txt
+            grep -E "^\[debug\] yt-dlp version|ERROR|WARNING|Destination|has already been downloaded|Merging|\[download\] 100" log.txt | head -20 | tee -a report.txt
+            cat log.txt >> all_verbose.txt
             echo | tee -a report.txt
           done < urls.txt
           ls -la out | tee -a report.txt
 
-      - name: Upload report
+      - name: Publish report
         if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: extractor-report
-          path: report.txt
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          yt-dlp --version > versions.txt; deno --version >> versions.txt 2>&1 || true
+          cp log.txt last_verbose_log.txt 2>/dev/null || true
+          scripts/publish_results.sh extractor report.txt versions.txt urls.txt all_verbose.txt
