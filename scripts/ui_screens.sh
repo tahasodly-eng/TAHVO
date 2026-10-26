@@ -78,8 +78,12 @@ adb shell "run-as $PKG sh -c 'mkdir -p shared_prefs && echo \"<?xml version=\\\"
 
 adb shell cmd uimode night no
 sleep 30
+# the stock launcher keeps raising "isn't responding" on CI emulators and steals the screen; turn it off
+adb root >/dev/null 2>&1; sleep 4; adb wait-for-device
+for l in com.google.android.apps.nexuslauncher com.android.launcher3; do adb shell pm disable-user --user 0 $l >> "$LOG" 2>&1; done
 dismiss_anr
 set_app_locale ar
+adb shell am force-stop $PKG
 
 # ---- Arabic, light ----
 adb shell am start -W -n $PKG/$ACT >> "$LOG" 2>&1
@@ -115,6 +119,7 @@ tap_text "الرئيسية" && shot 09_home_ar_again 4
 # ---- English, dark ----
 adb shell am force-stop $PKG
 set_app_locale en
+adb shell am force-stop $PKG
 adb shell cmd uimode night yes
 adb shell am start -W -n $PKG/$ACT >> "$LOG" 2>&1
 shot 10_home_en_dark 12
@@ -123,11 +128,6 @@ tap_text "Home" && shot 12_home_en_dark_again 3
 
 # launcher icon in the app drawer
 adb shell cmd uimode night no
-adb shell input keyevent 3
-sleep 2
-adb shell am start -a android.intent.action.MAIN -c android.intent.category.HOME >/dev/null 2>&1
-adb shell input swipe 540 1800 540 400 300
-shot 13_app_drawer 3
 
 adb logcat -d -t 400 '*:E' > "$OUT/logcat_errors.txt" 2>&1 || true
 exit 0
