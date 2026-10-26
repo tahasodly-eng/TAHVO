@@ -5,8 +5,8 @@ Starting: Intent { cmp=com.tahatube.app/com.deniscerri.ytdl.MainActivity }
 Status: ok
 LaunchState: COLD
 Activity: com.tahatube.app/com.deniscerri.ytdl.MainActivity
-TotalTime: 9194
-WaitTime: 9234
+TotalTime: 4201
+WaitTime: 4232
 Complete
 shot 01_home_ar
 NOT FOUND: 'Allow'
@@ -15,30 +15,3 @@ shot 02_home_ar_after_dialogs
 tap 'ألصق رابط الفيديو' at 540 608
 tap 'تحليل الرابط' at 540 932
 shot 03_invalid_link_ar
-NOT FOUND: 'not-a-link'
-tap 'ألصق رابط الفيديو' at 540 608
-tap 'تحليل الرابط' at 540 986
-shot 04_analyzing_ar
-shot 05_after_analyze_ar
-tap 'التنزيلات' at 675 2232
-shot 06_downloads_ar
-tap 'المكتبة' at 405 2232
-shot 07_library_ar
-tap 'الأدوات' at 135 2232
-shot 08_tools_ar
-tap 'الرئيسية' at 945 2232
-shot 09_home_ar_again
-system locale -> en-US
-Starting: Intent { cmp=com.tahatube.app/com.deniscerri.ytdl.MainActivity }
-Status: ok
-LaunchState: WARM
-Activity: com.tahatube.app/com.deniscerri.ytdl.MainActivity
-TotalTime: 6751
-WaitTime: 6821
-Complete
-shot 10_home_en_dark
-tap 'Tools' at 945 2232
-shot 11_tools_en_dark
-tap 'Home' at 135 2232
-shot 12_home_en_dark_again
-shot 13_app_drawer
