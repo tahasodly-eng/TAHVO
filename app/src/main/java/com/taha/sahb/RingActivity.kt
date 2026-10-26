@@ -249,7 +249,7 @@ class RingActivity : AppCompatActivity() {
             add(Action("PNG", getString(R.string.pages_as_images), R.drawable.ic_image, getString(R.string.sum_pdf_pages, one, "PNG"), R.string.start_convert,
                 direct = { pdfPages("png") }))
             if (srcs.size > 1) add(Action(getString(R.string.t_merge), getString(R.string.s_join), R.drawable.ic_merge, getString(R.string.sum_merge), R.string.start_merge,
-                direct = { launchJob(R.string.working) { listOf(Pdf.merge(this, srcs)) } }))
+                direct = { launchJob(R.string.working) { listOf(Pdf.merge(this@RingActivity, srcs)) } }))
         }
         Kind.OTHER -> listOf(zipAction())
     }
