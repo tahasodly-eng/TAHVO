@@ -25,7 +25,8 @@ PY
 }
 
 # wait until jobs.log has N lines
-wait_jobs() { for _ in $(seq 1 90); do n=$(adb shell "cat $DIR/jobs.log 2>/dev/null | wc -l" | tr -d '\r '); [ "${n:-0}" -ge "$1" ] && return 0; sleep 2; done; log "TIMEOUT waiting for job $1"; }
+jobs_n() { adb shell "cat $DIR/jobs.log 2>/dev/null | wc -l" | tr -d '\r '; }
+wait_jobs() { for _ in $(seq 1 90); do n=$(jobs_n); [ "${n:-0}" -ge "$1" ] && return 0; sleep 2; done; log "TIMEOUT waiting for job $1"; J=$(jobs_n); }
 
 # samples
 ffmpeg -hide_banner -loglevel error -f lavfi -i "color=c=0x7C4DFF@0.6:s=1200x800,format=rgba" -frames:v 1 sample.png
@@ -69,8 +70,10 @@ ring sample.mp4; pick 2; J=$((J+1)); wait_jobs $J; close
 # video tools: compress, trim 1-3s, mute, clean
 ring sample.mp4 1; shot 08_ring_video_tools 3
 pick 0 1; J=$((J+1)); wait_jobs $J; close
-ring sample.mp4 1; pick 3 1; sleep 2
+ring sample.mp4 1; pick 3 1
+for _ in $(seq 1 15); do
 adb shell uiautomator dump /sdcard/ui.xml >/dev/null; adb pull /sdcard/ui.xml /tmp/ui.xml >/dev/null
+grep -q 'android.widget.EditText' /tmp/ui.xml && break; sleep 1; done
 python3 - <<'PY' > /tmp/fields.txt
 import re
 x=open('/tmp/ui.xml',encoding='utf-8').read()
@@ -87,6 +90,9 @@ ring sample.mp4 1; pick 5 1; J=$((J+1)); wait_jobs $J; close
 # audio: M4A
 ring sample.wav; shot 10_ring_audio 3
 pick 0; J=$((J+1)); wait_jobs $J; close
+
+# image -> JPG again (the very first file access right after the emulator restart can be refused)
+ring sample.png; pick 0; J=$((J+1)); wait_jobs $J; shot 11_result_jpg_retry 1; close
 
 adb pull $DIR/jobs.log "$OUT/jobs.log" >> "$LOG" 2>&1
 mkdir -p "$OUT/files"
