@@ -1,20 +1,22 @@
 --------- beginning of main
-10-26 09:17:43.700   522   551 E system_server: No package ID 7f found for resource ID 0x7f08019b.
-10-26 09:17:43.705   522   551 E system_server: No package ID 7f found for resource ID 0x7f14032e.
-10-26 09:17:43.706   522   551 E system_server: No package ID 7f found for resource ID 0x7f14032e.
-10-26 09:17:43.706   522   551 E system_server: No package ID 7f found for resource ID 0x7f08015e.
-10-26 09:17:43.706   522   551 E system_server: No package ID 7f found for resource ID 0x7f1400f9.
-10-26 09:17:43.707   522   551 E system_server: No package ID 7f found for resource ID 0x7f1400f9.
-10-26 09:17:43.707   522   551 E system_server: No package ID 7f found for resource ID 0x7f080093.
-10-26 09:17:43.707   522   551 E system_server: No package ID 7f found for resource ID 0x7f1400f2.
-10-26 09:17:43.707   522   551 E system_server: No package ID 7f found for resource ID 0x7f1400f2.
-10-26 09:17:43.708   522   551 E system_server: No package ID 7f found for resource ID 0x7f0801a8.
-10-26 09:17:43.708   522   551 E system_server: No package ID 7f found for resource ID 0x7f1403a9.
-10-26 09:17:43.708   522   551 E system_server: No package ID 7f found for resource ID 0x7f1403a9.
+10-26 09:25:00.861   520   548 E system_server: No package ID 7f found for resource ID 0x7f08019b.
+10-26 09:25:00.862   520   548 E system_server: No package ID 7f found for resource ID 0x7f14032e.
+10-26 09:25:00.862   520   548 E system_server: No package ID 7f found for resource ID 0x7f14032e.
+10-26 09:25:00.862   520   548 E system_server: No package ID 7f found for resource ID 0x7f08015e.
+10-26 09:25:00.862   520   548 E system_server: No package ID 7f found for resource ID 0x7f1400f9.
+10-26 09:25:00.862   520   548 E system_server: No package ID 7f found for resource ID 0x7f1400f9.
+10-26 09:25:00.862   520   548 E system_server: No package ID 7f found for resource ID 0x7f080093.
+10-26 09:25:00.862   520   548 E system_server: No package ID 7f found for resource ID 0x7f1400f2.
+10-26 09:25:00.862   520   548 E system_server: No package ID 7f found for resource ID 0x7f1400f2.
+10-26 09:25:00.867   520   548 E system_server: No package ID 7f found for resource ID 0x7f0801a8.
+10-26 09:25:00.867   520   548 E system_server: No package ID 7f found for resource ID 0x7f1403a9.
+10-26 09:25:00.867   520   548 E system_server: No package ID 7f found for resource ID 0x7f1403a9.
+10-26 09:25:01.638   401   401 E BpTransactionCompletedListener: Failed to transact (-32)
 --------- beginning of system
-10-26 09:17:44.471   522  2278 E ClipboardService: Denying clipboard access to com.tahatube.app, application is not in focus nor is it a system service for user 0
-10-26 09:17:44.678  7734  7785 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(wmsSync-VRI[NexusLauncherActivity]#0) as ready
-10-26 09:17:44.678  7734  7785 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(VRI[NexusLauncherActivity]#1) as ready
-10-26 09:17:44.747   837   912 E OpenGLRenderer: Unable to match the desired swap behavior.
-10-26 09:17:45.584  7734  7752 E OpenGLRenderer: Unable to match the desired swap behavior.
-10-26 09:17:45.983  7734  7752 E FrameEvents: updateAcquireFence: Did not find frame.
+10-26 09:25:02.193   520   826 E ClipboardService: Denying clipboard access to com.tahatube.app, application is not in focus nor is it a system service for user 0
+10-26 09:25:02.200   520   826 E ClipboardService: Denying clipboard access to com.tahatube.app, application is not in focus nor is it a system service for user 0
+10-26 09:25:02.316  7444  7492 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(wmsSync-VRI[NexusLauncherActivity]#0) as ready
+10-26 09:25:02.316  7444  7492 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(VRI[NexusLauncherActivity]#1) as ready
+10-26 09:25:02.961   520  3324 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+10-26 09:25:03.363  7444  7461 E OpenGLRenderer: Unable to match the desired swap behavior.
+10-26 09:25:03.848  7444  7461 E FrameEvents: updateAcquireFence: Did not find frame.
