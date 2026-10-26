@@ -1,0 +1,3 @@
+== permissions in release APK
+10-26 19:26:27.707  2732  2732 W asset   : Asset path app/build/outputs/apk/release/app-release-unsigned.apk is neither a directory nor file (type=1).
+ERROR: dump failed because assets could not be loaded

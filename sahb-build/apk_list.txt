@@ -1,14 +1,1 @@
-app/build/outputs/apk/debug/:
-total 17688
-drwxr-xr-x 2 runner runner     4096 Oct 26 18:18 .
-drwxr-xr-x 4 runner runner     4096 Oct 26 18:19 ..
--rw-r--r-- 1 runner runner 18098251 Oct 26 18:18 app-debug.apk
--rw-r--r-- 1 runner runner      395 Oct 26 18:18 output-metadata.json
-
-app/build/outputs/apk/release/:
-total 14824
-drwxr-xr-x 3 runner runner     4096 Oct 26 18:19 .
-drwxr-xr-x 4 runner runner     4096 Oct 26 18:19 ..
--rw-r--r-- 1 runner runner 15159325 Oct 26 18:19 app-release-unsigned.apk
-drwxr-xr-x 4 runner runner     4096 Oct 26 18:19 baselineProfiles
--rw-r--r-- 1 runner runner      728 Oct 26 18:19 output-metadata.json
+ls: cannot access 'app/build/outputs/apk/*/': No such file or directory
