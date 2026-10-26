@@ -23,8 +23,8 @@ Unable to strip the following libraries, packaging them as they are: libandroidx
 > Task :app:extractGithubReleaseNativeSymbolTables
 > Task :app:extractGithubReleaseSupportedLocales
 > Task :app:mergeGithubReleaseNativeDebugMetadata NO-SOURCE
-> Task :app:generateGithubReleaseResources
 > Task :app:generateGithubReleaseLocaleConfig
+> Task :app:generateGithubReleaseResources
 > Task :app:generateGithubReleaseBuildConfig
 > Task :app:checkGithubReleaseAarMetadata
 > Task :app:processGithubReleaseNavigationResources
@@ -32,10 +32,10 @@ Unable to strip the following libraries, packaging them as they are: libandroidx
 > Task :app:mapGithubReleaseSourceSetPaths
 > Task :app:createGithubReleaseCompatibleScreenManifests
 > Task :app:extractDeepLinksGithubRelease
-> Task :app:processGithubReleaseMainManifest
 > Task :app:mergeGithubReleaseResources
-> Task :app:processGithubReleaseManifest
+> Task :app:processGithubReleaseMainManifest
 > Task :app:dataBindingGenBaseClassesGithubRelease
+> Task :app:processGithubReleaseManifest
 > Task :app:javaPreCompileGithubRelease
 > Task :app:processGithubReleaseManifestForPackage
 > Task :app:extractProguardFiles
@@ -296,5 +296,5 @@ w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/deniscerri/ytdl/wo
 
 [Incubating] Problems report is available at: file:///home/runner/work/TAHVO/TAHVO/build/reports/problems/problems-report.html
 
-BUILD SUCCESSFUL in 6m 33s
+BUILD SUCCESSFUL in 4m 52s
 57 actionable tasks: 57 executed
