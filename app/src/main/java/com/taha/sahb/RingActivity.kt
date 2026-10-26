@@ -226,6 +226,15 @@ class RingActivity : AppCompatActivity() {
     }
 
     private fun askTrim(then: (Long, Long) -> Unit) {
+        try { askTrimImpl(then) } catch (e: Throwable) {
+            Log.e("Sahb", "trim dialog failed", e)
+            debugLog("FAIL trim-dialog ${e.javaClass.simpleName}: ${e.message}")
+            showResult(false, e.message ?: e.javaClass.simpleName, null)
+        }
+    }
+
+    private fun askTrimImpl(then: (Long, Long) -> Unit) {
+        debugLog("DIALOG trim")
         val durMs = Engine.info(this, srcs[0]).first
         val pad = (20 * resources.displayMetrics.density).toInt()
         val box = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL; setPadding(pad, pad / 2, pad, 0) }

@@ -109,5 +109,5 @@ for d in Pictures Movies Music Download; do adb pull /sdcard/$d/Sahb "$OUT/files
 } > "$OUT/verify.txt" 2>&1
 # don't ship the media files themselves in the results branch
 find "$OUT/files" -type f \( -name '*.mp4' -o -name '*.m4a' \) -delete
-adb logcat -d -t 600 'Sahb:*' 'SahbJob:*' 'AndroidRuntime:E' '*:S' > "$OUT/logcat.txt" 2>&1
+adb logcat -d -v time > /tmp/full_logcat.txt 2>&1; grep -E 'Sahb|AndroidRuntime|FATAL|com.taha.sahb' /tmp/full_logcat.txt | tail -400 > "$OUT/logcat.txt"
 exit 0
