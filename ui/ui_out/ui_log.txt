@@ -1,0 +1,36 @@
+Performing Streamed Install
+Success
+Starting: Intent { cmp=com.tahatube.app/com.deniscerri.ytdl.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.tahatube.app/com.deniscerri.ytdl.MainActivity
+TotalTime: 5061
+WaitTime: 5081
+Complete
+shot 01_home_ar
+NOT FOUND: 'Allow'
+NOT FOUND: 'السماح'
+shot 02_home_ar_after_dialogs
+NOT FOUND: 'ألصق رابط الفيديو'
+NOT FOUND: 'تحليل الرابط'
+shot 03_invalid_link_ar
+NOT FOUND: 'not-a-link'
+NOT FOUND: 'ألصق رابط الفيديو'
+NOT FOUND: 'تحليل الرابط'
+shot 04_analyzing_ar
+shot 05_after_analyze_ar
+NOT FOUND: 'التنزيلات'
+NOT FOUND: 'المكتبة'
+NOT FOUND: 'الأدوات'
+NOT FOUND: 'الرئيسية'
+Starting: Intent { cmp=com.tahatube.app/com.deniscerri.ytdl.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.tahatube.app/com.deniscerri.ytdl.MainActivity
+TotalTime: 2267
+WaitTime: 2367
+Complete
+shot 10_home_en_dark
+NOT FOUND: 'Tools'
+NOT FOUND: 'Home'
+shot 13_app_drawer
