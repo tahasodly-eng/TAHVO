@@ -1,22 +1,38 @@
 --------- beginning of main
-10-26 09:25:00.861   520   548 E system_server: No package ID 7f found for resource ID 0x7f08019b.
-10-26 09:25:00.862   520   548 E system_server: No package ID 7f found for resource ID 0x7f14032e.
-10-26 09:25:00.862   520   548 E system_server: No package ID 7f found for resource ID 0x7f14032e.
-10-26 09:25:00.862   520   548 E system_server: No package ID 7f found for resource ID 0x7f08015e.
-10-26 09:25:00.862   520   548 E system_server: No package ID 7f found for resource ID 0x7f1400f9.
-10-26 09:25:00.862   520   548 E system_server: No package ID 7f found for resource ID 0x7f1400f9.
-10-26 09:25:00.862   520   548 E system_server: No package ID 7f found for resource ID 0x7f080093.
-10-26 09:25:00.862   520   548 E system_server: No package ID 7f found for resource ID 0x7f1400f2.
-10-26 09:25:00.862   520   548 E system_server: No package ID 7f found for resource ID 0x7f1400f2.
-10-26 09:25:00.867   520   548 E system_server: No package ID 7f found for resource ID 0x7f0801a8.
-10-26 09:25:00.867   520   548 E system_server: No package ID 7f found for resource ID 0x7f1403a9.
-10-26 09:25:00.867   520   548 E system_server: No package ID 7f found for resource ID 0x7f1403a9.
-10-26 09:25:01.638   401   401 E BpTransactionCompletedListener: Failed to transact (-32)
---------- beginning of system
-10-26 09:25:02.193   520   826 E ClipboardService: Denying clipboard access to com.tahatube.app, application is not in focus nor is it a system service for user 0
-10-26 09:25:02.200   520   826 E ClipboardService: Denying clipboard access to com.tahatube.app, application is not in focus nor is it a system service for user 0
-10-26 09:25:02.316  7444  7492 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(wmsSync-VRI[NexusLauncherActivity]#0) as ready
-10-26 09:25:02.316  7444  7492 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(VRI[NexusLauncherActivity]#1) as ready
-10-26 09:25:02.961   520  3324 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
-10-26 09:25:03.363  7444  7461 E OpenGLRenderer: Unable to match the desired swap behavior.
-10-26 09:25:03.848  7444  7461 E FrameEvents: updateAcquireFence: Did not find frame.
+10-26 09:29:27.242  5995  6075 E constellation: [api_verify_phone_operation] Failed to generate Client Signature
+10-26 09:29:27.242  5995  6075 E constellation: acwp: Stored private key deleted
+10-26 09:29:27.242  5995  6075 E constellation: 	at acos.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-26 09:29:27.242  5995  6075 E constellation: 	at acos.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-26 09:29:27.242  5995  6075 E constellation: 	at acoa.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):22)
+10-26 09:29:27.242  5995  6075 E constellation: 	at acoa.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):12)
+10-26 09:29:27.242  5995  6075 E constellation: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-26 09:29:27.242  5995  6075 E constellation: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+10-26 09:29:27.242  5995  6075 E constellation: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-26 09:29:27.242  5995  6075 E constellation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-26 09:29:27.242  5995  6075 E constellation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-26 09:29:27.242  5995  6075 E constellation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-26 09:29:27.242  5995  6075 E constellation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-26 09:29:27.242  5995  6075 E constellation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-26 09:29:27.242  5995  6075 E constellation: 	at java.lang.Thread.run(Thread.java:1012)
+10-26 09:29:31.063  1006  1028 E SystemServiceRegistry: No service published for: ethernet
+10-26 09:29:31.063  1006  1028 E SystemServiceRegistry: android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+10-26 09:29:31.063  1006  1028 E SystemServiceRegistry: 	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:166)
+10-26 09:29:31.063  1006  1028 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$139.createService(SystemServiceRegistry.java:1872)
+10-26 09:29:31.063  1006  1028 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:1971)
+10-26 09:29:31.063  1006  1028 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1645)
+10-26 09:29:31.063  1006  1028 E SystemServiceRegistry: 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2212)
+10-26 09:29:31.063  1006  1028 E SystemServiceRegistry: 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:934)
+10-26 09:29:31.063  1006  1028 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.isEthernetSupported(Tethering.java:1582)
+10-26 09:29:31.063  1006  1028 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.makeSupportedDownstreams(Tethering.java:2550)
+10-26 09:29:31.063  1006  1028 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.updateSupportedDownstreams(Tethering.java:2524)
+10-26 09:29:31.063  1006  1028 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.updateConfiguration(Tethering.java:546)
+10-26 09:29:31.063  1006  1028 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.-$$Nest$mupdateConfiguration(Tethering.java:0)
+10-26 09:29:31.063  1006  1028 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering$StateReceiver.onReceive(Tethering.java:1184)
+10-26 09:29:31.063  1006  1028 E SystemServiceRegistry: 	at android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0(LoadedApk.java:1802)
+10-26 09:29:31.063  1006  1028 E SystemServiceRegistry: 	at android.app.LoadedApk$ReceiverDispatcher$Args.$r8$lambda$gDuJqgxY6Zb-ifyeubKeivTLAwk(Unknown Source:0)
+10-26 09:29:31.063  1006  1028 E SystemServiceRegistry: 	at android.app.LoadedApk$ReceiverDispatcher$Args$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-26 09:29:31.063  1006  1028 E SystemServiceRegistry: 	at android.os.Handler.handleCallback(Handler.java:958)
+10-26 09:29:31.063  1006  1028 E SystemServiceRegistry: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-26 09:29:31.063  1006  1028 E SystemServiceRegistry: 	at android.os.Looper.loopOnce(Looper.java:205)
+10-26 09:29:31.063  1006  1028 E SystemServiceRegistry: 	at android.os.Looper.loop(Looper.java:294)
+10-26 09:29:31.063  1006  1028 E SystemServiceRegistry: 	at android.os.HandlerThread.run(HandlerThread.java:67)

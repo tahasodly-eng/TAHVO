@@ -1,58 +1,56 @@
 Performing Streamed Install
 Success
-dismissed ANR dialog
-09:20:43 app locale requested: ar -> now: Locales for com.tahatube.app for user 0 are [ar]
+Package com.google.android.apps.nexuslauncher new state: disabled-user
+
+Exception occurred while executing 'disable-user':
+java.lang.IllegalArgumentException: Unknown package: com.android.launcher3
+	at com.android.server.pm.PackageManagerService.setEnabledSettings(PackageManagerService.java:3904)
+	at com.android.server.pm.PackageManagerService.-$$Nest$msetEnabledSettings(PackageManagerService.java:0)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.setApplicationEnabledSetting(PackageManagerService.java:5733)
+	at com.android.server.pm.PackageManagerShellCommand.runSetEnabledSetting(PackageManagerShellCommand.java:2482)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:273)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6350)
+	at android.os.Binder.shellCommand(Binder.java:1068)
+	at android.os.Binder.onTransact(Binder.java:888)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4352)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6334)
+	at android.os.Binder.execTransactInternal(Binder.java:1344)
+	at android.os.Binder.execTransact(Binder.java:1275)
+09:26:33 app locale requested: ar -> now: Locales for com.tahatube.app for user 0 are [ar]
 Starting: Intent { cmp=com.tahatube.app/com.deniscerri.ytdl.MainActivity }
 Status: ok
-LaunchState: COLD
+LaunchState: UNKNOWN (0)
 Activity: com.tahatube.app/com.deniscerri.ytdl.MainActivity
-TotalTime: 6752
-WaitTime: 6798
+WaitTime: 3071
 Complete
-dismissed ANR dialog
-09:21:12 shot 01_home_ar
-dismissed ANR dialog
+09:26:55 shot 01_home_ar
 NOT FOUND: 'Allow'
-dismissed ANR dialog
 NOT FOUND: 'السماح'
-dismissed ANR dialog
-09:21:44 shot 02_home_ar_after_dialogs
-dismissed ANR dialog
+09:27:15 shot 02_home_ar_after_dialogs
 NOT FOUND: 'ألصق رابط الفيديو'
-dismissed ANR dialog
 NOT FOUND: 'تحليل الرابط'
-dismissed ANR dialog
-09:22:11 shot 03_invalid_link_ar
-dismissed ANR dialog
+09:27:29 shot 03_invalid_link_ar
 NOT FOUND: 'not-a-link'
-dismissed ANR dialog
 NOT FOUND: 'ألصق رابط الفيديو'
-dismissed ANR dialog
 NOT FOUND: 'تحليل الرابط'
-dismissed ANR dialog
-09:22:50 shot 04_analyzing_ar
-dismissed ANR dialog
-09:23:37 shot 05_after_analyze_ar
-dismissed ANR dialog
+09:27:50 shot 04_analyzing_ar
+09:28:32 shot 05_after_analyze_ar
 NOT FOUND: 'التنزيلات'
-dismissed ANR dialog
 NOT FOUND: 'المكتبة'
-dismissed ANR dialog
 NOT FOUND: 'الأدوات'
-dismissed ANR dialog
 NOT FOUND: 'الرئيسية'
-09:24:18 app locale requested: en -> now: Locales for com.tahatube.app for user 0 are [en]
+09:28:53 app locale requested: en -> now: Locales for com.tahatube.app for user 0 are [en]
 Starting: Intent { cmp=com.tahatube.app/com.deniscerri.ytdl.MainActivity }
 Status: ok
 LaunchState: COLD
 Activity: com.tahatube.app/com.deniscerri.ytdl.MainActivity
-TotalTime: 3537
-WaitTime: 3667
+TotalTime: 2785
+WaitTime: 2853
 Complete
-dismissed ANR dialog
-09:24:40 shot 10_home_en_dark
-dismissed ANR dialog
-NOT FOUND: 'Tools'
-dismissed ANR dialog
-NOT FOUND: 'Home'
-09:25:08 shot 13_app_drawer
+09:29:10 shot 10_home_en_dark
+tap 'Tools' at 945 2232
+09:29:21 shot 11_tools_en_dark
+tap 'Home' at 135 2232
+09:29:31 shot 12_home_en_dark_again
