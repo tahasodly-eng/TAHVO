@@ -4,8 +4,8 @@ Starting: Intent { cmp=com.tahatube.app/com.deniscerri.ytdl.MainActivity }
 Status: ok
 LaunchState: COLD
 Activity: com.tahatube.app/com.deniscerri.ytdl.MainActivity
-TotalTime: 5061
-WaitTime: 5081
+TotalTime: 8921
+WaitTime: 8943
 Complete
 shot 01_home_ar
 NOT FOUND: 'Allow'
@@ -27,8 +27,8 @@ Starting: Intent { cmp=com.tahatube.app/com.deniscerri.ytdl.MainActivity }
 Status: ok
 LaunchState: COLD
 Activity: com.tahatube.app/com.deniscerri.ytdl.MainActivity
-TotalTime: 2267
-WaitTime: 2367
+TotalTime: 3796
+WaitTime: 3824
 Complete
 shot 10_home_en_dark
 NOT FOUND: 'Tools'

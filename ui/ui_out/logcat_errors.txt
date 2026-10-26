@@ -1,95 +1,22 @@
 --------- beginning of main
-10-26 08:50:15.048   400   400 E BpTransactionCompletedListener: Failed to transact (-32)
-10-26 08:50:15.651  1802  1802 E A       : onError
-10-26 08:50:15.651  1802  1802 E A       : com.google.android.apps.gsa.shared.speech.a.m: errorCode: 65561, engine: 2
-10-26 08:50:15.651  1802  1802 E A       : 	at com.google.android.apps.gsa.staticplugins.dc.a.e.a(PG:3)
-10-26 08:50:15.651  1802  1802 E A       : 	at com.google.android.apps.gsa.s3.n.hh(PG:1)
-10-26 08:50:15.651  1802  1802 E A       : 	at com.google.cd.g.a.f.e(PG:2)
-10-26 08:50:15.651  1802  1802 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:22)
-10-26 08:50:15.651  1802  1802 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.ks(PG:6)
-10-26 08:50:15.651  1802  1802 E A       : 	at com.google.android.apps.gsa.s3.o.e(PG:14)
-10-26 08:50:15.651  1802  1802 E A       : 	at com.google.android.apps.gsa.s3.p.run(PG:1)
-10-26 08:50:15.651  1802  1802 E A       : 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
-10-26 08:50:15.651  1802  1802 E A       : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
-10-26 08:50:15.651  1802  1802 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.e.run(PG:2)
-10-26 08:50:15.651  1802  1802 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
-10-26 08:50:15.651  1802  1802 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
-10-26 08:50:15.651  1802  1802 E A       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-10-26 08:50:15.651  1802  1802 E A       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-10-26 08:50:15.651  1802  1802 E A       : 	at java.lang.Thread.run(Thread.java:1012)
-10-26 08:50:15.651  1802  1802 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.l.run(PG:5)
-10-26 08:50:15.651  1802  1802 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.o: errorCode: 65586, engine: 2
-10-26 08:50:15.651  1802  1802 E A       : 	... 15 more
-10-26 08:50:15.651  1802  1802 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.k: errorCode: 401, engine: 2
-10-26 08:50:15.651  1802  1802 E A       : 	at com.google.android.apps.gsa.assistant.shared.n.h.a(PG:5)
-10-26 08:50:15.651  1802  1802 E A       : 	at com.google.android.apps.gsa.s3.producers.j.hE(PG:2)
-10-26 08:50:15.651  1802  1802 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:16)
-10-26 08:50:15.651  1802  1802 E A       : 	... 12 more
-10-26 08:50:16.086  6449  6466 E OpenGLRenderer: Unable to match the desired swap behavior.
-10-26 08:50:16.404  6449  6466 E FrameEvents: updateAcquireFence: Did not find frame.
-10-26 08:50:18.686  1802  1802 E A       : Task 255 failed or timed out. Client 7927072817491205 disconnecting from SearchService!
-10-26 08:50:18.686  1802  1802 E A       : java.util.concurrent.CancellationException: Task was cancelled.
-10-26 08:50:18.686  1802  1802 E A       : 	at com.google.common.util.concurrent.d.s(PG:3)
-10-26 08:50:18.686  1802  1802 E A       : 	at com.google.common.util.concurrent.d.get(PG:4)
-10-26 08:50:18.686  1802  1802 E A       : 	at com.google.common.util.concurrent.eb.a(PG:1)
-10-26 08:50:18.686  1802  1802 E A       : 	at com.google.common.util.concurrent.ci.r(PG:2)
-10-26 08:50:18.686  1802  1802 E A       : 	at com.google.common.util.concurrent.cb.run(PG:4)
-10-26 08:50:18.686  1802  1802 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.ba.run(PG:1)
-10-26 08:50:18.686  1802  1802 E A       : 	at android.os.Handler.handleCallback(Handler.java:958)
-10-26 08:50:18.686  1802  1802 E A       : 	at android.os.Handler.dispatchMessage(Handler.java:99)
-10-26 08:50:18.686  1802  1802 E A       : 	at android.os.Looper.loopOnce(Looper.java:205)
-10-26 08:50:18.686  1802  1802 E A       : 	at android.os.Looper.loop(Looper.java:294)
-10-26 08:50:18.686  1802  1802 E A       : 	at android.app.ActivityThread.main(ActivityThread.java:8177)
-10-26 08:50:18.686  1802  1802 E A       : 	at java.lang.reflect.Method.invoke(Native Method)
-10-26 08:50:18.686  1802  1802 E A       : 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
-10-26 08:50:18.686  1802  1802 E A       : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
-10-26 08:50:18.700  1802  2843 E BgTaskExecutorImpl: PERIODIC background task MDD_CELLULAR_CHARGING_TASK was cancelled.
-10-26 08:50:18.700  1802  2843 E BgTaskExecutorImpl: java.util.concurrent.CancellationException: Task was cancelled.
-10-26 08:50:18.700  1802  2843 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.d.s(PG:3)
-10-26 08:50:18.700  1802  2843 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.d.get(PG:4)
-10-26 08:50:18.700  1802  2843 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.eb.a(PG:1)
-10-26 08:50:18.700  1802  2843 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.ci.r(PG:2)
-10-26 08:50:18.700  1802  2843 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.cb.run(PG:4)
-10-26 08:50:18.700  1802  2843 E BgTaskExecutorImpl: 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
-10-26 08:50:18.700  1802  2843 E BgTaskExecutorImpl: 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
-10-26 08:50:18.700  1802  2843 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.ae.run(PG:1)
-10-26 08:50:18.700  1802  2843 E BgTaskExecutorImpl: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-10-26 08:50:18.700  1802  2843 E BgTaskExecutorImpl: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-10-26 08:50:18.700  1802  2843 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.i.run(PG:2)
-10-26 08:50:18.700  1802  2843 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.p.run(PG:4)
-10-26 08:50:18.700  1802  2843 E BgTaskExecutorImpl: 	at java.lang.Thread.run(Thread.java:1012)
-10-26 08:50:18.721  1802  1802 E A       : Task 255 failed or timed out. Client 7927072817491217 disconnecting from SearchService!
-10-26 08:50:18.721  1802  1802 E A       : java.util.concurrent.CancellationException: Task was cancelled.
-10-26 08:50:18.721  1802  1802 E A       : 	at com.google.common.util.concurrent.d.s(PG:3)
-10-26 08:50:18.721  1802  1802 E A       : 	at com.google.common.util.concurrent.d.get(PG:4)
-10-26 08:50:18.721  1802  1802 E A       : 	at com.google.common.util.concurrent.eb.a(PG:1)
-10-26 08:50:18.721  1802  1802 E A       : 	at com.google.common.util.concurrent.ci.r(PG:2)
-10-26 08:50:18.721  1802  1802 E A       : 	at com.google.common.util.concurrent.cb.run(PG:4)
-10-26 08:50:18.721  1802  1802 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.ba.run(PG:1)
-10-26 08:50:18.721  1802  1802 E A       : 	at android.os.Handler.handleCallback(Handler.java:958)
-10-26 08:50:18.721  1802  1802 E A       : 	at android.os.Handler.dispatchMessage(Handler.java:99)
-10-26 08:50:18.721  1802  1802 E A       : 	at android.os.Looper.loopOnce(Looper.java:205)
-10-26 08:50:18.721  1802  1802 E A       : 	at android.os.Looper.loop(Looper.java:294)
-10-26 08:50:18.721  1802  1802 E A       : 	at android.app.ActivityThread.main(ActivityThread.java:8177)
-10-26 08:50:18.721  1802  1802 E A       : 	at java.lang.reflect.Method.invoke(Native Method)
-10-26 08:50:18.721  1802  1802 E A       : 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
-10-26 08:50:18.721  1802  1802 E A       : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
-10-26 08:50:18.755  1802  2843 E BgTaskExecutorImpl: PERIODIC background task MDD_WIFI_CHARGING_TASK was cancelled.
-10-26 08:50:18.755  1802  2843 E BgTaskExecutorImpl: java.util.concurrent.CancellationException: Task was cancelled.
-10-26 08:50:18.755  1802  2843 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.d.s(PG:3)
-10-26 08:50:18.755  1802  2843 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.d.get(PG:4)
-10-26 08:50:18.755  1802  2843 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.eb.a(PG:1)
-10-26 08:50:18.755  1802  2843 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.ci.r(PG:2)
-10-26 08:50:18.755  1802  2843 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.cb.run(PG:4)
-10-26 08:50:18.755  1802  2843 E BgTaskExecutorImpl: 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
-10-26 08:50:18.755  1802  2843 E BgTaskExecutorImpl: 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
-10-26 08:50:18.755  1802  2843 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.ae.run(PG:1)
-10-26 08:50:18.755  1802  2843 E BgTaskExecutorImpl: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-10-26 08:50:18.755  1802  2843 E BgTaskExecutorImpl: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-10-26 08:50:18.755  1802  2843 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.i.run(PG:2)
-10-26 08:50:18.755  1802  2843 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.p.run(PG:4)
-10-26 08:50:18.755  1802  2843 E BgTaskExecutorImpl: 	at java.lang.Thread.run(Thread.java:1012)
-10-26 08:50:19.183  1802  2842 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1793004507165
-10-26 08:50:19.214  1802  2862 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1793004507166
-10-26 08:50:19.228  1802  2853 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1793004507160
-10-26 08:50:19.282  1802  2842 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1793004507161
+10-26 09:02:45.262   523   551 E system_server: No package ID 7f found for resource ID 0x7f08019b.
+10-26 09:02:45.268   523   551 E system_server: No package ID 7f found for resource ID 0x7f14032e.
+10-26 09:02:45.268   523   551 E system_server: No package ID 7f found for resource ID 0x7f14032e.
+10-26 09:02:45.268   523   551 E system_server: No package ID 7f found for resource ID 0x7f08015e.
+10-26 09:02:45.268   523   551 E system_server: No package ID 7f found for resource ID 0x7f1400f9.
+10-26 09:02:45.268   523   551 E system_server: No package ID 7f found for resource ID 0x7f1400f9.
+10-26 09:02:45.268   523   551 E system_server: No package ID 7f found for resource ID 0x7f080093.
+10-26 09:02:45.269   523   551 E system_server: No package ID 7f found for resource ID 0x7f1400f2.
+10-26 09:02:45.269   523   551 E system_server: No package ID 7f found for resource ID 0x7f1400f2.
+10-26 09:02:45.269   523   551 E system_server: No package ID 7f found for resource ID 0x7f0801a8.
+10-26 09:02:45.269   523   551 E system_server: No package ID 7f found for resource ID 0x7f1403a9.
+10-26 09:02:45.269   523   551 E system_server: No package ID 7f found for resource ID 0x7f1403a9.
+--------- beginning of system
+10-26 09:02:46.052   523  1737 E ClipboardService: Denying clipboard access to com.tahatube.app, application is not in focus nor is it a system service for user 0
+10-26 09:02:46.450  6725  6775 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(wmsSync-VRI[NexusLauncherActivity]#0) as ready
+10-26 09:02:46.452  6725  6775 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(VRI[NexusLauncherActivity]#1) as ready
+10-26 09:02:46.651   838   917 E OpenGLRenderer: Unable to match the desired swap behavior.
+10-26 09:02:47.485  6725  6742 E OpenGLRenderer: Unable to match the desired swap behavior.
+10-26 09:02:47.725   523   551 E system_server: No package ID 7f found for resource ID 0x7f080107.
+10-26 09:02:47.725   523   551 E system_server: No package ID 7f found for resource ID 0x7f150560.
+10-26 09:02:47.917  6725  6742 E FrameEvents: updateAcquireFence: Did not find frame.
