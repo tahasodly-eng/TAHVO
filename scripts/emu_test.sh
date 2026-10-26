@@ -26,7 +26,7 @@ PY
 
 # wait until jobs.log has N lines
 jobs_n() { adb shell "cat $DIR/jobs.log 2>/dev/null | wc -l" | tr -d '\r '; }
-wait_jobs() { for _ in $(seq 1 90); do n=$(jobs_n); [ "${n:-0}" -ge "$1" ] && return 0; sleep 2; done; log "TIMEOUT waiting for job $1"; J=$(jobs_n); }
+wait_jobs() { for _ in $(seq 1 90); do n=$(jobs_n); [ "${n:-0}" -ge "$1" ] && return 0; sleep 2; done; log "TIMEOUT waiting for job $1"; J=$(( $(jobs_n) - 1 )); }
 
 # samples
 ffmpeg -hide_banner -loglevel error -f lavfi -i "color=c=0x7C4DFF@0.6:s=1200x800,format=rgba" -frames:v 1 sample.png
@@ -80,9 +80,17 @@ x=open('/tmp/ui.xml',encoding='utf-8').read()
 for n in re.findall(r'<node [^>]*class="android.widget.EditText"[^>]*>', x):
     a=list(map(int,re.search(r'\[(\d+),(\d+)\]\[(\d+),(\d+)\]',n).groups())); print((a[0]+a[2])//2,(a[1]+a[3])//2)
 PY
-f1=$(sed -n 1p /tmp/fields.txt); f2=$(sed -n 2p /tmp/fields.txt)
-adb shell input tap $f1; adb shell input keyevent KEYCODE_MOVE_END; for i in 1 2 3 4; do adb shell input keyevent 67; done; adb shell input text 1
-adb shell input tap $f2; adb shell input keyevent KEYCODE_MOVE_END; for i in 1 2 3 4; do adb shell input keyevent 67; done; adb shell input text 3
+field() { adb shell uiautomator dump /sdcard/ui.xml >/dev/null; adb pull /sdcard/ui.xml /tmp/ui.xml >/dev/null
+  python3 - "$1" <<'PY'
+import re, sys
+x=open('/tmp/ui.xml',encoding='utf-8').read()
+f=[n for n in re.findall(r'<node [^>]*>', x) if 'android.widget.EditText' in n]
+n=f[int(sys.argv[1])]; a=list(map(int,re.search(r'\[(\d+),(\d+)\]\[(\d+),(\d+)\]',n).groups())); print((a[0]+a[2])//2,(a[1]+a[3])//2)
+PY
+}
+# positions are re-read after each tap because the keyboard moves the dialog
+adb shell input tap $(field 0); sleep 1; adb shell input keyevent KEYCODE_MOVE_END; for i in 1 2 3 4; do adb shell input keyevent 67; done; adb shell input text 1
+sleep 1; adb shell input tap $(field 1); sleep 1; adb shell input keyevent KEYCODE_MOVE_END; for i in 1 2 3 4; do adb shell input keyevent 67; done; adb shell input text 3
 shot 09_trim_dialog 1
 cp /tmp/ui.xml "$OUT/09_trim_ui.xml"
 tap_text "تنفيذ" || tap_text "Apply"; J=$((J+1)); wait_jobs $J; close
