@@ -23,8 +23,8 @@ Unable to strip the following libraries, packaging them as they are: libandroidx
 > Task :app:extractGithubReleaseNativeSymbolTables
 > Task :app:extractGithubReleaseSupportedLocales
 > Task :app:mergeGithubReleaseNativeDebugMetadata NO-SOURCE
-> Task :app:generateGithubReleaseLocaleConfig
 > Task :app:generateGithubReleaseResources
+> Task :app:generateGithubReleaseLocaleConfig
 > Task :app:generateGithubReleaseBuildConfig
 > Task :app:checkGithubReleaseAarMetadata
 > Task :app:processGithubReleaseNavigationResources
@@ -39,7 +39,6 @@ Unable to strip the following libraries, packaging them as they are: libandroidx
 > Task :app:javaPreCompileGithubRelease
 > Task :app:extractProguardFiles
 > Task :app:mergeGithubReleaseStartupProfile
-> Task :app:processGithubReleaseManifestForPackage
 > Task :app:mergeGithubReleaseShaders
 > Task :app:compileGithubReleaseShaders NO-SOURCE
 > Task :app:generateGithubReleaseAssets UP-TO-DATE
@@ -49,6 +48,7 @@ Unable to strip the following libraries, packaging them as they are: libandroidx
 > Task :app:validateSigningGithubRelease
 > Task :app:writeGithubReleaseAppMetadata
 > Task :app:writeGithubReleaseSigningConfigVersions
+> Task :app:processGithubReleaseManifestForPackage
 > Task :app:processGithubReleaseResources
 
 > Task :app:kspGithubReleaseKotlin
@@ -296,5 +296,5 @@ w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/deniscerri/ytdl/wo
 
 [Incubating] Problems report is available at: file:///home/runner/work/TAHVO/TAHVO/build/reports/problems/problems-report.html
 
-BUILD SUCCESSFUL in 6m 42s
+BUILD SUCCESSFUL in 6m 11s
 57 actionable tasks: 57 executed
