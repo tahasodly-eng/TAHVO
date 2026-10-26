@@ -12,24 +12,24 @@
 > Task :app:buildKotlinToolingMetadata
 > Task :app:mergeGithubReleaseNativeLibs
 > Task :app:expandGithubReleaseL8ArtProfileWildcards
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:checkGithubReleaseDuplicateClasses
 
 > Task :app:stripGithubReleaseDebugSymbols
 Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libaria2c.so, libaria2c.zip.so, libbash.zip.so, libffmpeg.so, libffmpeg.zip.so, libffprobe.so, libpython.so, libpython.zip.so, libqjs.so, libtermux.so. Run with --info option to learn more.
 
-> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
-> Task :app:extractGithubReleaseNativeSymbolTables
-> Task :app:checkGithubReleaseDuplicateClasses
 > Task :app:dataBindingMergeDependencyArtifactsGithubRelease
-> Task :app:mergeGithubReleaseNativeDebugMetadata NO-SOURCE
 > Task :app:generateGithubReleaseResValues
+> Task :app:extractGithubReleaseNativeSymbolTables
 > Task :app:extractGithubReleaseSupportedLocales
+> Task :app:mergeGithubReleaseNativeDebugMetadata NO-SOURCE
 > Task :app:generateGithubReleaseLocaleConfig
 > Task :app:generateGithubReleaseResources
 > Task :app:generateGithubReleaseBuildConfig
 > Task :app:checkGithubReleaseAarMetadata
 > Task :app:processGithubReleaseNavigationResources
-> Task :app:mapGithubReleaseSourceSetPaths
 > Task :app:compileGithubReleaseNavigationResources
+> Task :app:mapGithubReleaseSourceSetPaths
 > Task :app:createGithubReleaseCompatibleScreenManifests
 > Task :app:extractDeepLinksGithubRelease
 > Task :app:mergeGithubReleaseResources
@@ -296,5 +296,5 @@ w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/deniscerri/ytdl/wo
 
 [Incubating] Problems report is available at: file:///home/runner/work/TAHVO/TAHVO/build/reports/problems/problems-report.html
 
-BUILD SUCCESSFUL in 5m 38s
+BUILD SUCCESSFUL in 6m 31s
 57 actionable tasks: 57 executed
