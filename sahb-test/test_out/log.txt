@@ -3,122 +3,38 @@ Success
 Package com.google.android.apps.nexuslauncher new state: disabled-user
 Starting: Intent { cmp=com.taha.sahb/.MainActivity }
 Status: ok
-LaunchState: COLD
+LaunchState: UNKNOWN (0)
 Activity: com.taha.sahb/.MainActivity
-TotalTime: 2086
-WaitTime: 2221
+WaitTime: 2165
 Complete
-sample.png: 1 file pushed, 0 skipped. 57.0 MB/s (5725 bytes in 0.000s)
-sample.mp4: 1 file pushed, 0 skipped. 43.4 MB/s (2317766 bytes in 0.051s)
-sample.wav: 1 file pushed, 0 skipped. 915.4 MB/s (529278 bytes in 0.001s)
+sample.png: 1 file pushed, 0 skipped. 61.4 MB/s (5725 bytes in 0.000s)
+sample.mp4: 1 file pushed, 0 skipped. 25.1 MB/s (2317766 bytes in 0.088s)
+sample.wav: 1 file pushed, 0 skipped. 576.5 MB/s (529278 bytes in 0.001s)
 Starting: Intent { cmp=com.taha.sahb/.MainActivity }
 Status: ok
 LaunchState: COLD
 Activity: com.taha.sahb/.MainActivity
-TotalTime: 1332
-WaitTime: 1347
+TotalTime: 2223
+WaitTime: 2250
 Complete
-17:39:29 shot 00_home
+17:52:51 shot 00_home
 Starting: Intent { cmp=com.taha.sahb/.RingActivity (has extras) }
 Status: ok
 LaunchState: WARM
 Activity: com.taha.sahb/.RingActivity
-TotalTime: 400
-WaitTime: 429
-Complete
-17:39:33 shot 01_ring_image
-Starting: Intent { flg=0x20000000 cmp=com.taha.sahb/.RingActivity (has extras) }
-Warning: Activity not started, intent has been delivered to currently running top-most instance.
-17:39:37 shot 02_result_jpg
-Starting: Intent { cmp=com.taha.sahb/.RingActivity (has extras) }
-Status: ok
-LaunchState: COLD
-Activity: com.taha.sahb/.RingActivity
-TotalTime: 943
-WaitTime: 949
-Complete
-Starting: Intent { flg=0x20000000 cmp=com.taha.sahb/.RingActivity (has extras) }
-Warning: Activity not started, intent has been delivered to currently running top-most instance.
-Starting: Intent { cmp=com.taha.sahb/.RingActivity (has extras) }
-Status: ok
-LaunchState: COLD
-Activity: com.taha.sahb/.RingActivity
-TotalTime: 698
-WaitTime: 704
-Complete
-17:39:48 shot 03_ring_image_tools
-Starting: Intent { flg=0x20000000 cmp=com.taha.sahb/.RingActivity (has extras) }
-Warning: Activity not started, intent has been delivered to currently running top-most instance.
-Starting: Intent { cmp=com.taha.sahb/.RingActivity (has extras) }
-Status: ok
-LaunchState: COLD
-Activity: com.taha.sahb/.RingActivity
-TotalTime: 766
-WaitTime: 774
-Complete
-Starting: Intent { flg=0x20000000 cmp=com.taha.sahb/.RingActivity (has extras) }
-Warning: Activity not started, intent has been delivered to currently running top-most instance.
-17:39:56 shot 04_crop_dialog
-17:39:59 tap '16:9' 540 1219
-Starting: Intent { cmp=com.taha.sahb/.RingActivity (has extras) }
-Status: ok
-LaunchState: COLD
-Activity: com.taha.sahb/.RingActivity
-TotalTime: 709
-WaitTime: 714
-Complete
-17:40:07 shot 05_ring_video
-Starting: Intent { flg=0x20000000 cmp=com.taha.sahb/.RingActivity (has extras) }
-Warning: Activity not started, intent has been delivered to currently running top-most instance.
-17:40:10 shot 06_progress_video
-17:40:11 shot 07_result_video
-Starting: Intent { cmp=com.taha.sahb/.RingActivity (has extras) }
-Status: ok
-LaunchState: COLD
-Activity: com.taha.sahb/.RingActivity
-TotalTime: 1193
-WaitTime: 1249
-Complete
-Starting: Intent { flg=0x20000000 cmp=com.taha.sahb/.RingActivity (has extras) }
-Warning: Activity not started, intent has been delivered to currently running top-most instance.
-Starting: Intent { cmp=com.taha.sahb/.RingActivity (has extras) }
-Status: ok
-LaunchState: COLD
-Activity: com.taha.sahb/.RingActivity
-TotalTime: 780
-WaitTime: 784
-Complete
-Starting: Intent { flg=0x20000000 cmp=com.taha.sahb/.RingActivity (has extras) }
-Warning: Activity not started, intent has been delivered to currently running top-most instance.
-Starting: Intent { cmp=com.taha.sahb/.RingActivity (has extras) }
-Status: ok
-LaunchState: COLD
-Activity: com.taha.sahb/.RingActivity
-TotalTime: 813
-WaitTime: 826
-Complete
-17:40:28 shot 08_ring_video_tools
-Starting: Intent { flg=0x20000000 cmp=com.taha.sahb/.RingActivity (has extras) }
-Warning: Activity not started, intent has been delivered to currently running top-most instance.
-Starting: Intent { cmp=com.taha.sahb/.RingActivity (has extras) }
-Status: ok
-LaunchState: COLD
-Activity: com.taha.sahb/.RingActivity
-TotalTime: 773
-WaitTime: 778
-Complete
-Starting: Intent { flg=0x20000000 cmp=com.taha.sahb/.RingActivity (has extras) }
-Warning: Activity not started, intent has been delivered to currently running top-most instance.
-17:40:47 shot 09_trim_dialog
-17:40:49 NOT FOUND 'تنفيذ'
-17:40:51 NOT FOUND 'Apply'
-17:43:52 TIMEOUT waiting for job 9
-Starting: Intent { cmp=com.taha.sahb/.RingActivity (has extras) }
-Status: ok
-LaunchState: COLD
-Activity: com.taha.sahb/.RingActivity
 TotalTime: 722
-WaitTime: 774
+WaitTime: 733
+Complete
+17:52:56 shot 01_ring_image
+Starting: Intent { flg=0x20000000 cmp=com.taha.sahb/.RingActivity (has extras) }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+17:52:59 shot 02_result_jpg
+Starting: Intent { cmp=com.taha.sahb/.RingActivity (has extras) }
+Status: ok
+LaunchState: COLD
+Activity: com.taha.sahb/.RingActivity
+TotalTime: 1472
+WaitTime: 1486
 Complete
 Starting: Intent { flg=0x20000000 cmp=com.taha.sahb/.RingActivity (has extras) }
 Warning: Activity not started, intent has been delivered to currently running top-most instance.
@@ -126,8 +42,41 @@ Starting: Intent { cmp=com.taha.sahb/.RingActivity (has extras) }
 Status: ok
 LaunchState: COLD
 Activity: com.taha.sahb/.RingActivity
-TotalTime: 736
-WaitTime: 760
+TotalTime: 1299
+WaitTime: 1338
+Complete
+17:53:12 shot 03_ring_image_tools
+Starting: Intent { flg=0x20000000 cmp=com.taha.sahb/.RingActivity (has extras) }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Starting: Intent { cmp=com.taha.sahb/.RingActivity (has extras) }
+Status: ok
+LaunchState: COLD
+Activity: com.taha.sahb/.RingActivity
+TotalTime: 1511
+WaitTime: 1527
+Complete
+Starting: Intent { flg=0x20000000 cmp=com.taha.sahb/.RingActivity (has extras) }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+17:53:22 shot 04_crop_dialog
+17:53:25 tap '16:9' 540 1219
+Starting: Intent { cmp=com.taha.sahb/.RingActivity (has extras) }
+Status: ok
+LaunchState: COLD
+Activity: com.taha.sahb/.RingActivity
+TotalTime: 1878
+WaitTime: 1904
+Complete
+17:53:34 shot 05_ring_video
+Starting: Intent { flg=0x20000000 cmp=com.taha.sahb/.RingActivity (has extras) }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+17:53:38 shot 06_progress_video
+17:53:39 shot 07_result_video
+Starting: Intent { cmp=com.taha.sahb/.RingActivity (has extras) }
+Status: ok
+LaunchState: COLD
+Activity: com.taha.sahb/.RingActivity
+TotalTime: 1042
+WaitTime: 1049
 Complete
 Starting: Intent { flg=0x20000000 cmp=com.taha.sahb/.RingActivity (has extras) }
 Warning: Activity not started, intent has been delivered to currently running top-most instance.
@@ -135,24 +84,73 @@ Starting: Intent { cmp=com.taha.sahb/.RingActivity (has extras) }
 Status: ok
 LaunchState: COLD
 Activity: com.taha.sahb/.RingActivity
-TotalTime: 642
-WaitTime: 653
+TotalTime: 1001
+WaitTime: 1006
 Complete
-17:44:09 shot 10_ring_audio
 Starting: Intent { flg=0x20000000 cmp=com.taha.sahb/.RingActivity (has extras) }
 Warning: Activity not started, intent has been delivered to currently running top-most instance.
 Starting: Intent { cmp=com.taha.sahb/.RingActivity (has extras) }
 Status: ok
 LaunchState: COLD
 Activity: com.taha.sahb/.RingActivity
-TotalTime: 675
-WaitTime: 683
+TotalTime: 966
+WaitTime: 977
+Complete
+17:53:57 shot 08_ring_video_tools
+Starting: Intent { flg=0x20000000 cmp=com.taha.sahb/.RingActivity (has extras) }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Starting: Intent { cmp=com.taha.sahb/.RingActivity (has extras) }
+Status: ok
+LaunchState: COLD
+Activity: com.taha.sahb/.RingActivity
+TotalTime: 1006
+WaitTime: 1014
 Complete
 Starting: Intent { flg=0x20000000 cmp=com.taha.sahb/.RingActivity (has extras) }
 Warning: Activity not started, intent has been delivered to currently running top-most instance.
-17:44:17 shot 11_result_jpg_retry
-/sdcard/Android/data/com.taha.sahb/files/jobs.log: 1 file pulled, 0 skipped. 0.0 MB/s (750 bytes in 0.048s)
-/sdcard/Pictures/Sahb/: 4 files pulled, 0 skipped. 1.6 MB/s (77601 bytes in 0.047s)
-/sdcard/Movies/Sahb/: 4 files pulled, 0 skipped. 101.1 MB/s (8546885 bytes in 0.081s)
-/sdcard/Music/Sahb/: 2 files pulled, 0 skipped. 3.4 MB/s (156803 bytes in 0.044s)
-/sdcard/Download/Sahb/: 1 file pulled, 0 skipped. 0.1 MB/s (4934 bytes in 0.042s)
+17:54:20 shot 09_trim_dialog
+17:54:22 NOT FOUND 'تنفيذ'
+17:54:24 NOT FOUND 'Apply'
+Starting: Intent { cmp=com.taha.sahb/.RingActivity (has extras) }
+Status: ok
+LaunchState: COLD
+Activity: com.taha.sahb/.RingActivity
+TotalTime: 1145
+WaitTime: 1158
+Complete
+Starting: Intent { flg=0x20000000 cmp=com.taha.sahb/.RingActivity (has extras) }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Starting: Intent { cmp=com.taha.sahb/.RingActivity (has extras) }
+Status: ok
+LaunchState: COLD
+Activity: com.taha.sahb/.RingActivity
+TotalTime: 1071
+WaitTime: 1083
+Complete
+Starting: Intent { flg=0x20000000 cmp=com.taha.sahb/.RingActivity (has extras) }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Starting: Intent { cmp=com.taha.sahb/.RingActivity (has extras) }
+Status: ok
+LaunchState: COLD
+Activity: com.taha.sahb/.RingActivity
+TotalTime: 1015
+WaitTime: 1091
+Complete
+17:54:42 shot 10_ring_audio
+Starting: Intent { flg=0x20000000 cmp=com.taha.sahb/.RingActivity (has extras) }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Starting: Intent { cmp=com.taha.sahb/.RingActivity (has extras) }
+Status: ok
+LaunchState: COLD
+Activity: com.taha.sahb/.RingActivity
+TotalTime: 1008
+WaitTime: 1011
+Complete
+Starting: Intent { flg=0x20000000 cmp=com.taha.sahb/.RingActivity (has extras) }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+17:54:51 shot 11_result_jpg_retry
+/sdcard/Android/data/com.taha.sahb/files/jobs.log: 1 file pulled, 0 skipped. 0.0 MB/s (762 bytes in 0.042s)
+/sdcard/Pictures/Sahb/: 4 files pulled, 0 skipped. 1.5 MB/s (77601 bytes in 0.050s)
+/sdcard/Movies/Sahb/: 4 files pulled, 0 skipped. 58.2 MB/s (8546885 bytes in 0.140s)
+/sdcard/Music/Sahb/: 2 files pulled, 0 skipped. 39.1 MB/s (156803 bytes in 0.004s)
+/sdcard/Download/Sahb/: 1 file pulled, 0 skipped. 2.6 MB/s (4934 bytes in 0.002s)
