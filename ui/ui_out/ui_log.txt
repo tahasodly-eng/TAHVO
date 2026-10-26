@@ -18,39 +18,39 @@ java.lang.IllegalArgumentException: Unknown package: com.android.launcher3
 	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6334)
 	at android.os.Binder.execTransactInternal(Binder.java:1344)
 	at android.os.Binder.execTransact(Binder.java:1275)
-09:26:33 app locale requested: ar -> now: Locales for com.tahatube.app for user 0 are [ar]
+09:32:14 app locale requested: ar -> now: Locales for com.tahatube.app for user 0 are [ar]
 Starting: Intent { cmp=com.tahatube.app/com.deniscerri.ytdl.MainActivity }
 Status: ok
 LaunchState: UNKNOWN (0)
 Activity: com.tahatube.app/com.deniscerri.ytdl.MainActivity
-WaitTime: 3071
+WaitTime: 3568
 Complete
-09:26:55 shot 01_home_ar
+09:32:35 shot 01_home_ar
 NOT FOUND: 'Allow'
 NOT FOUND: 'السماح'
-09:27:15 shot 02_home_ar_after_dialogs
+09:32:53 shot 02_home_ar_after_dialogs
 NOT FOUND: 'ألصق رابط الفيديو'
 NOT FOUND: 'تحليل الرابط'
-09:27:29 shot 03_invalid_link_ar
+09:33:06 shot 03_invalid_link_ar
 NOT FOUND: 'not-a-link'
 NOT FOUND: 'ألصق رابط الفيديو'
 NOT FOUND: 'تحليل الرابط'
-09:27:50 shot 04_analyzing_ar
-09:28:32 shot 05_after_analyze_ar
+09:33:26 shot 04_analyzing_ar
+09:34:08 shot 05_after_analyze_ar
 NOT FOUND: 'التنزيلات'
 NOT FOUND: 'المكتبة'
 NOT FOUND: 'الأدوات'
 NOT FOUND: 'الرئيسية'
-09:28:53 app locale requested: en -> now: Locales for com.tahatube.app for user 0 are [en]
+09:34:29 app locale requested: en -> now: Locales for com.tahatube.app for user 0 are [en]
 Starting: Intent { cmp=com.tahatube.app/com.deniscerri.ytdl.MainActivity }
 Status: ok
 LaunchState: COLD
 Activity: com.tahatube.app/com.deniscerri.ytdl.MainActivity
-TotalTime: 2785
-WaitTime: 2853
+TotalTime: 2957
+WaitTime: 2962
 Complete
-09:29:10 shot 10_home_en_dark
+09:34:46 shot 10_home_en_dark
 tap 'Tools' at 945 2232
-09:29:21 shot 11_tools_en_dark
+09:34:57 shot 11_tools_en_dark
 tap 'Home' at 135 2232
-09:29:31 shot 12_home_en_dark_again
+09:35:06 shot 12_home_en_dark_again
