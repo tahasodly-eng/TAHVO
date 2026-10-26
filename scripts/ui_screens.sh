@@ -68,6 +68,20 @@ set_app_locale() {
   log "app locale requested: $1 -> now: $(adb shell cmd locale get-app-locales $PKG 2>&1 | tr -d '\r')"
 }
 
+set_system_locale() {
+  adb root >/dev/null 2>&1; sleep 4; adb wait-for-device
+  adb shell setprop persist.sys.locale "$1"
+  adb shell setprop ctl.restart zygote
+  sleep 8; adb wait-for-device
+  for _ in $(seq 1 60); do [ "$(adb shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')" = "1" ] && break; sleep 3; done
+  sleep 20
+  log "system locale now: $(adb shell getprop persist.sys.locale | tr -d '\r')"
+  dismiss_anr
+}
+
+# tap by text, otherwise at fixed coordinates (1080x2400 screen)
+tap_or() { tap_text "$1" || { adb shell input tap $2 $3; log "tap fallback '$1' at $2 $3"; }; }
+
 dump_text() { adb shell uiautomator dump /sdcard/ui.xml >/dev/null 2>&1; adb pull /sdcard/ui.xml "$OUT/$1.xml" >/dev/null 2>&1; }
 
 APK=$(ls app/build/outputs/apk/github/debug/*x86_64*.apk | head -1)
@@ -84,6 +98,7 @@ for l in com.google.android.apps.nexuslauncher com.android.launcher3; do adb she
 dismiss_anr
 set_app_locale ar
 adb shell am force-stop $PKG
+set_system_locale ar-EG
 
 # ---- Arabic, light ----
 adb shell am start -W -n $PKG/$ACT >> "$LOG" 2>&1
@@ -94,32 +109,34 @@ tap_text "Allow" || tap_text "السماح" || true
 shot 02_home_ar_after_dialogs 3
 
 # invalid link -> validation error
-tap_text "ألصق رابط الفيديو" && adb shell input text "not-a-link" && adb shell input keyevent 111
-tap_text "تحليل الرابط"
+tap_or "ألصق رابط الفيديو" 540 606; adb shell input text "not-a-link"; adb shell input keyevent 111
+tap_or "تحليل الرابط" 540 930
 shot 03_invalid_link_ar 2
 
 # real TikTok link -> extraction
 adb shell input keyevent KEYCODE_MOVE_END
 for i in $(seq 1 20); do adb shell input keyevent 67; done
-tap_text "not-a-link" || tap_text "ألصق رابط الفيديو" || true
+tap_or "not-a-link" 540 606
 adb shell input text "https://vt.tiktok.com/ZSg9fBwLS/"
 adb shell input keyevent 111
-tap_text "تحليل الرابط"
+shot 03b_link_entered 1
+tap_or "تحليل الرابط" 540 930
 shot 04_analyzing_ar 4
 shot 05_after_analyze_ar 40
 dump_text 05_after_analyze_ar
 
 adb shell input keyevent 4
 sleep 2
-tap_text "التنزيلات" && shot 06_downloads_ar 4
-tap_text "المكتبة" && shot 07_library_ar 4
-tap_text "الأدوات" && shot 08_tools_ar 4
-tap_text "الرئيسية" && shot 09_home_ar_again 4
+tap_or "التنزيلات" 675 2232; shot 06_downloads_ar 4
+tap_or "المكتبة" 405 2232; shot 07_library_ar 4
+tap_or "الأدوات" 135 2232; shot 08_tools_ar 4
+tap_or "الرئيسية" 945 2232; shot 09_home_ar_again 4
 
 # ---- English, dark ----
 adb shell am force-stop $PKG
 set_app_locale en
 adb shell am force-stop $PKG
+set_system_locale en-US
 adb shell cmd uimode night yes
 adb shell am start -W -n $PKG/$ACT >> "$LOG" 2>&1
 shot 10_home_en_dark 12
