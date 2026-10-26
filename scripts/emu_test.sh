@@ -43,7 +43,7 @@ NEXT=0
 expect_job() { NEXT=$(( $(jobs_n) + 1 )); }
 wait_job() { for _ in $(seq 1 90); do [ "$(jobs_n)" -ge "$NEXT" ] && return 0; sleep 2; done; log "TIMEOUT"; }
 
-ring() { adb shell am start -W -n $PKG/.RingActivity --es test_path "$1" ${2:+--ez tools true} >> "$LOG" 2>&1; sleep 2; }
+ring() { adb shell am start -W -n $PKG/.RingActivity --es test_path "'$1'" ${2:+--ez tools true} >> "$LOG" 2>&1; sleep 2; }
 # pick slice N; "auto" skips the sheet for options-free actions (still records the job)
 pick() { adb shell am start -f 0x20000000 -n $PKG/.RingActivity --ei pick $1 ${2:+--ez tools true} ${3:+--ez auto true} >> "$LOG" 2>&1; sleep 2; }
 close() { adb shell am force-stop $PKG; sleep 1; }
@@ -93,6 +93,7 @@ for f in sample.png sample.mp4 sample.wav doc.pdf doc2.pdf; do adb push $f $DIR/
 ring $DIR/sample.png; close
 
 set_locale ar-EG
+ring $DIR/sample.png; close   # first app access after the restart
 IMG=$DIR/sample.png; VID=$DIR/sample.mp4; AUD=$DIR/sample.wav; PDF=$DIR/doc.pdf
 
 # ---------------- Arabic screens
