@@ -605,7 +605,7 @@
         <item quantity="many">كل %d دقيقة</item>
         <item quantity="other">كل %d دقيقة</item>
     </plurals>
-    <string name="bgutils_info">مزوّد رمز إثبات المصدر (POT) لأداة yt-dlp.\nعند تفعيله، يقوم YTDLnis باستضافة خادم HTTP الذي يولّد رمز POT، ويثبّت الإضافة المرتبطة التي تستخدمها yt-dlp.</string>
+    <string name="bgutils_info">مزوّد رمز إثبات المصدر (POT) لأداة yt-dlp.\nعند تفعيله، يقوم TAHVO باستضافة خادم HTTP الذي يولّد رمز POT، ويثبّت الإضافة المرتبطة التي تستخدمها yt-dlp.</string>
     <string name="bgutils_pot_generation_script">سكربت التوليد</string>
     <string name="bgutils_pot_generation_server">خادم HTTP</string>
     <string name="bgutils_pot_generation_script_summary">كل استدعاء لـ yt-dlp يتحمّل عبء إنشاء عملية جديدة لبيئة تشغيل JavaScript لتنفيذ السكربت. لا يُنصح باستخدام هذه الطريقة في حالات الاستخدام العالي التزامن.</string>
@@ -621,10 +621,34 @@
     <string name="check_clipboard_home_summary">كشف تلقائيا للرابط في الحافظة في الشاشة الرئيسية</string>
     <string name="check_clipboard_home">تحقق من الحافظة في الشاشة الرئيسية</string>
     <string name="notset">غير محدد</string>
-    <string name="packages_description">الحزم هي تطبيقات مساعدة يستخدمها YTDLnis لدعم أوامر yt-dlp. تأتي بعض هذه الحزم مدمجة بالفعل مع التطبيق، ولكن يمكنك تثبيت إصدارات أحدث يتم إصدارها دون الحاجة إلى تحديث التطبيق نفسه؛ حيث تحل ملفات APK المثبتة هذه محل الإصدار المدمج الذي يستخدمه التطبيق.</string>
+    <string name="packages_description">الحزم هي تطبيقات مساعدة يستخدمها TAHVO لدعم أوامر yt-dlp. تأتي بعض هذه الحزم مدمجة بالفعل مع التطبيق، ولكن يمكنك تثبيت إصدارات أحدث يتم إصدارها دون الحاجة إلى تحديث التطبيق نفسه؛ حيث تحل ملفات APK المثبتة هذه محل الإصدار المدمج الذي يستخدمه التطبيق.</string>
     <string name="bgutils_pot_generation_script_info">لاستخدام مزود BgUtils POT، يحتاج التطبيق إلى تحميل المستودع Brainicism/bgutil-ytdlp-pot-provider من GitHub وبدء عملية التثبيت. قد تستغرق هذه العملية بعض الوقت؛ هل تود المتابعة الآن؟</string>
     <string name="search_results">نتائج البحث</string>
     <string name="clear_info_json">مسح ملفات infojson</string>
     <string name="internal_plugin_ffmpeg_preset">إعداد FFmpeg مسبق للإضافة الداخلية</string>
     <string name="internal_plugin_ffmpeg_preset_summary">الإعداد المسبق الذي يستخدمه FFmpeg للإضافات الداخلية مثل دمج الترجمة داخل الفيديو وغيرها. تعديل هذا الخيار يؤثر على حجم الملف النهائي!</string>
+
+    <!-- TAHVO -->
+    <string name="tahvo_tagline">منزّل الفيديو والصوت</string>
+    <string name="tahvo_home_headline">نزّل الفيديو بسهولة</string>
+    <string name="tahvo_home_subtitle">ألصق الرابط واختر الجودة وابدأ التنزيل</string>
+    <string name="tahvo_url_hint">ألصق رابط الفيديو هنا…</string>
+    <string name="tahvo_paste">لصق</string>
+    <string name="tahvo_clear">مسح</string>
+    <string name="tahvo_analyze_link">تحليل الرابط</string>
+    <string name="tahvo_search_by_keywords">أو ابحث بالكلمات</string>
+    <string name="tahvo_invalid_url">الرجاء إدخال رابط صحيح يبدأ بـ http:// أو https://</string>
+    <string name="tahvo_empty_url">ألصق رابط الفيديو أولاً</string>
+    <string name="tahvo_clipboard_empty">لا يوجد رابط في الحافظة</string>
+    <string name="tahvo_platforms">المنصات الشائعة</string>
+    <string name="tahvo_platforms_hint">افتح المنصة وانسخ رابط الفيديو، ثم ارجع والصقه هنا.</string>
+    <string name="tahvo_more_sites">المزيد</string>
+    <string name="tahvo_recent_downloads">آخر التنزيلات</string>
+    <string name="tahvo_view_all">عرض الكل</string>
+    <string name="tahvo_no_downloads_yet">لا توجد تنزيلات بعد. ستظهر ملفاتك المنزّلة هنا.</string>
+    <string name="tahvo_nav_downloads">التنزيلات</string>
+    <string name="tahvo_nav_library">المكتبة</string>
+    <string name="tahvo_nav_tools">الأدوات</string>
+    <string name="tahvo_settings">الإعدادات</string>
+    <string name="tahvo_file_missing">الملف لم يعد موجوداً على الجهاز</string>
 </resources>

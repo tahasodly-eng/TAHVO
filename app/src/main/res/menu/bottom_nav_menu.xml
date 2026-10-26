@@ -5,16 +5,16 @@
         android:icon="@drawable/ic_home"
         android:id="@+id/homeFragment"/>
 
-    <item android:title="@string/downloads"
-        android:icon="@drawable/ic_downloads"
+    <item android:title="@string/tahvo_nav_library"
+        android:icon="@drawable/tahvo_ic_library"
         android:id="@+id/historyFragment"/>
 
-    <item android:title="@string/more"
-        android:icon="@drawable/ic_more"
+    <item android:title="@string/tahvo_nav_tools"
+        android:icon="@drawable/tahvo_ic_tools"
         android:id="@+id/moreFragment"/>
 
-    <item android:title="@string/queue"
-        android:icon="@drawable/baseline_downloading_24"
+    <item android:title="@string/tahvo_nav_downloads"
+        android:icon="@drawable/ic_downloads"
         android:visible="true"
         android:id="@+id/downloadQueueMainFragment"/>
 

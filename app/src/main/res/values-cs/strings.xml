@@ -593,7 +593,7 @@
         <item quantity="many">Každých %d minut</item>
         <item quantity="other">Každých %d minut</item>
     </plurals>
-    <string name="bgutils_info">Poskytovatel tokenu ověření původu (POT) pro yt-dlp.\nPokud je zapnutý, YTDLnis hostí HTTP server, který generuje POT a nainstaluje související plugin, který yt-dlp používá.</string>
+    <string name="bgutils_info">Poskytovatel tokenu ověření původu (POT) pro yt-dlp.\nPokud je zapnutý, TAHVO hostí HTTP server, který generuje POT a nainstaluje související plugin, který yt-dlp používá.</string>
     <string name="bgutils_pot_generation_script">Generovací skript</string>
     <string name="bgutils_pot_generation_server">HTTP server</string>
     <string name="bgutils_pot_generation_script_summary">Každé volání yt-dlp přináší režijní náklady na spuštění nového procesu js runtime pro provedení skriptu. Tato metoda se nedoporučuje pro použití s vysokou mírou souběžnosti.</string>
@@ -606,7 +606,7 @@
     <string name="notset">Není nastaveno</string>
     <string name="external">Externí</string>
     <string name="exit">Ukončit</string>
-    <string name="packages_description">Balíčky jsou pomocné aplikace, které YTDLnis využívá k usnadnění práce s příkazy yt-dlp. Některé z nich jsou již jeho součástí, ale můžete si nainstalovat novější verze, které jsou zveřejňovány, aniž byste museli aktualizovat samotnou aplikaci. Instalované aplikace nahradí zapracovanou verzi, kterou aplikace používá.</string>
+    <string name="packages_description">Balíčky jsou pomocné aplikace, které TAHVO využívá k usnadnění práce s příkazy yt-dlp. Některé z nich jsou již jeho součástí, ale můžete si nainstalovat novější verze, které jsou zveřejňovány, aniž byste museli aktualizovat samotnou aplikaci. Instalované aplikace nahradí zapracovanou verzi, kterou aplikace používá.</string>
     <string name="bgutils_pot_generation_script_info">Aby bylo možné používat poskytovatele POT BgUtils, musí aplikace stáhnout repozitář Brainicism/bgutil-ytdlp-pot-provider z GitHubu a zahájit instalaci. Dokončení tohoto procesu může chvíli trvat. Chcete pokračovat?</string>
     <string name="check_clipboard_home_summary">Automaticky rozpoznat URL adresy ve schránce na domovské obrazovce</string>
     <string name="check_clipboard_home">Zkontrolovat schránku na domovské obrazovce</string>
@@ -664,7 +664,7 @@
     <string name="download_anyway">Stáhnout i tak</string>
     <string name="write_ytdlp_terminal">Automaticky psát yt-dlp v terminálu</string>
     <string name="clear">Vymazat</string>
-    <string name="welcome_title">Vítejte v YTDLnis</string>
+    <string name="welcome_title">Vítejte v TAHVO</string>
     <string name="welcome_subtitle">Stahujte videa a zvuk pomocí yt-dlp. Nejprve si nastavíme pár věcí.</string>
     <string name="welcome_get_started">Začínáme</string>
     <string name="welcome_restore_backup">Obnovit ze zálohy</string>
@@ -674,7 +674,7 @@
     <string name="welcome_guide_summary">Příručka pokrývá vše o aplikaci, stahování, šablonách příkazů a řešení běžných problémů. Můžete ji otevřít kdykoli na webové stránce.</string>
     <string name="welcome_open_guide">Otevřít příručku</string>
     <string name="welcome_permissions_title">Oprávnění</string>
-    <string name="welcome_permissions_summary">YTDLnis funguje nejlépe s těmito oprávněními. Později je můžete změnit v nastavení.</string>
+    <string name="welcome_permissions_summary">TAHVO funguje nejlépe s těmito oprávněními. Později je můžete změnit v nastavení.</string>
     <string name="welcome_perm_storage">Přístup k úložišti</string>
     <string name="welcome_perm_storage_summary">Potřebný pro ukládání vašich stažených souborů do zařízení.</string>
     <string name="welcome_perm_notifications">Oznámení</string>
@@ -687,7 +687,7 @@
     <string name="welcome_allowed">Povoleno</string>
     <string name="welcome_required">Požadováno</string>
     <string name="welcome_updates_title">Aktualizace</string>
-    <string name="welcome_updates_summary">Vyberte, jak má YTDLnis zůstat aktuální.</string>
+    <string name="welcome_updates_summary">Vyberte, jak má TAHVO zůstat aktuální.</string>
     <string name="welcome_next">Další</string>
     <string name="welcome_finish">Dokončit</string>
     <string name="lyrics">Texty písní</string>

@@ -30,9 +30,9 @@
             android:entries="@array/accents"
             android:entryValues="@array/accents_values"
             android:icon="@drawable/baseline_color_lens_24"
-            app:defaultValue="blue"
+            app:defaultValue="orange"
             app:key="theme_accent"
-            app:summary="Blue"
+            app:summary="Orange"
             app:title="@string/accents" />
 
         <SwitchPreferenceCompat

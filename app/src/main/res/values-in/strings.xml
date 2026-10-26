@@ -574,7 +574,7 @@
     <plurals name="every_months">
         <item quantity="other">Setiap %d bulan</item>
     </plurals>
-    <string name="bgutils_info">Penyedia token bukti asal (POT) untuk yt-dlp.\nSaat fitur ini diaktifkan, YTDLnis menjalankan server HTTP yang menghasilkan POT serta menginstal plugin terkait yang digunakan oleh yt-dlp.</string>
+    <string name="bgutils_info">Penyedia token bukti asal (POT) untuk yt-dlp.\nSaat fitur ini diaktifkan, TAHVO menjalankan server HTTP yang menghasilkan POT serta menginstal plugin terkait yang digunakan oleh yt-dlp.</string>
     <string name="bgutils_pot_generation_script">Skrip pembuatan</string>
     <string name="bgutils_pot_generation_server">Server HTTP</string>
     <string name="bgutils_pot_generation_script_summary">Setiap panggilan yt-dlp menimbulkan overhead berupa pembuatan proses runtime js baru untuk menjalankan skrip. Metode ini tidak disarankan untuk penggunaan dengan konkurensi tinggi.</string>
@@ -587,7 +587,7 @@
     <string name="notset">Belum disetel</string>
     <string name="external">Eksternal</string>
     <string name="exit">Keluar</string>
-    <string name="packages_description">Paket adalah aplikasi pendukung yang digunakan YTDLnis untuk membantu menjalankan perintah yt-dlp. Beberapa paket sudah disertakan di dalamnya, namun Anda dapat menginstal versi terbaru yang dirilis tanpa perlu memperbarui aplikasi itu sendiri. Paket APK yang diinstal akan menggantikan versi bawaan yang digunakan oleh aplikasi tersebut.</string>
+    <string name="packages_description">Paket adalah aplikasi pendukung yang digunakan TAHVO untuk membantu menjalankan perintah yt-dlp. Beberapa paket sudah disertakan di dalamnya, namun Anda dapat menginstal versi terbaru yang dirilis tanpa perlu memperbarui aplikasi itu sendiri. Paket APK yang diinstal akan menggantikan versi bawaan yang digunakan oleh aplikasi tersebut.</string>
     <string name="bgutils_pot_generation_script_info">Untuk menggunakan BgUtils POT Provider, aplikasi perlu mengunduh repositori Brainicism/bgutil-ytdlp-pot-provider dari GitHub dan memulai instalasi. Proses ini mungkin memakan waktu cukup lama. Lanjutkan sekarang?</string>
     <string name="burn_subs">Bubuhkan takarir (subtitle)</string>
     <string name="check_clipboard_home_summary">Deteksi URL secara otomatis di papan klip pada layar beranda</string>
@@ -641,7 +641,7 @@
     <string name="merge_cuts">Gabungkan potongan-potongan tersebut menjadi satu berkas</string>
     <string name="write_ytdlp_terminal">Tulis yt-dlp di terminal secara otomatis</string>
     <string name="clear">Kosongkan</string>
-    <string name="welcome_title">Selamat datang di YTDLnis</string>
+    <string name="welcome_title">Selamat datang di TAHVO</string>
     <string name="welcome_subtitle">Unduh video dan audio menggunakan yt-dlp. Mari kita siapkan beberapa hal terlebih dahulu.</string>
     <string name="welcome_get_started">Memulai</string>
     <string name="welcome_restore_backup">Pulihkan dari cadangan</string>
@@ -663,7 +663,7 @@
     <string name="welcome_allowed">Diizinkan</string>
     <string name="welcome_required">Diperlukan</string>
     <string name="welcome_updates_title">Pembaruan</string>
-    <string name="welcome_updates_summary">Pilih cara YTDLnis agar versinya tetap yang terbaru.</string>
+    <string name="welcome_updates_summary">Pilih cara TAHVO agar versinya tetap yang terbaru.</string>
     <string name="welcome_next">Berikutnya</string>
     <string name="welcome_finish">Selesai</string>
     <string name="lyrics">Lirik</string>
@@ -686,7 +686,7 @@
     <string name="welcome_perm_folders_summary">Cadanganmu menggunakan folder-folder ini, tetapi aplikasi kehilangan akses ke sana. Izinkan kembali akses ke setiap folder, atau pilih folder lain untuk digunakan sebagai gantinya.</string>
     <string name="crop_unsupported">Fitur pemangkasan tidak tersedia untuk butir ini</string>
     <string name="internal_plugin_ffmpeg_preset_summary">Prasetel yang digunakan FFmpeg untuk pengaya internal seperti pembubuhan takarir (subtitle), dll. Menyesuaikan preferensi ini akan memengaruhi ukuran berkas di akhir!</string>
-    <string name="welcome_permissions_summary">YTDLnis bekerja paling baik dengan ini. Kamu bisa mengubahnya nanti di setelan.</string>
+    <string name="welcome_permissions_summary">TAHVO bekerja paling baik dengan ini. Kamu bisa mengubahnya nanti di setelan.</string>
     <plurals name="queue_items">
         <item quantity="other">%d butir</item>
     </plurals>

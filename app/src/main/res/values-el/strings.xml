@@ -565,7 +565,7 @@
         <item quantity="one">Κάθε λεπτό</item>
         <item quantity="other">Κάθε %d λεπτά</item>
     </plurals>
-    <string name="bgutils_info">Ένας πάροχος διακριτικού απόδειξης προέλευσης (POT) για το yt-dlp.\nΜε ενεργοποιημένο το YTDLnis φιλοξενεί τον διακομιστή HTTP που δημιουργεί το POT και εγκαθιστά το σχετικό πρόσθετο που χρησιμοποιεί το yt-dlp.</string>
+    <string name="bgutils_info">Ένας πάροχος διακριτικού απόδειξης προέλευσης (POT) για το yt-dlp.\nΜε ενεργοποιημένο το TAHVO φιλοξενεί τον διακομιστή HTTP που δημιουργεί το POT και εγκαθιστά το σχετικό πρόσθετο που χρησιμοποιεί το yt-dlp.</string>
     <string name="bgutils_pot_generation_script">Σενάριο δημιουργίας</string>
     <string name="bgutils_pot_generation_server">HTTP Server</string>
     <string name="bgutils_pot_generation_script_summary">Κάθε κλήση yt-dlp συνεπάγεται την επιβάρυνση της δημιουργίας μιας νέας διεργασίας χρόνου εκτέλεσης js για την εκτέλεση του σεναρίου. Αυτή η μέθοδος δεν συνιστάται για χρήση υψηλής ταυτόχρονης χρήσης.</string>
@@ -578,7 +578,7 @@
     <string name="notset">Δεν έχει οριστεί</string>
     <string name="external">Εξωτερικό</string>
     <string name="exit">Εξοδος</string>
-    <string name="packages_description">Τα πακέτα είναι βοηθητικές εφαρμογές που χρησιμοποιεί το YTDLnis για να βοηθήσει με τις εντολές yt-dlp. Ορισμένες από αυτές είναι ήδη ομαδοποιημένες, αλλά μπορείτε να εγκαταστήσετε νεότερες εκδόσεις που έχουν δημοσιευτεί χωρίς να χρειάζεται να ενημερώσετε την εφαρμογή. Τα εγκατεστημένα apk αντικαθιστούν την παρεχόμενη έκδοση που χρησιμοποιεί η εφαρμογή.</string>
+    <string name="packages_description">Τα πακέτα είναι βοηθητικές εφαρμογές που χρησιμοποιεί το TAHVO για να βοηθήσει με τις εντολές yt-dlp. Ορισμένες από αυτές είναι ήδη ομαδοποιημένες, αλλά μπορείτε να εγκαταστήσετε νεότερες εκδόσεις που έχουν δημοσιευτεί χωρίς να χρειάζεται να ενημερώσετε την εφαρμογή. Τα εγκατεστημένα apk αντικαθιστούν την παρεχόμενη έκδοση που χρησιμοποιεί η εφαρμογή.</string>
     <string name="bgutils_pot_generation_script_info">Για να χρησιμοποιήσετε τον πάροχο BgUtils POT, η εφαρμογή πρέπει να κατεβάσει το αποθετήριο Brainicism/bgutil-ytdlp-pot-provider από το github και να ξεκινήσει την εγκατάσταση. Η ολοκλήρωση αυτής της διαδικασίας μπορεί να διαρκέσει λίγο. Θέλετε να προχωρήσετε τώρα;</string>
     <string name="burn_subs">Εγγραφή υπότιτλων</string>
     <string name="check_clipboard_home_summary">Αυτόματη ανίχνευση URL στο πρόχειρο στην αρχική οθόνη</string>
@@ -649,7 +649,7 @@
     <string name="download_anyway">Λήψη ούτως ή άλλως</string>
     <string name="write_ytdlp_terminal">Αυτόματη εγγραφή yt-dlp σε τερματικό</string>
     <string name="clear">Καθαρισμός</string>
-    <string name="welcome_title">Καλώς ορίσατε στο YTDLnis</string>
+    <string name="welcome_title">Καλώς ορίσατε στο TAHVO</string>
     <string name="welcome_subtitle">Λήψη βίντεο και ήχου χρησιμοποιώντας το yt-dlp. Ας κάνουμε πρώτα μερικές ρυθμίσεις.</string>
     <string name="welcome_get_started">Ξεκινήστε</string>
     <string name="welcome_restore_backup">Επαναφορά από αντίγραφο ασφαλείας</string>
@@ -659,7 +659,7 @@
     <string name="welcome_guide_summary">Ο οδηγός καλύπτει τα πάντα σχετικά με την εφαρμογή, τη λήψη, τα πρότυπα εντολών και την επίλυση συνηθισμένων προβλημάτων. Μπορείτε να τον ανοίξετε οποιαδήποτε στιγμή από τον ιστότοπο.</string>
     <string name="welcome_open_guide">Άνοιγμα οδηγού</string>
     <string name="welcome_permissions_title">Δικαιώματα</string>
-    <string name="welcome_permissions_summary">Το YTDLnis λειτουργεί καλύτερα με αυτά. Μπορείτε να τα αλλάξετε αργότερα στις ρυθμίσεις.</string>
+    <string name="welcome_permissions_summary">Το TAHVO λειτουργεί καλύτερα με αυτά. Μπορείτε να τα αλλάξετε αργότερα στις ρυθμίσεις.</string>
     <string name="welcome_perm_storage">Πρόσβαση στον αποθηκευτικό χώρο</string>
     <string name="welcome_perm_storage_summary">Απαιτείται για την αποθήκευση των λήψεών σας στη συσκευή.</string>
     <string name="welcome_perm_notifications">Ειδοποιήσεις</string>
@@ -672,7 +672,7 @@
     <string name="welcome_allowed">Επιτρέπεται</string>
     <string name="welcome_required">Υποχρεωτικό</string>
     <string name="welcome_updates_title">Ενημερώσεις</string>
-    <string name="welcome_updates_summary">Επιλέξτε πώς το YTDLnis παραμένει ενημερωμένο.</string>
+    <string name="welcome_updates_summary">Επιλέξτε πώς το TAHVO παραμένει ενημερωμένο.</string>
     <string name="welcome_next">Επόμενο</string>
     <string name="welcome_finish">Τέλος</string>
     <string name="lyrics">Στίχοι</string>

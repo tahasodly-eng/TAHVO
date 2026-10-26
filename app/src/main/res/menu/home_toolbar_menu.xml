@@ -17,4 +17,11 @@
         app:iconTint="?attr/colorError"
         app:showAsAction="always" />
 
+
+    <item
+        android:id="@+id/tahvo_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/tahvo_settings"
+        app:showAsAction="always" />
+
 </menu>

@@ -139,6 +139,8 @@ class HomeFragment : Fragment(), HomeAdapter.OnItemClickListener, SearchSuggesti
     private var queryList = mutableListOf<String>()
 
     private var showDownloadAllFab: Boolean = false
+    private var tahvoHero: TahvoHomeHero? = null
+    private var tahvoSearchRow: View? = null
     private var showClipboardFab: Boolean = false
 
     override fun onCreateView(
@@ -251,6 +253,7 @@ class HomeFragment : Fragment(), HomeAdapter.OnItemClickListener, SearchSuggesti
             resultViewModel.totalCount.collectLatest {
                 totalCount = it
                 searchBar?.menu?.findItem(R.id.select_range)?.isVisible = it >= 3
+                updateTahvoHeroVisibility()
             }
         }
 
@@ -269,6 +272,7 @@ class HomeFragment : Fragment(), HomeAdapter.OnItemClickListener, SearchSuggesti
         }
 
         initMenu()
+        initTahvoHero(view)
         downloadSelectedFab?.tag = "downloadSelected"
         downloadSelectedFab?.setOnClickListener(this)
         downloadAllFab?.tag = "downloadAll"
@@ -336,6 +340,7 @@ class HomeFragment : Fragment(), HomeAdapter.OnItemClickListener, SearchSuggesti
 
                     loadingItems = res.processing
                     progressBar.isVisible = loadingItems && totalCount > 0
+                    updateTahvoHeroVisibility()
                     if (res.processing){
                         recyclerView?.setPadding(0,0,0,0)
                         shimmerCards!!.startShimmer()
@@ -762,6 +767,42 @@ class HomeFragment : Fragment(), HomeAdapter.OnItemClickListener, SearchSuggesti
         }
     }
 
+    private fun initTahvoHero(view: View) {
+        tahvoSearchRow = view.findViewById(R.id.tahvo_search_row)
+        tahvoHero = TahvoHomeHero(
+            root = view.findViewById(R.id.tahvo_hero),
+            lifecycleOwner = viewLifecycleOwner,
+            onAnalyze = { url ->
+                queryList = mutableListOf(url)
+                searchBar?.setText(url)
+                if (!sharedPreferences!!.getBoolean("incognito", false)) {
+                    resultViewModel.addSearchQueryToHistory(url)
+                }
+                startSearch()
+            },
+            onKeywordSearch = { text ->
+                searchView?.setText(text)
+                searchView?.show()
+            },
+            onViewAllDownloads = {
+                val nav = mainActivity?.findViewById<com.google.android.material.navigation.NavigationBarView>(R.id.bottomNavigationView)
+                if (nav != null && nav.menu.findItem(R.id.historyFragment)?.isVisible == true) {
+                    nav.selectedItemId = R.id.historyFragment
+                } else {
+                    runCatching { findNavController().navigate(R.id.historyFragment) }
+                }
+            }
+        ).also { it.bind() }
+        updateTahvoHeroVisibility()
+    }
+
+    /** The TAHVO home block is shown while nothing is being fetched and no results are on screen. */
+    private fun updateTahvoHeroVisibility() {
+        val showHero = totalCount == 0 && !loadingItems
+        tahvoHero?.setVisible(showHero)
+        tahvoSearchRow?.isVisible = !showHero
+    }
+
     fun scrollToTop() {
         recyclerView!!.scrollToPosition(0)
         runCatching { (searchBar!!.parent as AppBarLayout).setExpanded(true, true) }
@@ -803,6 +844,10 @@ class HomeFragment : Fragment(), HomeAdapter.OnItemClickListener, SearchSuggesti
                 }
                 R.id.app_updates -> {
                     showAvailableUpdates()
+                    true
+                }
+                R.id.tahvo_settings -> {
+                    startActivity(Intent(requireContext(), com.deniscerri.ytdl.ui.more.settings.SettingsActivity::class.java))
                     true
                 }
                 else -> false
