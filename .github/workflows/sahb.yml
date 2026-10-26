@@ -37,7 +37,9 @@ jobs:
           grep -nE "^e: |error:|FAILURE|What went wrong|BUILD (SUCCESSFUL|FAILED)|Unresolved|Could not" build.log > build_errors.txt || true
           tail -n 200 build.log > build_tail.txt
           ls -la app/build/outputs/apk/*/ > apk_list.txt 2>&1 || true
-          scripts/publish_results.sh sahb-build build_errors.txt build_tail.txt apk_list.txt
+          AAPT=$(ls $ANDROID_HOME/build-tools/*/aapt | sort -V | tail -1)
+          { echo "== permissions in release APK"; $AAPT dump permissions app/build/outputs/apk/release/app-release-unsigned.apk; } > permissions.txt 2>&1 || true
+          scripts/publish_results.sh sahb-build build_errors.txt build_tail.txt apk_list.txt permissions.txt
 
       - name: Publish release APK
         continue-on-error: true

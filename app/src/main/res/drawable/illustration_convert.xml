@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- simple illustration: small file types flowing into one document -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="300dp" android:height="180dp" android:viewportWidth="300" android:viewportHeight="180">
+    <!-- central document -->
+    <path android:fillColor="#17263C" android:strokeColor="#9FB3CC" android:strokeWidth="4" android:strokeLineJoin="round"
+        android:pathData="M115,20h52l26,26v116a8,8 0,0 1,-8 8h-70a8,8 0,0 1,-8 -8V28a8,8 0,0 1,8 -8z" />
+    <path android:strokeColor="#9FB3CC" android:strokeWidth="4" android:strokeLineJoin="round" android:fillColor="#00000000" android:pathData="M167,20v26h26" />
+    <path android:strokeColor="#9FB3CC" android:strokeWidth="6" android:strokeLineCap="round" android:pathData="M128,78h50M128,98h50M128,118h50M128,138h30" />
+    <!-- image card -->
+    <path android:fillColor="#17263C" android:strokeColor="#9FB3CC" android:strokeWidth="3" android:pathData="M22,38l40,-8 8,36 -40,8z" />
+    <path android:strokeColor="#9FB3CC" android:strokeWidth="3" android:strokeLineJoin="round" android:fillColor="#00000000" android:pathData="M31,62l10,-10 8,8 6,-5 9,8" />
+    <!-- audio card -->
+    <path android:fillColor="#17263C" android:strokeColor="#9FB3CC" android:strokeWidth="3" android:pathData="M28,110l34,-6 6,34 -34,6z" />
+    <path android:strokeColor="#9FB3CC" android:strokeWidth="3" android:strokeLineCap="round" android:fillColor="#00000000" android:pathData="M45,135v-18l12,-2v14" />
+    <!-- video card -->
+    <path android:fillColor="#17263C" android:strokeColor="#9FB3CC" android:strokeWidth="3" android:pathData="M232,32l40,6 -5,30 -40,-6z" />
+    <path android:fillColor="#9FB3CC" android:pathData="M245,44l12,8 -13,6z" />
+    <!-- doc card -->
+    <path android:fillColor="#17263C" android:strokeColor="#9FB3CC" android:strokeWidth="3" android:pathData="M238,104l30,4 -5,40 -30,-4z" />
+    <path android:strokeColor="#9FB3CC" android:strokeWidth="3" android:strokeLineCap="round" android:pathData="M243,118l16,2M242,126l16,2M241,134l12,2" />
+    <!-- turquoise arrows -->
+    <path android:strokeColor="#2DD4BF" android:strokeWidth="5" android:strokeLineCap="round" android:fillColor="#00000000" android:pathData="M76,56c18,0 26,12 28,28" />
+    <path android:fillColor="#2DD4BF" android:pathData="M96,82l9,12 7,-14z" />
+    <path android:strokeColor="#2DD4BF" android:strokeWidth="5" android:strokeLineCap="round" android:fillColor="#00000000" android:pathData="M226,120c-14,0 -22,8 -26,20" />
+    <path android:fillColor="#2DD4BF" android:pathData="M193,134l5,14 10,-11z" />
+</vector>

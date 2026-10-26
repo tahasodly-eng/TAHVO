@@ -42,13 +42,13 @@ import kotlin.coroutines.resumeWithException
 import kotlin.math.max
 import kotlin.math.roundToInt
 
-enum class Kind { IMAGE, VIDEO, AUDIO, OTHER }
+enum class Kind { IMAGE, VIDEO, AUDIO, PDF, OTHER }
 
 class Src(val uri: Uri, val name: String, val mime: String, val kind: Kind) {
     val base: String get() = name.substringBeforeLast('.', name)
 }
 
-class Saved(val uri: Uri, val folder: String, val mime: String)
+class Saved(val uri: Uri, val folder: String, val mime: String, val name: String, val size: Long)
 
 object Engine {
 
@@ -68,6 +68,7 @@ object Engine {
             mime.startsWith("image/") -> Kind.IMAGE
             mime.startsWith("video/") -> Kind.VIDEO
             mime.startsWith("audio/") -> Kind.AUDIO
+            mime == "application/pdf" || ext == "pdf" -> Kind.PDF
             else -> Kind.OTHER
         }
         return Src(uri, name, mime, kind)
@@ -94,6 +95,8 @@ object Engine {
             put(MediaStore.MediaColumns.IS_PENDING, 1)
         }
         val r = ctx.contentResolver
+        val size = file.length()
+        if (size <= 0) throw IllegalStateException("empty output")
         val uri = r.insert(collection, values) ?: throw IllegalStateException("MediaStore insert failed")
         try {
             r.openOutputStream(uri)!!.use { out -> file.inputStream().use { it.copyTo(out) } }
@@ -104,7 +107,10 @@ object Engine {
         } finally {
             file.delete()
         }
-        return Saved(uri, rel, mime)
+        // confirm the saved file is really there and readable before reporting success
+        r.openInputStream(uri)?.use { if (it.read() < 0) throw IllegalStateException("unreadable output") }
+            ?: throw IllegalStateException("unreadable output")
+        return Saved(uri, rel, mime, displayName, size)
     }
 
     // ------------------------------------------------------------ images
@@ -157,6 +163,28 @@ object Engine {
         val out = fmt ?: sameFormat(src)
         val f = encode(ctx, b, out, quality)
         save(ctx, f, name(src, tag, out), mimeOf(out))
+    }
+
+    /** Draws the text diagonally across the image, semi-transparent. */
+    suspend fun watermarkImage(ctx: Context, src: Src, text: String): Saved = withContext(Dispatchers.IO) {
+        val b = decode(ctx, src)
+        val out = Bitmap.createBitmap(b.width, b.height, Bitmap.Config.ARGB_8888)
+        val c = Canvas(out)
+        c.drawBitmap(b, 0f, 0f, null)
+        val t = Pdf.textBitmap(text, (b.width * 0.9f).toInt().coerceAtLeast(200))
+        val p = Paint(Paint.ANTI_ALIAS_FLAG or Paint.FILTER_BITMAP_FLAG).apply {
+            alpha = 90
+            colorFilter = android.graphics.PorterDuffColorFilter(Color.WHITE, android.graphics.PorterDuff.Mode.SRC_IN)
+        }
+        val shadow = Paint(p).apply { colorFilter = android.graphics.PorterDuffColorFilter(Color.BLACK, android.graphics.PorterDuff.Mode.SRC_IN); alpha = 60 }
+        c.save()
+        c.rotate(-30f, b.width / 2f, b.height / 2f)
+        val l = (b.width - t.width) / 2f; val top = (b.height - t.height) / 2f
+        c.drawBitmap(t, l + 3, top + 3, shadow)
+        c.drawBitmap(t, l, top, p)
+        c.restore()
+        val fmt = sameFormat(src)
+        save(ctx, encode(ctx, out, fmt, 92), name(src, "watermark", fmt), mimeOf(fmt))
     }
 
     suspend fun pdf(ctx: Context, srcs: List<Src>): Saved = withContext(Dispatchers.IO) {
