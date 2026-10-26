@@ -18,39 +18,47 @@ java.lang.IllegalArgumentException: Unknown package: com.android.launcher3
 	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6334)
 	at android.os.Binder.execTransactInternal(Binder.java:1344)
 	at android.os.Binder.execTransact(Binder.java:1275)
-09:32:14 app locale requested: ar -> now: Locales for com.tahatube.app for user 0 are [ar]
-Starting: Intent { cmp=com.tahatube.app/com.deniscerri.ytdl.MainActivity }
-Status: ok
-LaunchState: UNKNOWN (0)
-Activity: com.tahatube.app/com.deniscerri.ytdl.MainActivity
-WaitTime: 3568
-Complete
-09:32:35 shot 01_home_ar
-NOT FOUND: 'Allow'
-NOT FOUND: 'السماح'
-09:32:53 shot 02_home_ar_after_dialogs
-NOT FOUND: 'ألصق رابط الفيديو'
-NOT FOUND: 'تحليل الرابط'
-09:33:06 shot 03_invalid_link_ar
-NOT FOUND: 'not-a-link'
-NOT FOUND: 'ألصق رابط الفيديو'
-NOT FOUND: 'تحليل الرابط'
-09:33:26 shot 04_analyzing_ar
-09:34:08 shot 05_after_analyze_ar
-NOT FOUND: 'التنزيلات'
-NOT FOUND: 'المكتبة'
-NOT FOUND: 'الأدوات'
-NOT FOUND: 'الرئيسية'
-09:34:29 app locale requested: en -> now: Locales for com.tahatube.app for user 0 are [en]
+09:36:07 app locale requested: ar -> now: Locales for com.tahatube.app for user 0 are [ar]
+09:36:40 system locale now: ar-EG
 Starting: Intent { cmp=com.tahatube.app/com.deniscerri.ytdl.MainActivity }
 Status: ok
 LaunchState: COLD
 Activity: com.tahatube.app/com.deniscerri.ytdl.MainActivity
-TotalTime: 2957
-WaitTime: 2962
+TotalTime: 3805
+WaitTime: 3829
 Complete
-09:34:46 shot 10_home_en_dark
+09:37:04 shot 01_home_ar
+NOT FOUND: 'Allow'
+NOT FOUND: 'السماح'
+09:37:19 shot 02_home_ar_after_dialogs
+tap 'ألصق رابط الفيديو' at 540 608
+tap 'تحليل الرابط' at 540 932
+09:37:34 shot 03_invalid_link_ar
+NOT FOUND: 'not-a-link'
+09:37:39 tap fallback 'not-a-link' at 540 606
+09:37:44 shot 03b_link_entered
+tap 'تحليل الرابط' at 540 986
+09:37:57 shot 04_analyzing_ar
+09:38:39 shot 05_after_analyze_ar
+tap 'التنزيلات' at 405 2232
+09:38:54 shot 06_downloads_ar
+tap 'المكتبة' at 675 2232
+09:39:04 shot 07_library_ar
+tap 'الأدوات' at 945 2232
+09:39:14 shot 08_tools_ar
+tap 'الرئيسية' at 135 2232
+09:39:25 shot 09_home_ar_again
+09:39:25 app locale requested: en -> now: Locales for com.tahatube.app for user 0 are [en]
+09:39:58 system locale now: en-US
+Starting: Intent { cmp=com.tahatube.app/com.deniscerri.ytdl.MainActivity }
+Status: ok
+LaunchState: WARM
+Activity: com.tahatube.app/com.deniscerri.ytdl.MainActivity
+TotalTime: 1775
+WaitTime: 1782
+Complete
+09:40:17 shot 10_home_en_dark
 tap 'Tools' at 945 2232
-09:34:57 shot 11_tools_en_dark
+09:40:27 shot 11_tools_en_dark
 tap 'Home' at 135 2232
-09:35:06 shot 12_home_en_dark_again
+09:40:36 shot 12_home_en_dark_again
