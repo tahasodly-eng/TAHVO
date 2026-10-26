@@ -25,7 +25,7 @@ PY
 }
 
 # wait until jobs.log has N lines
-jobs_n() { adb shell "cat $DIR/jobs.log 2>/dev/null | wc -l" | tr -d '\r '; }
+jobs_n() { adb shell "grep -cE '^(OK|FAIL) ' $DIR/jobs.log 2>/dev/null" | tr -d '\r '; }
 wait_jobs() { for _ in $(seq 1 90); do n=$(jobs_n); [ "${n:-0}" -ge "$1" ] && return 0; sleep 2; done; log "TIMEOUT waiting for job $1"; J=$(( $(jobs_n) - 1 )); }
 
 # samples
@@ -89,8 +89,8 @@ n=f[int(sys.argv[1])]; a=list(map(int,re.search(r'\[(\d+),(\d+)\]\[(\d+),(\d+)\]
 PY
 }
 # positions are re-read after each tap because the keyboard moves the dialog
-adb shell input tap $(field 0); sleep 1; adb shell input keyevent KEYCODE_MOVE_END; for i in 1 2 3 4; do adb shell input keyevent 67; done; adb shell input text 1
-sleep 1; adb shell input tap $(field 1); sleep 1; adb shell input keyevent KEYCODE_MOVE_END; for i in 1 2 3 4; do adb shell input keyevent 67; done; adb shell input text 3
+adb shell input tap $(field 0); sleep 1; adb shell input keycombination 113 29; adb shell input keyevent 67; adb shell input text 1
+sleep 1; adb shell input tap $(field 1); sleep 1; adb shell input keycombination 113 29; adb shell input keyevent 67; adb shell input text 3
 shot 09_trim_dialog 1
 cp /tmp/ui.xml "$OUT/09_trim_ui.xml"
 tap_text "تنفيذ" || tap_text "Apply"; J=$((J+1)); wait_jobs $J; close

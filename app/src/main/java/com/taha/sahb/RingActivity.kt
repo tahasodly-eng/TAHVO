@@ -257,11 +257,14 @@ class RingActivity : AppCompatActivity() {
         box.addView(TextView(this).apply { text = getString(R.string.trim_to) }); box.addView(to)
         MaterialAlertDialogBuilder(this).setTitle(R.string.trim_title).setView(box)
             .setPositiveButton(R.string.ok) { _, _ ->
-                val s = from.text.toString().toDoubleOrNull()
-                val e = to.text.toString().toDoubleOrNull()
-                if (s == null || e == null || e <= s || s < 0) {
+                val s = from.text.toString().trim().toDoubleOrNull()
+                var e = to.text.toString().trim().toDoubleOrNull()
+                val len = durMs / 1000.0
+                // cap the end at the clip length; reject a start at or past the end
+                if (e != null && len > 0 && e > len) e = len
+                if (s == null || e == null || s < 0 || e <= s || (len > 0 && s >= len)) {
                     MaterialAlertDialogBuilder(this).setMessage(R.string.bad_time).setPositiveButton(R.string.close, null).show()
-                } else then((s * 1000).toLong(), (e * 1000).toLong())
+                } else then((s * 1000).toLong(), (e!! * 1000).toLong())
             }
             .setNegativeButton(R.string.cancel, null).show()
     }
