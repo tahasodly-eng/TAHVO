@@ -59,6 +59,15 @@ format|duration=5.990748
 stream|codec_name=aac
 format|duration=6.037188
 + read -r f
+++ basename test_out/files/Pictures/sample.jpg
+++ stat -c%s test_out/files/Pictures/sample.jpg
++ echo '--- sample.jpg (6386 B)'
+--- sample.jpg (6386 B)
++ case "$f" in
++ ffprobe -v error -show_entries format=duration:format_tags=comment,title:stream=codec_name,width,height -of compact test_out/files/Pictures/sample.jpg
+stream|codec_name=mjpeg|width=1200|height=800
+format|duration=0.040000
++ read -r f
 ++ basename test_out/files/Pictures/sample_small.webp
 ++ stat -c%s test_out/files/Pictures/sample_small.webp
 + echo '--- sample_small.webp (2342 B)'
