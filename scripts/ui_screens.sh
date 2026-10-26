@@ -9,7 +9,8 @@ mkdir -p "$OUT"
 LOG="$OUT/ui_log.txt"
 : > "$LOG"
 
-shot() { sleep "${2:-3}"; dismiss_anr; adb exec-out screencap -p > "$OUT/$1.png"; echo "shot $1" >> "$LOG"; }
+log() { echo "$(date -u +%T) $*" >> "$LOG"; }
+shot() { sleep "${2:-3}"; dismiss_anr; adb exec-out screencap -p > "$OUT/$1.png"; log "shot $1"; }
 
 # tap the centre of the first UI element whose text or content-desc contains $1
 tap_text() {
@@ -62,15 +63,9 @@ for n in re.findall(r'<node [^>]*>',x):
   done
 }
 
-set_system_locale() {
-  adb root >/dev/null 2>&1; sleep 3
-  adb shell setprop persist.sys.locale "$1"
-  adb shell setprop ctl.restart zygote
-  sleep 5; adb wait-for-device
-  until [ "$(adb shell getprop sys.boot_completed | tr -d '\r')" = "1" ]; do sleep 3; done
-  sleep 25
-  dismiss_anr
-  echo "system locale -> $1" >> "$LOG"
+set_app_locale() {
+  adb shell cmd locale set-app-locales $PKG --locales "$1" >> "$LOG" 2>&1
+  log "app locale requested: $1 -> now: $(adb shell cmd locale get-app-locales $PKG 2>&1 | tr -d '\r')"
 }
 
 dump_text() { adb shell uiautomator dump /sdcard/ui.xml >/dev/null 2>&1; adb pull /sdcard/ui.xml "$OUT/$1.xml" >/dev/null 2>&1; }
@@ -82,7 +77,9 @@ adb install -r -g "$APK" >> "$LOG" 2>&1
 adb shell "run-as $PKG sh -c 'mkdir -p shared_prefs && echo \"<?xml version=\\\"1.0\\\" encoding=\\\"utf-8\\\" standalone=\\\"yes\\\" ?><map><boolean name=\\\"welcome_completed\\\" value=\\\"true\\\" /><boolean name=\\\"asked_auto_update_preferences\\\" value=\\\"true\\\" /><boolean name=\\\"update_app\\\" value=\\\"false\\\" /></map>\" > shared_prefs/${PKG}_preferences.xml'" >> "$LOG" 2>&1
 
 adb shell cmd uimode night no
-set_system_locale ar-EG
+sleep 30
+dismiss_anr
+set_app_locale ar
 
 # ---- Arabic, light ----
 adb shell am start -W -n $PKG/$ACT >> "$LOG" 2>&1
@@ -117,7 +114,7 @@ tap_text "الرئيسية" && shot 09_home_ar_again 4
 
 # ---- English, dark ----
 adb shell am force-stop $PKG
-set_system_locale en-US
+set_app_locale en
 adb shell cmd uimode night yes
 adb shell am start -W -n $PKG/$ACT >> "$LOG" 2>&1
 shot 10_home_en_dark 12

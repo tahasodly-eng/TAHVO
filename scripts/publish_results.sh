@@ -13,6 +13,7 @@ else
   git init -q "$tmp"; git -C "$tmp" checkout -q -b ci-results
   git -C "$tmp" remote add origin "$url"
 fi
+rm -rf "$tmp/$sub"
 mkdir -p "$tmp/$sub"
 for f in "$@"; do [ -e "$f" ] && cp -r "$f" "$tmp/$sub/"; done
 echo "$GITHUB_SHA $(date -u +%FT%TZ) run=$GITHUB_RUN_ID" > "$tmp/$sub/RUN_INFO.txt"
