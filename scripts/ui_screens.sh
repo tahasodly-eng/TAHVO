@@ -96,13 +96,14 @@ sleep 30
 adb root >/dev/null 2>&1; sleep 4; adb wait-for-device
 for l in com.google.android.apps.nexuslauncher com.android.launcher3; do adb shell pm disable-user --user 0 $l >> "$LOG" 2>&1; done
 dismiss_anr
-set_app_locale ar
+adb shell cmd locale set-app-locales $PKG --locales "" >> "$LOG" 2>&1
 adb shell am force-stop $PKG
 set_system_locale ar-EG
 
 # ---- Arabic, light ----
 adb shell am start -W -n $PKG/$ACT >> "$LOG" 2>&1
 shot 01_home_ar 15
+log "activity config: $(adb shell dumpsys activity activities | grep -m1 -o 'mLastReportedConfiguration={[^}]*' | grep -o 'ld[a-z]*\|[a-z][a-z]-r[A-Z][A-Z]\|ar[^ ]*' | tr '\n' ' ')"
 dump_text 01_home_ar
 # dismiss any startup permission dialog
 tap_text "Allow" || tap_text "السماح" || true
@@ -134,7 +135,6 @@ tap_or "الرئيسية" 945 2232; shot 09_home_ar_again 4
 
 # ---- English, dark ----
 adb shell am force-stop $PKG
-set_app_locale en
 adb shell am force-stop $PKG
 set_system_locale en-US
 adb shell cmd uimode night yes
