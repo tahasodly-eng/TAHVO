@@ -1,0 +1,155 @@
++ find test_out/files -type f
++ sort
++ read -r f
+++ basename test_out/files/Download/doc_p2-3.pdf
+++ stat -c%s test_out/files/Download/doc_p2-3.pdf
++ echo '--- doc_p2-3.pdf (1094 B)'
+--- doc_p2-3.pdf (1094 B)
++ case "$f" in
++ python3 -c 'import re,sys;d=open(sys.argv[1],'\''rb'\'').read();print('\''pages:'\'',len(re.findall(rb'\''/Type\s*/Page[^s]'\'',d)))' test_out/files/Download/doc_p2-3.pdf
+pages: 2
++ read -r f
+++ basename test_out/files/Download/doc_small.pdf
+++ stat -c%s test_out/files/Download/doc_small.pdf
++ echo '--- doc_small.pdf (52309 B)'
+--- doc_small.pdf (52309 B)
++ case "$f" in
++ python3 -c 'import re,sys;d=open(sys.argv[1],'\''rb'\'').read();print('\''pages:'\'',len(re.findall(rb'\''/Type\s*/Page[^s]'\'',d)))' test_out/files/Download/doc_small.pdf
+pages: 3
++ read -r f
+++ basename test_out/files/Download/doc_watermark.pdf
+++ stat -c%s test_out/files/Download/doc_watermark.pdf
++ echo '--- doc_watermark.pdf (11639 B)'
+--- doc_watermark.pdf (11639 B)
++ case "$f" in
++ python3 -c 'import re,sys;d=open(sys.argv[1],'\''rb'\'').read();print('\''pages:'\'',len(re.findall(rb'\''/Type\s*/Page[^s]'\'',d)))' test_out/files/Download/doc_watermark.pdf
+pages: 3
++ read -r f
+++ basename test_out/files/Download/sample.pdf
+++ stat -c%s test_out/files/Download/sample.pdf
++ echo '--- sample.pdf (5599 B)'
+--- sample.pdf (5599 B)
++ case "$f" in
++ python3 -c 'import re,sys;d=open(sys.argv[1],'\''rb'\'').read();print('\''pages:'\'',len(re.findall(rb'\''/Type\s*/Page[^s]'\'',d)))' test_out/files/Download/sample.pdf
+pages: 1
++ read -r f
+++ basename test_out/files/Movies/sample_clean.mp4
+++ stat -c%s test_out/files/Movies/sample_clean.mp4
++ echo '--- sample_clean.mp4 (2318712 B)'
+--- sample_clean.mp4 (2318712 B)
++ case "$f" in
++ ffprobe -v error -show_entries format=duration:format_tags=comment,title:stream=codec_name,width,height -of compact test_out/files/Movies/sample_clean.mp4
+stream|codec_name=h264|width=1280|height=720
+stream|codec_name=aac
+format|duration=6.037188
++ read -r f
+++ basename test_out/files/Movies/sample_cut.mp4
+++ stat -c%s test_out/files/Movies/sample_cut.mp4
++ echo '--- sample_cut.mp4 (976178 B)'
+--- sample_cut.mp4 (976178 B)
++ case "$f" in
++ ffprobe -v error -show_entries format=duration:format_tags=comment,title:stream=codec_name,width,height -of compact test_out/files/Movies/sample_cut.mp4
+stream|codec_name=aac
+stream|codec_name=h264|width=1280|height=720
+format|duration=2.018617
++ read -r f
+++ basename test_out/files/Movies/sample_h264.mp4
+++ stat -c%s test_out/files/Movies/sample_h264.mp4
++ echo '--- sample_h264.mp4 (2318712 B)'
+--- sample_h264.mp4 (2318712 B)
++ case "$f" in
++ ffprobe -v error -show_entries format=duration:format_tags=comment,title:stream=codec_name,width,height -of compact test_out/files/Movies/sample_h264.mp4
+stream|codec_name=h264|width=1280|height=720
+stream|codec_name=aac
+format|duration=6.037188
++ read -r f
+++ basename test_out/files/Movies/sample_mute.mp4
+++ stat -c%s test_out/files/Movies/sample_mute.mp4
++ echo '--- sample_mute.mp4 (2264879 B)'
+--- sample_mute.mp4 (2264879 B)
++ case "$f" in
++ ffprobe -v error -show_entries format=duration:format_tags=comment,title:stream=codec_name,width,height -of compact test_out/files/Movies/sample_mute.mp4
+stream|codec_name=h264|width=1280|height=720
+format|duration=5.967067
++ read -r f
+++ basename 'test_out/files/Music/sample (1).m4a'
+++ stat -c%s 'test_out/files/Music/sample (1).m4a'
++ echo '--- sample (1).m4a (101384 B)'
+--- sample (1).m4a (101384 B)
++ case "$f" in
++ ffprobe -v error -show_entries format=duration:format_tags=comment,title:stream=codec_name,width,height -of compact 'test_out/files/Music/sample (1).m4a'
+stream|codec_name=aac
+format|duration=5.990748
++ read -r f
+++ basename test_out/files/Music/sample.m4a
+++ stat -c%s test_out/files/Music/sample.m4a
++ echo '--- sample.m4a (55419 B)'
+--- sample.m4a (55419 B)
++ case "$f" in
++ ffprobe -v error -show_entries format=duration:format_tags=comment,title:stream=codec_name,width,height -of compact test_out/files/Music/sample.m4a
+stream|codec_name=aac
+format|duration=6.037188
++ read -r f
+++ basename test_out/files/Pictures/doc_p1.jpg
+++ stat -c%s test_out/files/Pictures/doc_p1.jpg
++ echo '--- doc_p1.jpg (30490 B)'
+--- doc_p1.jpg (30490 B)
++ case "$f" in
++ ffprobe -v error -show_entries format=duration:format_tags=comment,title:stream=codec_name,width,height -of compact test_out/files/Pictures/doc_p1.jpg
+stream|codec_name=mjpeg|width=1555|height=2200
+format|duration=0.040000
++ read -r f
+++ basename test_out/files/Pictures/doc_p2.jpg
+++ stat -c%s test_out/files/Pictures/doc_p2.jpg
++ echo '--- doc_p2.jpg (31717 B)'
+--- doc_p2.jpg (31717 B)
++ case "$f" in
++ ffprobe -v error -show_entries format=duration:format_tags=comment,title:stream=codec_name,width,height -of compact test_out/files/Pictures/doc_p2.jpg
+stream|codec_name=mjpeg|width=1555|height=2200
+format|duration=0.040000
++ read -r f
+++ basename test_out/files/Pictures/doc_p3.jpg
+++ stat -c%s test_out/files/Pictures/doc_p3.jpg
++ echo '--- doc_p3.jpg (32056 B)'
+--- doc_p3.jpg (32056 B)
++ case "$f" in
++ ffprobe -v error -show_entries format=duration:format_tags=comment,title:stream=codec_name,width,height -of compact test_out/files/Pictures/doc_p3.jpg
+stream|codec_name=mjpeg|width=1555|height=2200
+format|duration=0.040000
++ read -r f
+++ basename test_out/files/Pictures/sample_16x9.png
+++ stat -c%s test_out/files/Pictures/sample_16x9.png
++ echo '--- sample_16x9.png (4878 B)'
+--- sample_16x9.png (4878 B)
++ case "$f" in
++ ffprobe -v error -show_entries format=duration:format_tags=comment,title:stream=codec_name,width,height -of compact test_out/files/Pictures/sample_16x9.png
+stream|codec_name=png|width=1200|height=675
+format|duration=N/A
++ read -r f
+++ basename test_out/files/Pictures/sample_frame.jpg
+++ stat -c%s test_out/files/Pictures/sample_frame.jpg
++ echo '--- sample_frame.jpg (64028 B)'
+--- sample_frame.jpg (64028 B)
++ case "$f" in
++ ffprobe -v error -show_entries format=duration:format_tags=comment,title:stream=codec_name,width,height -of compact test_out/files/Pictures/sample_frame.jpg
+stream|codec_name=mjpeg|width=1280|height=720
+format|duration=0.040000
++ read -r f
+++ basename test_out/files/Pictures/sample_small.webp
+++ stat -c%s test_out/files/Pictures/sample_small.webp
++ echo '--- sample_small.webp (2544 B)'
+--- sample_small.webp (2544 B)
++ case "$f" in
++ ffprobe -v error -show_entries format=duration:format_tags=comment,title:stream=codec_name,width,height -of compact test_out/files/Pictures/sample_small.webp
+stream|codec_name=webp|width=1200|height=800
+format|duration=N/A
++ read -r f
+++ basename test_out/files/Pictures/sample_watermark.png
+++ stat -c%s test_out/files/Pictures/sample_watermark.png
++ echo '--- sample_watermark.png (35573 B)'
+--- sample_watermark.png (35573 B)
++ case "$f" in
++ ffprobe -v error -show_entries format=duration:format_tags=comment,title:stream=codec_name,width,height -of compact test_out/files/Pictures/sample_watermark.png
+stream|codec_name=png|width=1200|height=800
+format|duration=N/A
++ read -r f
