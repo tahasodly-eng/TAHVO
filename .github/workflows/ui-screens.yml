@@ -12,7 +12,7 @@ permissions:
 jobs:
   screens:
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     timeout-minutes: 60
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -33,9 +33,6 @@ jobs:
           touch local.properties keystore.properties
           chmod +x gradlew
           ./gradlew assembleGithubDebug
-
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
 
       - name: Enable KVM
         run: |
