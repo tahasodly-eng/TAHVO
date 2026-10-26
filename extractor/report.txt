@@ -1,0 +1,41 @@
+=== https://vt.tiktok.com/ZSg957K6b/
+RESULT: OK
+[debug] yt-dlp version nightly@2026.10.23.233055 from yt-dlp/yt-dlp-nightly-builds [fa9886678] (pip)
+[download] Destination: out/TikTok-7693521323754048769.mp4
+[download]   0.1% of    1.26MiB at  Unknown B/s ETA Unknown[download]   0.2% of    1.26MiB at  Unknown B/s ETA Unknown[download]   0.5% of    1.26MiB at  Unknown B/s ETA Unknown[download]   1.2% of    1.26MiB at   11.60MiB/s ETA 00:00  [download]   2.4% of    1.26MiB at   19.34MiB/s ETA 00:00[download]   4.9% of    1.26MiB at   32.54MiB/s ETA 00:00[download]   9.8% of    1.26MiB at   31.60MiB/s ETA 00:00[download]  19.7% of    1.26MiB at   43.18MiB/s ETA 00:00[download]  39.5% of    1.26MiB at   65.22MiB/s ETA 00:00[download]  79.2% of    1.26MiB at  104.30MiB/s ETA 00:00[download] 100.0% of    1.26MiB at  120.40MiB/s ETA 00:00[download] 100% of    1.26MiB in 00:00:00 at 24.55MiB/s  
+
+=== https://www.tiktok.com/@hammamalraqi3/video/7693521323754048769
+RESULT: OK
+[debug] yt-dlp version nightly@2026.10.23.233055 from yt-dlp/yt-dlp-nightly-builds [fa9886678] (pip)
+[download] out/TikTok-7693521323754048769.mp4 has already been downloaded
+[download] 100% of    1.26MiB
+
+=== https://vt.tiktok.com/ZSg9fBwLS/
+RESULT: OK
+[debug] yt-dlp version nightly@2026.10.23.233055 from yt-dlp/yt-dlp-nightly-builds [fa9886678] (pip)
+[download] Destination: out/TikTok-7699442237284961557.mp4
+[download]   0.0% of    8.25MiB at  Unknown B/s ETA Unknown[download]   0.0% of    8.25MiB at  Unknown B/s ETA Unknown[download]   0.1% of    8.25MiB at  Unknown B/s ETA Unknown[download]   0.2% of    8.25MiB at   13.22MiB/s ETA 00:00  [download]   0.4% of    8.25MiB at   19.93MiB/s ETA 00:00[download]   0.7% of    8.25MiB at   31.48MiB/s ETA 00:00[download]   1.5% of    8.25MiB at   26.86MiB/s ETA 00:00[download]   3.0% of    8.25MiB at   39.73MiB/s ETA 00:00[download]   6.0% of    8.25MiB at   60.14MiB/s ETA 00:00[download]  12.1% of    8.25MiB at   97.30MiB/s ETA 00:00[download]  24.2% of    8.25MiB at  152.39MiB/s ETA 00:00[download]  48.5% of    8.25MiB at  164.77MiB/s ETA 00:00[download]  96.9% of    8.25MiB at  161.42MiB/s ETA 00:00[download] 100.0% of    8.25MiB at  144.39MiB/s ETA 00:00[download] 100% of    8.25MiB in 00:00:00 at 91.94MiB/s  
+
+=== https://www.tiktok.com/@micspodofficial/video/7699442237284961557
+RESULT: OK
+[debug] yt-dlp version nightly@2026.10.23.233055 from yt-dlp/yt-dlp-nightly-builds [fa9886678] (pip)
+[download] out/TikTok-7699442237284961557.mp4 has already been downloaded
+[download] 100% of    8.25MiB
+
+=== https://youtu.be/YcGJ6o2jYJw
+RESULT: FAIL
+[debug] yt-dlp version nightly@2026.10.23.233055 from yt-dlp/yt-dlp-nightly-builds [fa9886678] (pip)
+WARNING: [youtube] No title found in player responses; falling back to title from initial data. Other metadata may also be missing
+ERROR: [youtube] YcGJ6o2jYJw: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+=== https://www.youtube.com/watch?v=aqz-KE-bpKQ
+RESULT: FAIL
+[debug] yt-dlp version nightly@2026.10.23.233055 from yt-dlp/yt-dlp-nightly-builds [fa9886678] (pip)
+WARNING: [youtube] No title found in player responses; falling back to title from initial data. Other metadata may also be missing
+ERROR: [youtube] aqz-KE-bpKQ: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+total 9756
+drwxr-xr-x 2 runner runner    4096 Oct 26 08:27 .
+drwxr-xr-x 9 runner runner    4096 Oct 26 08:27 ..
+-rw-r--r-- 1 runner runner 1323115 Oct 26 08:27 TikTok-7693521323754048769.mp4
+-rw-r--r-- 1 runner runner 8654261 Oct 26 08:27 TikTok-7699442237284961557.mp4

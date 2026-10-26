@@ -1,0 +1,154 @@
+[debug] Command-line config: ['-v', '--no-playlist', '-f', 'b[height<=480]/b/bv*+ba', '-o', 'out/%(extractor)s-%(id)s.%(ext)s', 'https://vt.tiktok.com/ZSg957K6b/']
+[debug] Encodings: locale UTF-8, fs utf-8, pref UTF-8, out utf-8 (No ANSI), error utf-8 (No ANSI), screen utf-8 (No ANSI)
+[debug] yt-dlp version nightly@2026.10.23.233055 from yt-dlp/yt-dlp-nightly-builds [fa9886678] (pip)
+[debug] Python 3.14.4 (CPython x86_64 64bit) - Linux-7.0.0-1017-azure-x86_64-with-glibc2.43 (OpenSSL 3.5.5 27 Jan 2026, glibc 2.43)
+[debug] exe versions: ffmpeg 8.0.1 (setts), ffprobe 8.0.1
+[debug] Optional libraries: Cryptodome-3.24.1, brotli-1.2.1, certifi-2026.10.23, curl_cffi-0.16.4b1, mutagen-1.48.1, requests-2.32.5, sqlite3-3.46.1, urllib3-2.6.3, websockets-17.3, yt_dlp_ejs-0.8.0
+[debug] JS runtimes: deno-2.9.8
+[debug] Proxy map: {}
+[debug] Request Handlers: urllib, requests, websockets, curl_cffi
+[debug] Plugin directories: none
+[debug] Loaded 1747 extractors
+[vm.tiktok] Extracting URL: https://vt.tiktok.com/ZSg957K6b/
+[vm.tiktok] ZSg957K6b: Downloading webpage
+[TikTok] Extracting URL: https://www.tiktok.com/@hammamalraqi3/video/7693521323754048769?_r=1&_t=ZS-9AphHtq5IaF
+[TikTok] 7693521323754048769: Downloading webpage
+[debug] [TikTok] Webpage size: 431201 bytes
+[debug] [TikTok] Impersonation target: chrome-150:macos-26
+[debug] Extractor gave empty title. Creating a generic title
+[debug] Formats sorted by: hasvid, ie_pref, lang, quality, res, fps, hdr:12(7), vcodec, channels, acodec, size, br, asr, proto, vext, aext, hasaud, source, id
+[info] 7693521323754048769: Downloading 1 format(s): bytevc1_720p_378614-1
+[debug] Invoking http downloader on "https://v19-webapp-prime.us.tiktok.com/video/tos/alisg/tos-alisg-pve-0037c001/oI9qxgDRQBBECmxefEAgI9hFMOJT62XDLTzRU9/?a=1988&bti=ODszNWYuMDE6&&bt=369&ft=4KJMyMzm8Zmo05GMia4jVEoNdpWrKsd.&mime_type=video_mp4&rc=Mzs3NzlmZDppZjxkaTg8aUBpamVyeXI5cm5oZTMzODczNEA1LjAuYF4vXmAxLTFeNjNfYSNxZWhwMmRzLi9hLS1kMTFzcw%3D%3D&expire=1793176083&l=20261026082736E8AE6866CDA6345CC47E&ply_type=2&policy=2&signature=02c43c006e9d47212950aa1d76e50f15&tk=tt_chain_token&btag=e000f8000"
+[download] Destination: out/TikTok-7693521323754048769.mp4
+[download]   0.1% of    1.26MiB at  Unknown B/s ETA Unknown[download]   0.2% of    1.26MiB at  Unknown B/s ETA Unknown[download]   0.5% of    1.26MiB at  Unknown B/s ETA Unknown[download]   1.2% of    1.26MiB at   11.60MiB/s ETA 00:00  [download]   2.4% of    1.26MiB at   19.34MiB/s ETA 00:00[download]   4.9% of    1.26MiB at   32.54MiB/s ETA 00:00[download]   9.8% of    1.26MiB at   31.60MiB/s ETA 00:00[download]  19.7% of    1.26MiB at   43.18MiB/s ETA 00:00[download]  39.5% of    1.26MiB at   65.22MiB/s ETA 00:00[download]  79.2% of    1.26MiB at  104.30MiB/s ETA 00:00[download] 100.0% of    1.26MiB at  120.40MiB/s ETA 00:00[download] 100% of    1.26MiB in 00:00:00 at 24.55MiB/s  
+[debug] Command-line config: ['-v', '--no-playlist', '-f', 'b[height<=480]/b/bv*+ba', '-o', 'out/%(extractor)s-%(id)s.%(ext)s', 'https://www.tiktok.com/@hammamalraqi3/video/7693521323754048769']
+[debug] Encodings: locale UTF-8, fs utf-8, pref UTF-8, out utf-8 (No ANSI), error utf-8 (No ANSI), screen utf-8 (No ANSI)
+[debug] yt-dlp version nightly@2026.10.23.233055 from yt-dlp/yt-dlp-nightly-builds [fa9886678] (pip)
+[debug] Python 3.14.4 (CPython x86_64 64bit) - Linux-7.0.0-1017-azure-x86_64-with-glibc2.43 (OpenSSL 3.5.5 27 Jan 2026, glibc 2.43)
+[debug] exe versions: ffmpeg 8.0.1 (setts), ffprobe 8.0.1
+[debug] Optional libraries: Cryptodome-3.24.1, brotli-1.2.1, certifi-2026.10.23, curl_cffi-0.16.4b1, mutagen-1.48.1, requests-2.32.5, sqlite3-3.46.1, urllib3-2.6.3, websockets-17.3, yt_dlp_ejs-0.8.0
+[debug] JS runtimes: deno-2.9.8
+[debug] Proxy map: {}
+[debug] Request Handlers: urllib, requests, websockets, curl_cffi
+[debug] Plugin directories: none
+[debug] Loaded 1747 extractors
+[TikTok] Extracting URL: https://www.tiktok.com/@hammamalraqi3/video/7693521323754048769
+[TikTok] 7693521323754048769: Downloading webpage
+[debug] [TikTok] Webpage size: 431695 bytes
+[debug] [TikTok] Impersonation target: chrome-150:macos-26
+[debug] Extractor gave empty title. Creating a generic title
+[debug] Formats sorted by: hasvid, ie_pref, lang, quality, res, fps, hdr:12(7), vcodec, channels, acodec, size, br, asr, proto, vext, aext, hasaud, source, id
+[info] 7693521323754048769: Downloading 1 format(s): bytevc1_720p_378614-1
+[debug] Invoking http downloader on "https://v19-webapp-prime.us.tiktok.com/video/tos/alisg/tos-alisg-pve-0037c001/oI9qxgDRQBBECmxefEAgI9hFMOJT62XDLTzRU9/?a=1988&bti=ODszNWYuMDE6&&bt=369&ft=aEeq8qT0mIoPD12jKZbI3wU0dyAbMeF~O5&mime_type=video_mp4&rc=Mzs3NzlmZDppZjxkaTg8aUBpamVyeXI5cm5oZTMzODczNEA1LjAuYF4vXmAxLTFeNjNfYSNxZWhwMmRzLi9hLS1kMTFzcw%3D%3D&expire=1793176084&l=20261026082737054B6FEDB0F5B05C83F7&ply_type=2&policy=2&signature=67c796c592c9b9afa43a2f2c96b3d303&tk=tt_chain_token&btag=e000f8000"
+[download] out/TikTok-7693521323754048769.mp4 has already been downloaded
+[download] 100% of    1.26MiB
+[debug] Command-line config: ['-v', '--no-playlist', '-f', 'b[height<=480]/b/bv*+ba', '-o', 'out/%(extractor)s-%(id)s.%(ext)s', 'https://vt.tiktok.com/ZSg9fBwLS/']
+[debug] Encodings: locale UTF-8, fs utf-8, pref UTF-8, out utf-8 (No ANSI), error utf-8 (No ANSI), screen utf-8 (No ANSI)
+[debug] yt-dlp version nightly@2026.10.23.233055 from yt-dlp/yt-dlp-nightly-builds [fa9886678] (pip)
+[debug] Python 3.14.4 (CPython x86_64 64bit) - Linux-7.0.0-1017-azure-x86_64-with-glibc2.43 (OpenSSL 3.5.5 27 Jan 2026, glibc 2.43)
+[debug] exe versions: ffmpeg 8.0.1 (setts), ffprobe 8.0.1
+[debug] Optional libraries: Cryptodome-3.24.1, brotli-1.2.1, certifi-2026.10.23, curl_cffi-0.16.4b1, mutagen-1.48.1, requests-2.32.5, sqlite3-3.46.1, urllib3-2.6.3, websockets-17.3, yt_dlp_ejs-0.8.0
+[debug] JS runtimes: deno-2.9.8
+[debug] Proxy map: {}
+[debug] Request Handlers: urllib, requests, websockets, curl_cffi
+[debug] Plugin directories: none
+[debug] Loaded 1747 extractors
+[vm.tiktok] Extracting URL: https://vt.tiktok.com/ZSg9fBwLS/
+[vm.tiktok] ZSg9fBwLS: Downloading webpage
+[TikTok] Extracting URL: https://www.tiktok.com/@micspodofficial/video/7699442237284961557?_r=1&_t=ZS-9ApeLWB8p6O
+[TikTok] 7699442237284961557: Downloading webpage
+[debug] [TikTok] Webpage size: 434436 bytes
+[debug] [TikTok] Impersonation target: chrome-150:macos-26
+[debug] Formats sorted by: hasvid, ie_pref, lang, quality, res, fps, hdr:12(7), vcodec, channels, acodec, size, br, asr, proto, vext, aext, hasaud, source, id
+[info] 7699442237284961557: Downloading 1 format(s): h264_540p_314854-1
+[debug] Invoking http downloader on "https://v19-webapp-prime.us.tiktok.com/video/tos/alisg/tos-alisg-pve-0037c001/okCSIIZEjoffNnPJ6AQehEQsIACV11DLiijDFC/?a=1988&bti=ODszNWYuMDE6&&bt=307&ft=aEeq8qT0mIoPD12rKZbI3wU4J7AbMeF~O5&mime_type=video_mp4&rc=PDxlaDRkZTNlZTw2aTlkOEBpamxucXQ5cnJ4ZTMzODczNEAtYi81Li00Xy8xYzFhMWNfYSMxbnJkMmRrZ2BhLS1kMTFzcw%3D%3D&expire=1793176278&l=202610260827380755989DE0B8403DDC7D&ply_type=2&policy=2&signature=fb1f5907e7dbd326eb90c4fc974a2c7c&tk=tt_chain_token&btag=e00098000"
+[download] Destination: out/TikTok-7699442237284961557.mp4
+[download]   0.0% of    8.25MiB at  Unknown B/s ETA Unknown[download]   0.0% of    8.25MiB at  Unknown B/s ETA Unknown[download]   0.1% of    8.25MiB at  Unknown B/s ETA Unknown[download]   0.2% of    8.25MiB at   13.22MiB/s ETA 00:00  [download]   0.4% of    8.25MiB at   19.93MiB/s ETA 00:00[download]   0.7% of    8.25MiB at   31.48MiB/s ETA 00:00[download]   1.5% of    8.25MiB at   26.86MiB/s ETA 00:00[download]   3.0% of    8.25MiB at   39.73MiB/s ETA 00:00[download]   6.0% of    8.25MiB at   60.14MiB/s ETA 00:00[download]  12.1% of    8.25MiB at   97.30MiB/s ETA 00:00[download]  24.2% of    8.25MiB at  152.39MiB/s ETA 00:00[download]  48.5% of    8.25MiB at  164.77MiB/s ETA 00:00[download]  96.9% of    8.25MiB at  161.42MiB/s ETA 00:00[download] 100.0% of    8.25MiB at  144.39MiB/s ETA 00:00[download] 100% of    8.25MiB in 00:00:00 at 91.94MiB/s  
+[debug] Command-line config: ['-v', '--no-playlist', '-f', 'b[height<=480]/b/bv*+ba', '-o', 'out/%(extractor)s-%(id)s.%(ext)s', 'https://www.tiktok.com/@micspodofficial/video/7699442237284961557']
+[debug] Encodings: locale UTF-8, fs utf-8, pref UTF-8, out utf-8 (No ANSI), error utf-8 (No ANSI), screen utf-8 (No ANSI)
+[debug] yt-dlp version nightly@2026.10.23.233055 from yt-dlp/yt-dlp-nightly-builds [fa9886678] (pip)
+[debug] Python 3.14.4 (CPython x86_64 64bit) - Linux-7.0.0-1017-azure-x86_64-with-glibc2.43 (OpenSSL 3.5.5 27 Jan 2026, glibc 2.43)
+[debug] exe versions: ffmpeg 8.0.1 (setts), ffprobe 8.0.1
+[debug] Optional libraries: Cryptodome-3.24.1, brotli-1.2.1, certifi-2026.10.23, curl_cffi-0.16.4b1, mutagen-1.48.1, requests-2.32.5, sqlite3-3.46.1, urllib3-2.6.3, websockets-17.3, yt_dlp_ejs-0.8.0
+[debug] JS runtimes: deno-2.9.8
+[debug] Proxy map: {}
+[debug] Request Handlers: urllib, requests, websockets, curl_cffi
+[debug] Plugin directories: none
+[debug] Loaded 1747 extractors
+[TikTok] Extracting URL: https://www.tiktok.com/@micspodofficial/video/7699442237284961557
+[TikTok] 7699442237284961557: Downloading webpage
+[debug] [TikTok] Webpage size: 434544 bytes
+[debug] [TikTok] Impersonation target: chrome-150:macos-26
+[debug] Formats sorted by: hasvid, ie_pref, lang, quality, res, fps, hdr:12(7), vcodec, channels, acodec, size, br, asr, proto, vext, aext, hasaud, source, id
+[info] 7699442237284961557: Downloading 1 format(s): h264_540p_314854-1
+[debug] Invoking http downloader on "https://v19-webapp-prime.us.tiktok.com/video/tos/alisg/tos-alisg-pve-0037c001/okCSIIZEjoffNnPJ6AQehEQsIACV11DLiijDFC/?a=1988&bti=ODszNWYuMDE6&&bt=307&ft=aEeq8qT0mIoPD12gKZbI3wU.q_AbMeF~O5&mime_type=video_mp4&rc=PDxlaDRkZTNlZTw2aTlkOEBpamxucXQ5cnJ4ZTMzODczNEAtYi81Li00Xy8xYzFhMWNfYSMxbnJkMmRrZ2BhLS1kMTFzcw%3D%3D&expire=1793176279&l=20261026082740253D515118C6DE5E6245&ply_type=2&policy=2&signature=cbf4385e7c4c16112a7407598864bd35&tk=tt_chain_token&btag=e00098000"
+[download] out/TikTok-7699442237284961557.mp4 has already been downloaded
+[download] 100% of    8.25MiB
+[debug] Command-line config: ['-v', '--no-playlist', '-f', 'b[height<=480]/b/bv*+ba', '-o', 'out/%(extractor)s-%(id)s.%(ext)s', 'https://youtu.be/YcGJ6o2jYJw']
+[debug] Encodings: locale UTF-8, fs utf-8, pref UTF-8, out utf-8 (No ANSI), error utf-8 (No ANSI), screen utf-8 (No ANSI)
+[debug] yt-dlp version nightly@2026.10.23.233055 from yt-dlp/yt-dlp-nightly-builds [fa9886678] (pip)
+[debug] Python 3.14.4 (CPython x86_64 64bit) - Linux-7.0.0-1017-azure-x86_64-with-glibc2.43 (OpenSSL 3.5.5 27 Jan 2026, glibc 2.43)
+[debug] exe versions: ffmpeg 8.0.1 (setts), ffprobe 8.0.1
+[debug] Optional libraries: Cryptodome-3.24.1, brotli-1.2.1, certifi-2026.10.23, curl_cffi-0.16.4b1, mutagen-1.48.1, requests-2.32.5, sqlite3-3.46.1, urllib3-2.6.3, websockets-17.3, yt_dlp_ejs-0.8.0
+[debug] JS runtimes: deno-2.9.8
+[debug] Proxy map: {}
+[debug] Request Handlers: urllib, requests, websockets, curl_cffi
+[debug] Plugin directories: none
+[debug] Loaded 1747 extractors
+[debug] [youtube] [pot] PO Token Providers: none
+[debug] [youtube] [pot] PO Token Cache Providers: memory
+[debug] [youtube] [pot] PO Token Cache Spec Providers: webpo
+[debug] [youtube] [jsc] JS Challenge Providers: bun (unavailable), deno, node (unavailable), quickjs (unavailable)
+[youtube] Extracting URL: https://youtu.be/YcGJ6o2jYJw
+[youtube] YcGJ6o2jYJw: Downloading webpage
+[debug] [youtube] Forcing "main" player JS variant for player cbcfbf2f
+        original url = /s/player/cbcfbf2f/player_es6.vflset/en_US/base.js
+[youtube] YcGJ6o2jYJw: Downloading tv samsung player API JSON
+[debug] [youtube] YcGJ6o2jYJw: tv_samsung player response playability status: LOGIN_REQUIRED
+[youtube] YcGJ6o2jYJw: Downloading visionos player API JSON
+[debug] [youtube] YcGJ6o2jYJw: visionos player response playability status: LOGIN_REQUIRED
+[debug] [youtube] YcGJ6o2jYJw: web player response playability status: LOGIN_REQUIRED
+WARNING: [youtube] No title found in player responses; falling back to title from initial data. Other metadata may also be missing
+ERROR: [youtube] YcGJ6o2jYJw: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+  File "/home/runner/.local/lib/python3.14/site-packages/yt_dlp/extractor/common.py", line 764, in extract
+    ie_result = self._real_extract(url)
+  File "/home/runner/.local/lib/python3.14/site-packages/yt_dlp/extractor/youtube/_video.py", line 4083, in _real_extract
+    self.raise_no_formats(reason, expected=True)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.14/site-packages/yt_dlp/extractor/common.py", line 1271, in raise_no_formats
+    raise ExtractorError(msg, expected=expected, video_id=video_id)
+
+[debug] Command-line config: ['-v', '--no-playlist', '-f', 'b[height<=480]/b/bv*+ba', '-o', 'out/%(extractor)s-%(id)s.%(ext)s', 'https://www.youtube.com/watch?v=aqz-KE-bpKQ']
+[debug] Encodings: locale UTF-8, fs utf-8, pref UTF-8, out utf-8 (No ANSI), error utf-8 (No ANSI), screen utf-8 (No ANSI)
+[debug] yt-dlp version nightly@2026.10.23.233055 from yt-dlp/yt-dlp-nightly-builds [fa9886678] (pip)
+[debug] Python 3.14.4 (CPython x86_64 64bit) - Linux-7.0.0-1017-azure-x86_64-with-glibc2.43 (OpenSSL 3.5.5 27 Jan 2026, glibc 2.43)
+[debug] exe versions: ffmpeg 8.0.1 (setts), ffprobe 8.0.1
+[debug] Optional libraries: Cryptodome-3.24.1, brotli-1.2.1, certifi-2026.10.23, curl_cffi-0.16.4b1, mutagen-1.48.1, requests-2.32.5, sqlite3-3.46.1, urllib3-2.6.3, websockets-17.3, yt_dlp_ejs-0.8.0
+[debug] JS runtimes: deno-2.9.8
+[debug] Proxy map: {}
+[debug] Request Handlers: urllib, requests, websockets, curl_cffi
+[debug] Plugin directories: none
+[debug] Loaded 1747 extractors
+[debug] [youtube] [pot] PO Token Providers: none
+[debug] [youtube] [pot] PO Token Cache Providers: memory
+[debug] [youtube] [pot] PO Token Cache Spec Providers: webpo
+[debug] [youtube] [jsc] JS Challenge Providers: bun (unavailable), deno, node (unavailable), quickjs (unavailable)
+[youtube] Extracting URL: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+[youtube] aqz-KE-bpKQ: Downloading webpage
+[debug] [youtube] Forcing "main" player JS variant for player cbcfbf2f
+        original url = /s/player/cbcfbf2f/player_es6.vflset/en_US/base.js
+[youtube] aqz-KE-bpKQ: Downloading tv samsung player API JSON
+[debug] [youtube] aqz-KE-bpKQ: tv_samsung player response playability status: LOGIN_REQUIRED
+[youtube] aqz-KE-bpKQ: Downloading visionos player API JSON
+[debug] [youtube] aqz-KE-bpKQ: visionos player response playability status: LOGIN_REQUIRED
+[debug] [youtube] aqz-KE-bpKQ: web player response playability status: LOGIN_REQUIRED
+WARNING: [youtube] No title found in player responses; falling back to title from initial data. Other metadata may also be missing
+ERROR: [youtube] aqz-KE-bpKQ: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+  File "/home/runner/.local/lib/python3.14/site-packages/yt_dlp/extractor/common.py", line 764, in extract
+    ie_result = self._real_extract(url)
+  File "/home/runner/.local/lib/python3.14/site-packages/yt_dlp/extractor/youtube/_video.py", line 4083, in _real_extract
+    self.raise_no_formats(reason, expected=True)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.14/site-packages/yt_dlp/extractor/common.py", line 1271, in raise_no_formats
+    raise ExtractorError(msg, expected=expected, video_id=video_id)
+
