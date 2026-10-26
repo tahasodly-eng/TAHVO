@@ -40,6 +40,7 @@ jobs:
           scripts/publish_results.sh sahb-build build_errors.txt build_tail.txt apk_list.txt
 
       - name: Publish release APK
+        continue-on-error: true
         run: |
           tag="sahb-${GITHUB_RUN_NUMBER}"
           cp app/build/outputs/apk/release/app-release-unsigned.apk Sahb-unsigned.apk
