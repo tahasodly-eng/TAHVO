@@ -1,0 +1,63 @@
+name: Extractor test (TikTok / YouTube)
+
+on:
+  push:
+    branches: [ main ]
+    paths: [ '.github/workflows/extractor-test.yml', 'scripts/extractor_urls.txt' ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install yt-dlp (nightly), ffmpeg, deno
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          python3 -m pip install -q -U --pre "yt-dlp[default,curl-cffi]"
+          curl -fsSL https://deno.land/install.sh | sh -s -- -y
+          echo "$HOME/.deno/bin" >> $GITHUB_PATH
+
+      - name: Versions
+        run: |
+          yt-dlp --version
+          deno --version | head -1
+
+      - name: Run tests
+        run: |
+          mkdir -p out
+          : > report.txt
+          : > urls.txt
+          while IFS= read -r url; do
+            [ -z "$url" ] && continue
+            case "$url" in \#*) continue;; esac
+            echo "$url" >> urls.txt
+            case "$url" in *vt.tiktok.com*)
+              full=$(curl -sL -A "Mozilla/5.0" -o /dev/null -w '%{url_effective}' "$url" | cut -d'?' -f1)
+              echo "resolved $url -> $full"
+              [ -n "$full" ] && echo "$full" >> urls.txt;;
+            esac
+          done < scripts/extractor_urls.txt
+          while IFS= read -r url; do
+            echo "=== $url" | tee -a report.txt
+            if yt-dlp -v --no-playlist -f "b[height<=480]/b/bv*+ba" -o "out/%(extractor)s-%(id)s.%(ext)s" "$url" > log.txt 2>&1; then
+              echo "RESULT: OK" | tee -a report.txt
+            else
+              echo "RESULT: FAIL" | tee -a report.txt
+            fi
+            grep -E "^\[debug\] yt-dlp version|ERROR|WARNING|Destination|has already been downloaded|Merging" log.txt | head -20 | tee -a report.txt
+            echo | tee -a report.txt
+          done < urls.txt
+          ls -la out | tee -a report.txt
+
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: extractor-report
+          path: report.txt
