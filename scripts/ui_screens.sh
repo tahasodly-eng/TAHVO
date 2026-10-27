@@ -114,17 +114,52 @@ tap_or "ألصق رابط الفيديو" 540 606; adb shell input text "not-a-l
 tap_or "تحليل الرابط" 540 930
 shot 03_invalid_link_ar 2
 
-# real TikTok link -> extraction
-adb shell input keyevent KEYCODE_MOVE_END
-for i in $(seq 1 20); do adb shell input keyevent 67; done
-tap_or "not-a-link" 540 606
-adb shell input text "https://vt.tiktok.com/ZSg9fBwLS/"
-adb shell input keyevent 111
-shot 03b_link_entered 1
-tap_or "تحليل الرابط" 540 930
-shot 04_analyzing_ar 4
-shot 05_after_analyze_ar 40
-dump_text 05_after_analyze_ar
+# ---- TAHVO browser: page with two videos -> pick -> download ----
+mkdir -p site
+if command -v ffmpeg >/dev/null; then
+  ffmpeg -hide_banner -loglevel error -y -f lavfi -i testsrc2=s=640x360:d=4:r=25 -f lavfi -i sine=d=4 -c:v libx264 -pix_fmt yuv420p -c:a aac -shortest site/clip_one.mp4
+  ffmpeg -hide_banner -loglevel error -y -f lavfi -i smptebars=s=640x360:d=3:r=25 -f lavfi -i sine=f=660:d=3 -c:v libx264 -pix_fmt yuv420p -c:a aac -shortest site/clip_two.mp4
+fi
+cat > site/index.html <<'HTML'
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Sample Videos Page</title></head>
+<body style="font-family:sans-serif;padding:12px"><h2>Two videos</h2>
+<video controls preload="metadata" width="100%" src="clip_one.mp4"></video>
+<p>Second:</p>
+<video controls preload="metadata" width="100%"><source src="clip_two.mp4" type="video/mp4"></video>
+</body></html>
+HTML
+: > "$OUT/server_requests.txt"
+python3 scripts/test_page_server.py site "$OUT/server_requests.txt" &
+SERVER=$!
+adb reverse tcp:8765 tcp:8765 >> "$LOG" 2>&1
+sleep 2
+adb shell am force-stop $PKG
+adb shell am start -W -n $PKG/$ACT >> "$LOG" 2>&1
+sleep 10
+shot 20_home_browser_button_ar 2
+tap_or "فتح الصفحة في متصفح TAHVO" 540 1010
+shot 21_browser_start_ar 4
+adb shell input text "http://127.0.0.1:8765/index.html"
+adb shell input keyevent 66
+shot 22_browser_page_ar 10
+dump_text 22_browser_page_ar
+tap_text "الفيديوهات" || tap_text "تنزيل"
+shot 23_browser_sheet_ar 3
+dump_text 23_browser_sheet_ar
+tap_text "تحديد الكل"
+shot 24_browser_selected_ar 2
+tap_text "تنزيل المحدد"
+shot 25_browser_queued_ar 1
+sleep 45
+adb shell "find /sdcard -iname '*.mp4' -newer /sdcard/ui.xml 2>/dev/null; find /sdcard/Download /sdcard/Movies -iname '*.mp4' 2>/dev/null" | sort -u > "$OUT/downloaded_files.txt"
+adb shell "find /sdcard -iname '*.mp4' -exec ls -l {} \\; 2>/dev/null" >> "$OUT/downloaded_files.txt" 2>&1
+# "Analyze this page" hands the same page to yt-dlp, which should list both videos
+tap_text "الفيديوهات" || tap_text "تنزيل"
+sleep 2
+tap_text "تحليل هذه الصفحة"
+shot 26_analyze_page_ar 40
+dump_text 26_analyze_page_ar
+kill $SERVER 2>/dev/null
 
 adb shell input keyevent 4
 sleep 2

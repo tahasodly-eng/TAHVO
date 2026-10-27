@@ -532,6 +532,12 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".ui.browser.TahvoBrowserActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboardHidden|uiMode"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
         <activity android:name=".ui.more.cookies.WebViewActivityIncognito" android:process=":incognito_process" />
 
         <activity

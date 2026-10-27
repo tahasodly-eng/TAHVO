@@ -482,6 +482,13 @@ class MainActivity : BaseActivity() {
                     }
                     navController.navigate(R.id.downloadQueueMainFragment, bundle)
                 }
+                "Analyze" -> {
+                    // a page link sent from the TAHVO browser: run the normal analysis on it
+                    val bundle = Bundle()
+                    bundle.putString("url", intent.getStringExtra("url").orEmpty())
+                    navController.popBackStack(R.id.homeFragment, true)
+                    navController.navigate(R.id.homeFragment, bundle)
+                }
                 "Search" -> {
                     val bundle = Bundle()
                     bundle.putBoolean("search", true)

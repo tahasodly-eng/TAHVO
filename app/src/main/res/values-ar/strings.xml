@@ -641,7 +641,7 @@
     <string name="tahvo_empty_url">ألصق رابط الفيديو أولاً</string>
     <string name="tahvo_clipboard_empty">لا يوجد رابط في الحافظة</string>
     <string name="tahvo_platforms">المنصات الشائعة</string>
-    <string name="tahvo_platforms_hint">افتح المنصة وانسخ رابط الفيديو، ثم ارجع والصقه هنا.</string>
+    <string name="tahvo_platforms_hint">افتح المنصة داخل TAHVO وشغّل الفيديو، ثم اضغط زر التنزيل.</string>
     <string name="tahvo_more_sites">المزيد</string>
     <string name="tahvo_recent_downloads">آخر التنزيلات</string>
     <string name="tahvo_view_all">عرض الكل</string>
@@ -651,4 +651,23 @@
     <string name="tahvo_nav_tools">الأدوات</string>
     <string name="tahvo_settings">الإعدادات</string>
     <string name="tahvo_file_missing">الملف لم يعد موجوداً على الجهاز</string>
+    <string name="tahvo_browser_title">متصفح TAHVO</string>
+    <string name="tahvo_browser_open">فتح الصفحة في متصفح TAHVO</string>
+    <string name="tahvo_browser_address_hint">اكتب رابطًا أو ابحث…</string>
+    <string name="tahvo_browser_close">إغلاق المتصفح</string>
+    <string name="tahvo_browser_reload">إعادة التحميل</string>
+    <string name="tahvo_browser_start_title">تصفّح ونزّل</string>
+    <string name="tahvo_browser_start_body">افتح أي صفحة فيها فيديو، وشغّل الفيديو، ثم اضغط زر التنزيل لتختار ما تحفظه.</string>
+    <string name="tahvo_browser_download">تنزيل</string>
+    <string name="tahvo_browser_videos_count">الفيديوهات (%1$d)</string>
+    <string name="tahvo_browser_analyze_page">تحليل هذه الصفحة بمحرك TAHVO</string>
+    <string name="tahvo_browser_analyze_page_hint">ليوتيوب وتيك توك وإنستغرام وما يشبهها، أو لعرض كل الفيديوهات التي يجدها المحرك في الصفحة.</string>
+    <string name="tahvo_browser_found_title">ملفات فيديو وُجدت في الصفحة (%1$d)</string>
+    <string name="tahvo_browser_nothing_found">لم تظهر ملفات فيديو مباشرة بعد. شغّل الفيديو في الصفحة ثم افتح هذه القائمة مرة أخرى، أو استخدم «تحليل هذه الصفحة».</string>
+    <string name="tahvo_browser_select_all">تحديد الكل</string>
+    <string name="tahvo_browser_select_none">إلغاء التحديد</string>
+    <string name="tahvo_browser_download_selected">تنزيل المحدد (%1$d)</string>
+    <string name="tahvo_browser_queued">أُضيف %1$d إلى التنزيلات</string>
+    <string name="tahvo_browser_queue_failed">تعذّرت إضافة التنزيلات. حاول مرة أخرى.</string>
+    <string name="tahvo_browser_not_video">هذا الملف ليس فيديو ولا صوتًا</string>
 </resources>

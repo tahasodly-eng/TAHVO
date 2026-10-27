@@ -98,6 +98,22 @@
             app:iconTint="@color/tahvo_white" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/tahvo_browser_btn"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/tahvo_browser_open"
+            android:textColor="@color/tahvo_orange"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:cornerRadius="27dp"
+            app:icon="@drawable/ic_tahvo_globe"
+            app:iconGravity="textStart"
+            app:iconTint="@color/tahvo_orange"
+            app:strokeColor="@color/tahvo_orange" />
+
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/tahvo_keyword_search_btn"
             style="@style/Widget.Material3.Button.TextButton"
             android:layout_width="wrap_content"

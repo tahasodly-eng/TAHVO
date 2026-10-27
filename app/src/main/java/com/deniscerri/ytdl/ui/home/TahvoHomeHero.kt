@@ -21,6 +21,7 @@ import com.deniscerri.ytdl.R
 import com.deniscerri.ytdl.database.DBManager
 import com.deniscerri.ytdl.database.enums.DownloadType
 import com.deniscerri.ytdl.database.models.HistoryItem
+import com.deniscerri.ytdl.ui.browser.TahvoBrowserActivity
 import com.deniscerri.ytdl.util.Extensions.loadThumbnail
 import com.deniscerri.ytdl.util.FileUtil
 import com.google.android.material.button.MaterialButton
@@ -65,6 +66,7 @@ class TahvoHomeHero(
         root.findViewById<MaterialButton>(R.id.tahvo_keyword_search_btn).setOnClickListener {
             onKeywordSearch(urlInput.text?.toString().orEmpty().trim())
         }
+        root.findViewById<MaterialButton>(R.id.tahvo_browser_btn).setOnClickListener { openBrowser() }
         root.findViewById<MaterialButton>(R.id.tahvo_view_all_btn).setOnClickListener { onViewAllDownloads() }
         urlInput.setOnEditorActionListener { _, actionId, _ ->
             if (actionId == EditorInfo.IME_ACTION_GO || actionId == EditorInfo.IME_ACTION_DONE) {
@@ -129,7 +131,8 @@ class TahvoHomeHero(
             v.findViewById<TextView>(R.id.tahvo_platform_badge).text = p.badge
             v.findViewById<TextView>(R.id.tahvo_platform_name).text = p.name
             v.contentDescription = p.name
-            v.setOnClickListener { openUrl(p.url) }
+            // platforms open inside the TAHVO browser so the video can be downloaded from the page itself
+            v.setOnClickListener { if (p.badge == "+") openUrl(p.url) else TahvoBrowserActivity.open(context, p.url) }
             val params = GridLayout.LayoutParams(
                 GridLayout.spec(GridLayout.UNDEFINED),
                 GridLayout.spec(GridLayout.UNDEFINED, 1f)
@@ -139,6 +142,12 @@ class TahvoHomeHero(
             }
             grid.addView(v, params)
         }
+    }
+
+    /** Opens the in-app browser on the typed link, or empty so the user can type an address or a search. */
+    private fun openBrowser() {
+        val text = urlInput.text?.toString().orEmpty().trim()
+        TahvoBrowserActivity.open(context, if (text.isNotEmpty() && isValidLink(text)) normalize(text) else null)
     }
 
     private fun openUrl(url: String) {
