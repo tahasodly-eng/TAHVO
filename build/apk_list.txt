@@ -1,10 +1,1 @@
-total 464984
-drwxr-xr-x 3 runner runner      4096 Oct 26 09:49 .
-drwxr-xr-x 3 runner runner      4096 Oct 26 09:49 ..
--rw-r--r-- 1 runner runner  69978196 Oct 26 09:49 TAHVO-1.9.1.2-arm64-v8a-release-github.apk
--rw-r--r-- 1 runner runner  59024482 Oct 26 09:49 TAHVO-1.9.1.2-armeabi-v7a-release-github.apk
--rw-r--r-- 1 runner runner 218256431 Oct 26 09:49 TAHVO-1.9.1.2-universal-release-github.apk
--rw-r--r-- 1 runner runner  64033322 Oct 26 09:49 TAHVO-1.9.1.2-x86-release-github.apk
--rw-r--r-- 1 runner runner  64819303 Oct 26 09:49 TAHVO-1.9.1.2-x86_64-release-github.apk
-drwxr-xr-x 4 runner runner      4096 Oct 26 09:49 baselineProfiles
--rw-r--r-- 1 runner runner      2574 Oct 26 09:49 output-metadata.json
+ls: cannot access 'app/build/outputs/apk/github/release/': No such file or directory
