@@ -1734,8 +1734,7 @@ class YTDLPUtil(private val context: Context, private val commandTemplateDao: Co
         request.merge(metadataCommands)
 
         if (downloadItem.extraCommands.isNotBlank() && downloadItem.type != DownloadType.command){
-            // a config file keeps quoted arguments with spaces (referer, user agent, cookies) intact
-            request.addConfig(downloadItem.extraCommands)
+            request.addOption(downloadItem.extraCommands)
         }
 
         if (request.toString().contains("sponsorblock")) {
