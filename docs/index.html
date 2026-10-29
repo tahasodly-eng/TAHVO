@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TAHVO — نزّل الفيديو والصوت بسهولة</title>
+<meta name="description" content="TAHVO: نزّل الفيديو والصوت من آلاف المواقع، أو افتح أي صفحة واختر منها الفيديوهات التي تريدها. مجاني لأندرويد وويندوز. تطوير طه مصطفى النفاتي.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TAHVO — نزّل الفيديو والصوت بسهولة">
+<meta property="og:description" content="ألصق الرابط أو افتح أي صفحة واختر الفيديوهات التي تريدها. مجاني لأندرويد وويندوز.">
+<meta property="og:image" content="https://tahasodly-eng.github.io/TAHVO/assets/banner.png">
+<meta property="og:url" content="https://tahasodly-eng.github.io/TAHVO/">
+<meta property="og:locale" content="ar_AR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#FFF7F2;--card:#fff;--line:#F1DFD2;--accent:#FF6B00;--accent2:#E05A00;--text:#161616;--text2:#5f5f5f;--soft:#FFE9DA}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:"IBM Plex Sans Arabic",Tahoma,sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:700;font-size:24px;text-decoration:none;color:var(--accent);direction:ltr}
+  .brand img{width:42px;height:42px;border-radius:12px}
+  nav a{color:var(--text2);text-decoration:none;margin-inline-start:22px;font-size:15px}
+  nav a:hover{color:var(--text)}
+  .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:36px 0 64px}
+  .hero h1{font-size:clamp(34px,5vw,54px);line-height:1.25;margin-bottom:14px}
+  .hero h1 span{color:var(--accent)}
+  .lead{color:var(--text2);font-size:18px;max-width:34em}
+  .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;transition:transform .15s,background .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn.primary{background:var(--accent);color:#fff}
+  .btn.primary:hover{background:var(--accent2)}
+  .btn.ghost{border:1.5px solid var(--accent);color:var(--accent);background:#fff}
+  .btn svg{width:22px;height:22px;flex:none}
+  .btn small{display:block;font-weight:400;font-size:12px;opacity:.85;line-height:1.3}
+  .note{color:var(--text2);font-size:13px;margin-top:14px}
+  .phones{position:relative;height:540px}
+  .phones img{position:absolute;width:240px;border-radius:28px;border:6px solid #1f1f1f;box-shadow:0 30px 60px rgba(120,50,0,.25)}
+  .phones img:nth-child(1){left:0;top:40px;transform:rotate(-6deg)}
+  .phones img:nth-child(2){right:0;top:0;transform:rotate(5deg)}
+  section{padding:56px 0;border-top:1px solid var(--line)}
+  h2{font-size:30px;margin-bottom:8px}
+  .sub{color:var(--text2);margin-bottom:30px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .feat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+  .feat .ic{width:44px;height:44px;border-radius:12px;background:var(--soft);display:grid;place-items:center;margin-bottom:12px}
+  .feat .ic svg{width:24px;height:24px;stroke:var(--accent)}
+  .feat h3{font-size:18px;margin-bottom:4px}
+  .feat p{color:var(--text2);font-size:15px}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+  .split img.shot{width:100%;border-radius:16px;box-shadow:0 20px 50px rgba(120,50,0,.18)}
+  .steps{counter-reset:s;list-style:none}
+  .steps li{position:relative;padding-inline-start:46px;margin-bottom:14px;color:var(--text2)}
+  .steps li b{color:var(--text)}
+  .steps li:before{counter-increment:s;content:counter(s);position:absolute;right:0;top:2px;width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;display:grid;place-items:center;font-size:15px}
+  .duo{display:flex;gap:16px;justify-content:center}
+  .duo img{width:46%;max-width:240px;border-radius:22px;border:5px solid #1f1f1f}
+  .warn{background:#fff;border:1px solid var(--line);border-inline-start:5px solid var(--accent);border-radius:14px;padding:18px 20px;margin-top:20px;color:var(--text2);font-size:15px}
+  .warn b{color:var(--text)}
+  .dl{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .dlcard{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px}
+  .dlcard h3{font-size:20px;margin-bottom:4px}
+  .dlcard p{color:var(--text2);font-size:14px;margin-bottom:18px}
+  details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:10px}
+  summary{cursor:pointer;font-weight:500}
+  details p{color:var(--text2);margin-top:8px;font-size:15px}
+  footer{padding:30px 0 40px;color:var(--text2);font-size:14px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  @media (max-width:820px){
+    .hero{grid-template-columns:1fr;padding-top:16px}
+    .phones{height:400px;max-width:400px;margin:0 auto;width:100%}
+    .phones img{width:175px}
+    .grid{grid-template-columns:1fr 1fr}
+    .split,.dl{grid-template-columns:1fr}
+    nav{display:none}
+  }
+  @media (max-width:520px){
+    .grid{grid-template-columns:1fr}
+    .btn{width:100%;justify-content:center}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="#"><img src="assets/icon.png" alt="">TAHVO</a>
+    <nav>
+      <a href="#features">المزايا</a>
+      <a href="#browser">المتصفح</a>
+      <a href="#windows">ويندوز</a>
+      <a href="#download">التنزيل</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div>
+      <h1>نزّل الفيديو والصوت <span>بسهولة</span></h1>
+      <p class="lead">ألصق رابط الفيديو، أو افتح أي صفحة واختر منها الفيديوهات التي تريدها، وحدّد الجودة أو الصوت فقط. يعمل مع آلاف المواقع.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://github.com/tahasodly-eng/TAHVO/raw/main/docs/downloads/TAHVO.apk">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 9.48l1.84-3.18a.38.38 0 00-.66-.38l-1.86 3.22A11.4 11.4 0 0012 8.1c-1.77 0-3.43.38-4.92 1.04L5.22 5.92a.38.38 0 00-.66.38L6.4 9.48A10.8 10.8 0 001 18h22a10.8 10.8 0 00-5.4-8.52zM7 15.25a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5zm10 0a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5z"/></svg>
+          <span>تنزيل لأندرويد<small>Android 7 فأحدث</small></span>
+        </a>
+        <a class="btn ghost" href="https://github.com/tahasodly-eng/TAHVO/raw/main/docs/downloads/Setup_TAHVO.exe">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5l7.5-1v7H3zm0 13l7.5 1v-7H3zm8.5 1.2L21 21v-8.5h-9.5zm0-15.4v7.2H21V3z"/></svg>
+          <span>تنزيل لويندوز<small>Windows 10 و 11</small></span>
+        </a>
+      </div>
+      <p class="note">مجاني بالكامل · بلا إعلانات · عربي وإنجليزي</p>
+    </div>
+    <div class="phones" aria-hidden="true">
+      <img src="assets/home.jpg" alt="">
+      <img src="assets/sheet.jpg" alt="">
+    </div>
+  </div>
+</div>
+
+<section id="features">
+  <div class="wrap">
+    <h2>ماذا يفعل TAHVO؟</h2>
+    <p class="sub">كل ما تحتاجه لحفظ الفيديو والصوت على جهازك.</p>
+    <div class="grid">
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.5.5l3-3a5 5 0 00-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 00-7.5-.5l-3 3a5 5 0 007 7l1.7-1.7"/></svg></div><h3>ألصق الرابط ونزّل</h3><p>انسخ رابط الفيديو من أي تطبيق، والصقه، واختر الجودة.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg></div><h3>متصفح داخلي</h3><p>افتح أي صفحة من داخل التطبيق، فيكتشف الفيديوهات فيها لتختار ما تنزّله.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><h3>اختر ما تريد</h3><p>من صفحة فيها عدة فيديوهات أو قائمة تشغيل: حدّد بعضها أو كلها.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div><h3>صوت فقط</h3><p>احفظ الصوت بصيغة MP3 للمحاضرات والأناشيد والبودكاست.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="15" height="14" rx="2"/><path d="M17 10l5-3v10l-5-3"/></svg></div><h3>الجودة التي تناسبك</h3><p>أفضل جودة أو 1080p أو 720p أو أقل لتوفير المساحة والباقة.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 11-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></div><h3>يتحدّث تلقائياً</h3><p>محرك التنزيل يتحدّث باستمرار ليبقى متوافقاً مع تغييرات المواقع.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="browser">
+  <div class="wrap split">
+    <div>
+      <h2>متصفح TAHVO على الهاتف</h2>
+      <p class="sub">لصفحات فيها أكثر من فيديو، أو مواقع لا يكفي فيها الرابط.</p>
+      <ol class="steps">
+        <li><b>اضغط «فتح الصفحة في متصفح TAHVO»</b> في الشاشة الرئيسية، أو إحدى المنصات الشائعة.</li>
+        <li><b>افتح الصفحة وشغّل الفيديو</b>، فيظهر زر «الفيديوهات» مع عددها.</li>
+        <li><b>اختر ما تريد</b> أو «تحديد الكل»، ثم «تنزيل المحدد».</li>
+        <li>أو اختر <b>«تحليل هذه الصفحة»</b> للمواقع الكبيرة مثل منصات التواصل.</li>
+      </ol>
+    </div>
+    <div class="duo">
+      <img src="assets/browser.jpg" alt="صفحة فيها فيديوهان داخل متصفح TAHVO">
+      <img src="assets/sheet.jpg" alt="قائمة الفيديوهات التي وُجدت في الصفحة">
+    </div>
+  </div>
+</section>
+
+<section id="windows">
+  <div class="wrap split">
+    <img class="shot" src="assets/windows.jpg" alt="TAHVO على ويندوز بعد فحص صفحة وتنزيل ثلاثة فيديوهات منها">
+    <div>
+      <h2>TAHVO على ويندوز</h2>
+      <p class="sub">نفس الفكرة على الكمبيوتر.</p>
+      <ol class="steps">
+        <li><b>ألصق الرابط</b> واضغط «تحليل الرابط»، أو «كل فيديوهات الصفحة» لصفحة فيها عدة فيديوهات.</li>
+        <li><b>حدّد الفيديوهات</b> واختر فيديو MP4 أو صوت MP3 والجودة.</li>
+        <li><b>اضغط «تنزيل المحدد»</b> وتابع التقدم والسرعة. الملفات في مجلد Downloads\TAHVO.</li>
+      </ol>
+      <div class="warn"><b>عند التثبيت:</b> قد تظهر شاشة زرقاء «Windows protected your PC». اضغط <b>More info</b> ثم <b>Run anyway</b>. يظهر هذا لأن البرنامج جديد وغير موقّع بشهادة تجارية.</div>
+    </div>
+  </div>
+</section>
+
+<section id="download">
+  <div class="wrap">
+    <h2>التنزيل</h2>
+    <p class="sub">أحدث إصدار، مجاناً.</p>
+    <div class="dl">
+      <div class="dlcard">
+        <h3>أندرويد</h3>
+        <p>ملف TAHVO.apk · للهواتف الحديثة (64-bit) بنظام Android 7 فأحدث. افتح الملف بعد تنزيله، ووافق على «السماح من هذا المصدر» إن طلب الهاتف ذلك.</p>
+        <a class="btn primary" href="https://github.com/tahasodly-eng/TAHVO/raw/main/docs/downloads/TAHVO.apk">تنزيل TAHVO.apk</a>
+      </div>
+      <div class="dlcard">
+        <h3>ويندوز</h3>
+        <p>ملف Setup_TAHVO.exe · Windows 10 و 11. يُثبَّت لحسابك فقط بلا صلاحيات المدير. عند أول تشغيل يجهّز البرنامج مكوّناً إضافياً (حوالي 40 ميغابايت) تحتاجه بعض المواقع.</p>
+        <a class="btn primary" href="https://github.com/tahasodly-eng/TAHVO/raw/main/docs/downloads/Setup_TAHVO.exe">تنزيل Setup_TAHVO.exe</a>
+      </div>
+    </div>
+    <div style="height:28px"></div>
+    <details><summary>هل البرنامج مجاني؟</summary><p>نعم، مجاني بالكامل وبلا إعلانات أو اشتراكات.</p></details>
+    <details><summary>لماذا ليس على متجر Google Play؟</summary><p>متجر Google لا يقبل تطبيقات تنزيل الفيديو من بعض المنصات، لذلك يُوزَّع TAHVO من هذه الصفحة مباشرة.</p></details>
+    <details><summary>ظهرت رسالة أن الموقع يطلب تسجيل الدخول</summary><p>على ويندوز: من «الإعدادات» اختر متصفحاً سجّلت فيه الدخول إلى ذلك الموقع. يقرأ البرنامج بيانات الدخول من جهازك فقط ولا يرسلها لأي جهة.</p></details>
+    <details><summary>هل يمكن تنزيل أي فيديو؟</summary><p>يعمل مع آلاف المواقع، لكن المحتوى المحمي أو المشفّر (مثل منصات الأفلام المدفوعة) لا يمكن تنزيله. نزّل ما تملك حق حفظه أو للاستخدام الشخصي.</p></details>
+    <details><summary>لدي اقتراح أو مشكلة</summary><p>راسلني على <a href="mailto:tahamnly2024@gmail.com">tahamnly2024@gmail.com</a>.</p></details>
+  </div>
+</section>
+
+<div class="wrap">
+  <footer>
+    <span>تطوير: طه مصطفى النفاتي · ليبيا</span>
+    <span>مبني على مشروعي <a href="https://github.com/deniscerri/ytdlnis">YTDLnis</a> و <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a> مفتوحي المصدر · <a href="https://github.com/tahasodly-eng/TAHVO">الكود</a></span>
+  </footer>
+</div>
+</body>
+</html>

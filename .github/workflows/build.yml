@@ -3,7 +3,7 @@ name: Build TAHVO
 on:
   push:
     branches: [ main ]
-    paths-ignore: [ 'scripts/extractor_urls.txt', '.github/workflows/extractor-test.yml', 'README.md' ]
+    paths-ignore: [ 'scripts/extractor_urls.txt', '.github/workflows/extractor-test.yml', 'README.md', 'docs/**', '.github/workflows/build.yml' ]
   workflow_dispatch:
 
 permissions:
