@@ -1,6 +1,6 @@
 + find test_out/files -type f
-+ read -r f
 + sort
++ read -r f
 ++ basename test_out/files/Download/doc_merged.pdf
 ++ stat -c%s test_out/files/Download/doc_merged.pdf
 + echo '--- doc_merged.pdf (2564 B)'

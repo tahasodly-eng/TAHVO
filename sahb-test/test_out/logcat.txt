@@ -1,300 +1,300 @@
-10-31 07:36:51.209 I/SahbRing(11708): center 540 1283
-10-31 07:36:51.212 I/SahbRing(11708): slice 0 JPG 540 952
-10-31 07:36:51.212 I/SahbRing(11708): slice 1 PNG 826 1448
-10-31 07:36:51.212 I/SahbRing(11708): slice 2 دمج 253 1448
-10-31 07:36:51.212 I/SahbRing(11708): center 540 1283
-10-31 07:36:51.319 I/SahbRing(11708): slice 0 JPG 540 952
-10-31 07:36:51.319 I/SahbRing(11708): slice 1 PNG 826 1448
-10-31 07:36:51.319 I/SahbRing(11708): slice 2 دمج 253 1448
-10-31 07:36:51.319 I/SahbRing(11708): center 540 1283
-10-31 07:36:51.700 I/SahbRing(11708): slice 0 JPG 540 952
-10-31 07:36:51.700 I/SahbRing(11708): slice 1 PNG 826 1448
-10-31 07:36:51.700 I/SahbRing(11708): slice 2 دمج 253 1448
-10-31 07:36:51.700 I/SahbRing(11708): center 540 1283
-10-31 07:36:53.700 I/SahbRing(11708): slice 0 JPG 540 952
-10-31 07:36:53.700 I/SahbRing(11708): slice 1 PNG 826 1448
-10-31 07:36:53.700 I/SahbRing(11708): slice 2 دمج 253 1448
-10-31 07:36:53.700 I/SahbRing(11708): center 540 1283
-10-31 07:36:55.647 I/MediaProvider( 5868): Open with lower FS for /storage/emulated/0/Download/Sahb/.pending-1794037015-doc_merged.pdf. Uid: 10192
-10-31 07:36:55.660 D/MediaProvider( 5868): Moving /storage/emulated/0/Download/Sahb/.pending-1794037015-doc_merged.pdf to /storage/emulated/0/Download/Sahb/doc_merged.pdf
-10-31 07:36:55.667 I/MediaProvider( 5868): Open with lower FS for /storage/emulated/0/Download/Sahb/doc_merged.pdf. Uid: 10192
-10-31 07:36:55.668 I/SahbJob (11708): OK content://media/external/downloads/1000000041
-10-31 07:36:59.835 I/SahbRing(11782): slice 0 ضغط 540 952
-10-31 07:36:59.836 I/SahbRing(11782): slice 1 الحجم 798 1077
-10-31 07:36:59.836 I/SahbRing(11782): slice 2 قص الإطار 862 1356
-10-31 07:36:59.836 I/SahbRing(11782): slice 3 اقتطاع 683 1580
-10-31 07:36:59.836 I/SahbRing(11782): slice 4 كتم الصوت 396 1580
-10-31 07:36:59.836 I/SahbRing(11782): slice 5 حذف البيانات 217 1356
-10-31 07:36:59.836 I/SahbRing(11782): slice 6 ZIP 281 1077
-10-31 07:36:59.836 I/SahbRing(11782): center 540 1283
-10-31 07:36:59.927 I/SahbRing(11782): slice 0 ضغط 540 952
-10-31 07:36:59.928 I/SahbRing(11782): slice 1 الحجم 798 1077
-10-31 07:36:59.928 I/SahbRing(11782): slice 2 قص الإطار 862 1356
-10-31 07:36:59.928 I/SahbRing(11782): slice 3 اقتطاع 683 1580
-10-31 07:36:59.928 I/SahbRing(11782): slice 4 كتم الصوت 396 1580
-10-31 07:36:59.929 I/SahbRing(11782): slice 5 حذف البيانات 217 1356
-10-31 07:36:59.929 I/SahbRing(11782): slice 6 ZIP 281 1077
-10-31 07:36:59.929 I/SahbRing(11782): center 540 1283
-10-31 07:36:59.989 I/SahbRing(11782): slice 0 ضغط 540 952
-10-31 07:36:59.989 I/SahbRing(11782): slice 1 الحجم 798 1077
-10-31 07:36:59.989 I/SahbRing(11782): slice 2 قص الإطار 862 1356
-10-31 07:36:59.989 I/SahbRing(11782): slice 3 اقتطاع 683 1580
-10-31 07:36:59.989 I/SahbRing(11782): slice 4 كتم الصوت 396 1580
-10-31 07:36:59.989 I/SahbRing(11782): slice 5 حذف البيانات 217 1356
-10-31 07:36:59.989 I/SahbRing(11782): slice 6 ZIP 281 1077
-10-31 07:36:59.989 I/SahbRing(11782): center 540 1283
-10-31 07:37:00.307 I/SahbRing(11782): slice 0 ضغط 540 952
-10-31 07:37:00.307 I/SahbRing(11782): slice 1 الحجم 798 1077
-10-31 07:37:00.307 I/SahbRing(11782): slice 2 قص الإطار 862 1356
-10-31 07:37:00.307 I/SahbRing(11782): slice 3 اقتطاع 683 1580
-10-31 07:37:00.307 I/SahbRing(11782): slice 4 كتم الصوت 396 1580
-10-31 07:37:00.307 I/SahbRing(11782): slice 5 حذف البيانات 217 1356
-10-31 07:37:00.307 I/SahbRing(11782): slice 6 ZIP 281 1077
-10-31 07:37:00.307 I/SahbRing(11782): center 540 1283
-10-31 07:37:02.439 I/SahbRing(11782): slice 0 ضغط 540 952
-10-31 07:37:02.439 I/SahbRing(11782): slice 1 الحجم 798 1077
-10-31 07:37:02.439 I/SahbRing(11782): slice 2 قص الإطار 862 1356
-10-31 07:37:02.440 I/SahbRing(11782): slice 3 اقتطاع 683 1580
-10-31 07:37:02.440 I/SahbRing(11782): slice 4 كتم الصوت 396 1580
-10-31 07:37:02.440 I/SahbRing(11782): slice 5 حذف البيانات 217 1356
-10-31 07:37:02.440 I/SahbRing(11782): slice 6 ZIP 281 1077
-10-31 07:37:02.440 I/SahbRing(11782): center 540 1283
-10-31 07:37:02.680 I/SahbRing(11782): slice 0 ضغط 540 952
-10-31 07:37:02.713 I/SahbRing(11782): slice 1 الحجم 798 1077
-10-31 07:37:02.713 I/SahbRing(11782): slice 2 قص الإطار 862 1356
-10-31 07:37:02.714 I/SahbRing(11782): slice 3 اقتطاع 683 1580
-10-31 07:37:02.714 I/SahbRing(11782): slice 4 كتم الصوت 396 1580
-10-31 07:37:02.716 I/SahbRing(11782): slice 5 حذف البيانات 217 1356
-10-31 07:37:02.716 I/SahbRing(11782): slice 6 ZIP 281 1077
-10-31 07:37:02.716 I/SahbRing(11782): center 540 1283
-10-31 07:37:02.966 I/SahbRing(11782): slice 0 ضغط 540 952
-10-31 07:37:02.967 I/SahbRing(11782): slice 1 الحجم 798 1077
-10-31 07:37:02.967 I/SahbRing(11782): slice 2 قص الإطار 862 1356
-10-31 07:37:02.967 I/SahbRing(11782): slice 3 اقتطاع 683 1580
-10-31 07:37:02.967 I/SahbRing(11782): slice 4 كتم الصوت 396 1580
-10-31 07:37:02.967 I/SahbRing(11782): slice 5 حذف البيانات 217 1356
-10-31 07:37:02.967 I/SahbRing(11782): slice 6 ZIP 281 1077
-10-31 07:37:02.967 I/SahbRing(11782): center 540 1283
-10-31 07:37:03.972 D/AndroidRuntime(11835): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-31 07:37:03.976 I/AndroidRuntime(11835): Using default boot image
-10-31 07:37:03.976 I/AndroidRuntime(11835): Leaving lock profiling enabled
-10-31 07:37:04.076 D/AndroidRuntime(11835): Calling main entry com.android.commands.uiautomator.Launcher
-10-31 07:37:04.967 I/SahbRing(11782): slice 0 ضغط 540 952
-10-31 07:37:04.967 I/SahbRing(11782): slice 1 الحجم 798 1077
-10-31 07:37:04.967 I/SahbRing(11782): slice 2 قص الإطار 862 1356
-10-31 07:37:04.967 I/SahbRing(11782): slice 3 اقتطاع 683 1580
-10-31 07:37:04.967 I/SahbRing(11782): slice 4 كتم الصوت 396 1580
-10-31 07:37:04.967 I/SahbRing(11782): slice 5 حذف البيانات 217 1356
-10-31 07:37:04.967 I/SahbRing(11782): slice 6 ZIP 281 1077
-10-31 07:37:04.967 I/SahbRing(11782): center 540 1283
-10-31 07:37:05.128 D/AndroidRuntime(11835): Shutting down VM
-10-31 07:37:06.170 D/AndroidRuntime(11861): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-31 07:37:06.176 I/AndroidRuntime(11861): Using default boot image
-10-31 07:37:06.176 I/AndroidRuntime(11861): Leaving lock profiling enabled
-10-31 07:37:06.422 D/AndroidRuntime(11861): Calling main entry com.android.commands.uiautomator.Launcher
-10-31 07:37:07.485 D/AndroidRuntime(11861): Shutting down VM
-10-31 07:37:11.558 D/AndroidRuntime(11914): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-10-31 07:37:11.566 I/AndroidRuntime(11914): Using default boot image
-10-31 07:37:11.566 I/AndroidRuntime(11914): Leaving lock profiling enabled
-10-31 07:37:11.831 D/AndroidRuntime(11914): Calling main entry com.android.commands.uiautomator.Launcher
-10-31 07:37:18.178 D/AndroidRuntime(11914): Shutting down VM
-10-31 07:37:19.336 I/SahbJob (11782): CANCEL
-10-31 07:37:19.365 I/SahbRing(11782): slice 0 ضغط 540 952
-10-31 07:37:19.365 I/SahbRing(11782): slice 1 الحجم 798 1077
-10-31 07:37:19.365 I/SahbRing(11782): slice 2 قص الإطار 862 1356
-10-31 07:37:19.365 I/SahbRing(11782): slice 3 اقتطاع 683 1580
-10-31 07:37:19.365 I/SahbRing(11782): slice 4 كتم الصوت 396 1580
-10-31 07:37:19.365 I/SahbRing(11782): slice 5 حذف البيانات 217 1356
-10-31 07:37:19.365 I/SahbRing(11782): slice 6 ZIP 281 1077
-10-31 07:37:19.365 I/SahbRing(11782): center 540 1283
-10-31 07:37:23.742 D/AndroidRuntime(12122): >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
-10-31 07:37:23.748 I/AndroidRuntime(12122): Using default boot image
-10-31 07:37:23.748 I/AndroidRuntime(12122): Leaving lock profiling enabled
-10-31 07:37:26.767 I/AndroidRuntime(12395): VM exiting with result code 0, cleanup skipped.
-10-31 07:38:04.349 I/SahbRing(15418): slice 0 JPG 540 952
-10-31 07:38:04.349 I/SahbRing(15418): slice 1 PNG 870 1283
-10-31 07:38:04.349 I/SahbRing(15418): slice 2 WEBP 540 1613
-10-31 07:38:04.349 I/SahbRing(15418): slice 3 PDF 209 1283
-10-31 07:38:04.349 I/SahbRing(15418): center 540 1283
-10-31 07:38:04.422 I/SahbRing(15418): slice 0 JPG 540 952
-10-31 07:38:04.422 I/SahbRing(15418): slice 1 PNG 870 1283
-10-31 07:38:04.422 I/SahbRing(15418): slice 2 WEBP 540 1613
-10-31 07:38:04.422 I/SahbRing(15418): slice 3 PDF 209 1283
-10-31 07:38:04.422 I/SahbRing(15418): center 540 1283
-10-31 07:38:04.604 I/SahbRing(15418): slice 0 JPG 540 952
-10-31 07:38:04.605 I/SahbRing(15418): slice 1 PNG 870 1283
-10-31 07:38:04.605 I/SahbRing(15418): slice 2 WEBP 540 1613
-10-31 07:38:04.605 I/SahbRing(15418): slice 3 PDF 209 1283
-10-31 07:38:04.605 I/SahbRing(15418): center 540 1283
-10-31 07:38:04.917 I/SahbRing(15418): slice 0 JPG 540 952
-10-31 07:38:04.917 I/SahbRing(15418): slice 1 PNG 870 1283
-10-31 07:38:04.917 I/SahbRing(15418): slice 2 WEBP 540 1613
-10-31 07:38:04.917 I/SahbRing(15418): slice 3 PDF 209 1283
-10-31 07:38:04.917 I/SahbRing(15418): center 540 1283
-10-31 07:38:05.009 I/SahbRing(15418): slice 0 JPG 540 952
-10-31 07:38:05.009 I/SahbRing(15418): slice 1 PNG 870 1283
-10-31 07:38:05.009 I/SahbRing(15418): slice 2 WEBP 540 1613
-10-31 07:38:05.009 I/SahbRing(15418): slice 3 PDF 209 1283
-10-31 07:38:05.009 I/SahbRing(15418): center 540 1283
-10-31 07:38:06.882 I/SahbRing(15418): slice 0 JPG 540 952
-10-31 07:38:06.882 I/SahbRing(15418): slice 1 PNG 870 1283
-10-31 07:38:06.882 I/SahbRing(15418): slice 2 WEBP 540 1613
-10-31 07:38:06.882 I/SahbRing(15418): slice 3 PDF 209 1283
-10-31 07:38:06.882 I/SahbRing(15418): center 540 1283
-10-31 07:38:06.923 I/SahbRing(15418): slice 0 JPG 540 952
-10-31 07:38:06.923 I/SahbRing(15418): slice 1 PNG 870 1283
-10-31 07:38:06.923 I/SahbRing(15418): slice 2 WEBP 540 1613
-10-31 07:38:06.923 I/SahbRing(15418): slice 3 PDF 209 1283
-10-31 07:38:06.924 I/SahbRing(15418): center 540 1283
-10-31 07:38:09.470 I/SahbRing(15418): slice 0 JPG 540 952
-10-31 07:38:09.470 I/SahbRing(15418): slice 1 PNG 870 1283
-10-31 07:38:09.470 I/SahbRing(15418): slice 2 WEBP 540 1613
-10-31 07:38:09.470 I/SahbRing(15418): slice 3 PDF 209 1283
-10-31 07:38:09.470 I/SahbRing(15418): center 540 1283
-10-31 07:38:09.967 I/SahbRing(15418): slice 0 JPG 540 952
-10-31 07:38:09.967 I/SahbRing(15418): slice 1 PNG 870 1283
-10-31 07:38:09.967 I/SahbRing(15418): slice 2 WEBP 540 1613
-10-31 07:38:09.967 I/SahbRing(15418): slice 3 PDF 209 1283
-10-31 07:38:09.967 I/SahbRing(15418): center 540 1283
-10-31 07:38:11.971 I/SahbRing(15418): slice 0 JPG 540 952
-10-31 07:38:11.971 I/SahbRing(15418): slice 1 PNG 870 1283
-10-31 07:38:11.971 I/SahbRing(15418): slice 2 WEBP 540 1613
-10-31 07:38:11.971 I/SahbRing(15418): slice 3 PDF 209 1283
-10-31 07:38:11.971 I/SahbRing(15418): center 540 1283
-10-31 07:38:15.496 I/SahbRing(15656): slice 0 Compress 540 952
-10-31 07:38:15.496 I/SahbRing(15656): slice 1 Resize 826 1117
-10-31 07:38:15.496 I/SahbRing(15656): slice 2 Crop 826 1448
-10-31 07:38:15.496 I/SahbRing(15656): slice 3 Watermark 540 1613
-10-31 07:38:15.496 I/SahbRing(15656): slice 4 Clean 253 1448
-10-31 07:38:15.497 I/SahbRing(15656): slice 5 ZIP 253 1117
-10-31 07:38:15.497 I/SahbRing(15656): center 540 1283
-10-31 07:38:15.509 I/SahbRing(15656): slice 0 Compress 540 952
-10-31 07:38:15.509 I/SahbRing(15656): slice 1 Resize 826 1117
-10-31 07:38:15.509 I/SahbRing(15656): slice 2 Crop 826 1448
-10-31 07:38:15.509 I/SahbRing(15656): slice 3 Watermark 540 1613
-10-31 07:38:15.509 I/SahbRing(15656): slice 4 Clean 253 1448
-10-31 07:38:15.509 I/SahbRing(15656): slice 5 ZIP 253 1117
-10-31 07:38:15.509 I/SahbRing(15656): center 540 1283
-10-31 07:38:15.558 I/SahbRing(15656): slice 0 Compress 540 952
-10-31 07:38:15.558 I/SahbRing(15656): slice 1 Resize 826 1117
-10-31 07:38:15.558 I/SahbRing(15656): slice 2 Crop 826 1448
-10-31 07:38:15.558 I/SahbRing(15656): slice 3 Watermark 540 1613
-10-31 07:38:15.558 I/SahbRing(15656): slice 4 Clean 253 1448
-10-31 07:38:15.558 I/SahbRing(15656): slice 5 ZIP 253 1117
-10-31 07:38:15.558 I/SahbRing(15656): center 540 1283
-10-31 07:38:15.928 I/SahbRing(15656): slice 0 Compress 540 952
-10-31 07:38:15.928 I/SahbRing(15656): slice 1 Resize 826 1117
-10-31 07:38:15.933 I/SahbRing(15656): slice 2 Crop 826 1448
-10-31 07:38:15.933 I/SahbRing(15656): slice 3 Watermark 540 1613
-10-31 07:38:15.933 I/SahbRing(15656): slice 4 Clean 253 1448
-10-31 07:38:15.934 I/SahbRing(15656): slice 5 ZIP 253 1117
-10-31 07:38:15.934 I/SahbRing(15656): center 540 1283
-10-31 07:38:17.460 I/SahbJob (15656): PAYWALL Crop
-10-31 07:38:18.056 I/SahbRing(15656): slice 0 Compress 540 952
-10-31 07:38:18.056 I/SahbRing(15656): slice 1 Resize 826 1117
-10-31 07:38:18.056 I/SahbRing(15656): slice 2 Crop 826 1448
-10-31 07:38:18.056 I/SahbRing(15656): slice 3 Watermark 540 1613
-10-31 07:38:18.058 I/SahbRing(15656): slice 4 Clean 253 1448
-10-31 07:38:18.059 I/SahbRing(15656): slice 5 ZIP 253 1117
-10-31 07:38:18.059 I/SahbRing(15656): center 540 1283
-10-31 07:38:18.395 I/SahbRing(15656): slice 0 Compress 540 952
-10-31 07:38:18.395 I/SahbRing(15656): slice 1 Resize 826 1117
-10-31 07:38:18.395 I/SahbRing(15656): slice 2 Crop 826 1448
-10-31 07:38:18.395 I/SahbRing(15656): slice 3 Watermark 540 1613
-10-31 07:38:18.397 I/SahbRing(15656): slice 4 Clean 253 1448
-10-31 07:38:18.398 I/SahbRing(15656): slice 5 ZIP 253 1117
-10-31 07:38:18.398 I/SahbRing(15656): center 540 1283
-10-31 07:38:18.496 I/SahbRing(15656): slice 0 Compress 540 952
-10-31 07:38:18.496 I/SahbRing(15656): slice 1 Resize 826 1117
-10-31 07:38:18.496 I/SahbRing(15656): slice 2 Crop 826 1448
-10-31 07:38:18.496 I/SahbRing(15656): slice 3 Watermark 540 1613
-10-31 07:38:18.497 I/SahbRing(15656): slice 4 Clean 253 1448
-10-31 07:38:18.498 I/SahbRing(15656): slice 5 ZIP 253 1117
-10-31 07:38:18.498 I/SahbRing(15656): center 540 1283
-10-31 07:38:18.684 I/SahbRing(15656): slice 0 Compress 540 952
-10-31 07:38:18.684 I/SahbRing(15656): slice 1 Resize 826 1117
-10-31 07:38:18.687 I/SahbRing(15656): slice 2 Crop 826 1448
-10-31 07:38:18.687 I/SahbRing(15656): slice 3 Watermark 540 1613
-10-31 07:38:18.687 I/SahbRing(15656): slice 4 Clean 253 1448
-10-31 07:38:18.687 I/SahbRing(15656): slice 5 ZIP 253 1117
-10-31 07:38:18.687 I/SahbRing(15656): center 540 1283
-10-31 07:38:18.987 I/SahbRing(15656): slice 0 Compress 540 952
-10-31 07:38:18.987 I/SahbRing(15656): slice 1 Resize 826 1117
-10-31 07:38:18.987 I/SahbRing(15656): slice 2 Crop 826 1448
-10-31 07:38:18.987 I/SahbRing(15656): slice 3 Watermark 540 1613
-10-31 07:38:18.987 I/SahbRing(15656): slice 4 Clean 253 1448
-10-31 07:38:18.988 I/SahbRing(15656): slice 5 ZIP 253 1117
-10-31 07:38:18.988 I/SahbRing(15656): center 540 1283
-10-31 07:38:20.570 I/SahbRing(15656): slice 0 Compress 540 952
-10-31 07:38:20.570 I/SahbRing(15656): slice 1 Resize 826 1117
-10-31 07:38:20.570 I/SahbRing(15656): slice 2 Crop 826 1448
-10-31 07:38:20.570 I/SahbRing(15656): slice 3 Watermark 540 1613
-10-31 07:38:20.570 I/SahbRing(15656): slice 4 Clean 253 1448
-10-31 07:38:20.570 I/SahbRing(15656): slice 5 ZIP 253 1117
-10-31 07:38:20.570 I/SahbRing(15656): center 540 1283
-10-31 07:38:20.984 I/SahbRing(15656): slice 0 Compress 540 952
-10-31 07:38:20.985 I/SahbRing(15656): slice 1 Resize 826 1117
-10-31 07:38:20.985 I/SahbRing(15656): slice 2 Crop 826 1448
-10-31 07:38:20.985 I/SahbRing(15656): slice 3 Watermark 540 1613
-10-31 07:38:20.985 I/SahbRing(15656): slice 4 Clean 253 1448
-10-31 07:38:20.985 I/SahbRing(15656): slice 5 ZIP 253 1117
-10-31 07:38:20.985 I/SahbRing(15656): center 540 1283
-10-31 07:38:24.163 I/SahbRing(15718): slice 0 Compress 540 952
-10-31 07:38:24.164 I/SahbRing(15718): slice 1 Resize 798 1077
-10-31 07:38:24.164 I/SahbRing(15718): slice 2 Crop 862 1356
-10-31 07:38:24.164 I/SahbRing(15718): slice 3 Trim 683 1580
-10-31 07:38:24.164 I/SahbRing(15718): slice 4 Mute 396 1580
-10-31 07:38:24.164 I/SahbRing(15718): slice 5 Clean 217 1356
-10-31 07:38:24.164 I/SahbRing(15718): slice 6 ZIP 281 1077
-10-31 07:38:24.164 I/SahbRing(15718): center 540 1283
-10-31 07:38:24.235 I/SahbRing(15718): slice 0 Compress 540 952
-10-31 07:38:24.235 I/SahbRing(15718): slice 1 Resize 798 1077
-10-31 07:38:24.235 I/SahbRing(15718): slice 2 Crop 862 1356
-10-31 07:38:24.236 I/SahbRing(15718): slice 3 Trim 683 1580
-10-31 07:38:24.236 I/SahbRing(15718): slice 4 Mute 396 1580
-10-31 07:38:24.236 I/SahbRing(15718): slice 5 Clean 217 1356
-10-31 07:38:24.236 I/SahbRing(15718): slice 6 ZIP 281 1077
-10-31 07:38:24.236 I/SahbRing(15718): center 540 1283
-10-31 07:38:24.370 I/SahbRing(15718): slice 0 Compress 540 952
-10-31 07:38:24.385 I/SahbRing(15718): slice 1 Resize 798 1077
-10-31 07:38:24.386 I/SahbRing(15718): slice 2 Crop 862 1356
-10-31 07:38:24.386 I/SahbRing(15718): slice 3 Trim 683 1580
-10-31 07:38:24.390 I/SahbRing(15718): slice 4 Mute 396 1580
-10-31 07:38:24.390 I/SahbRing(15718): slice 5 Clean 217 1356
-10-31 07:38:24.390 I/SahbRing(15718): slice 6 ZIP 281 1077
-10-31 07:38:24.390 I/SahbRing(15718): center 540 1283
-10-31 07:38:24.642 I/SahbRing(15718): slice 0 Compress 540 952
-10-31 07:38:24.642 I/SahbRing(15718): slice 1 Resize 798 1077
-10-31 07:38:24.643 I/SahbRing(15718): slice 2 Crop 862 1356
-10-31 07:38:24.643 I/SahbRing(15718): slice 3 Trim 683 1580
-10-31 07:38:24.643 I/SahbRing(15718): slice 4 Mute 396 1580
-10-31 07:38:24.643 I/SahbRing(15718): slice 5 Clean 217 1356
-10-31 07:38:24.643 I/SahbRing(15718): slice 6 ZIP 281 1077
-10-31 07:38:24.643 I/SahbRing(15718): center 540 1283
-10-31 07:38:26.634 I/SahbRing(15718): slice 0 Compress 540 952
-10-31 07:38:26.634 I/SahbRing(15718): slice 1 Resize 798 1077
-10-31 07:38:26.634 I/SahbRing(15718): slice 2 Crop 862 1356
-10-31 07:38:26.634 I/SahbRing(15718): slice 3 Trim 683 1580
-10-31 07:38:26.634 I/SahbRing(15718): slice 4 Mute 396 1580
-10-31 07:38:26.634 I/SahbRing(15718): slice 5 Clean 217 1356
-10-31 07:38:26.634 I/SahbRing(15718): slice 6 ZIP 281 1077
-10-31 07:38:26.634 I/SahbRing(15718): center 540 1283
-10-31 07:38:30.743 I/SahbRing(15781): slice 0 JPG 540 952
-10-31 07:38:30.744 I/SahbRing(15781): slice 1 PNG 540 1613
-10-31 07:38:30.744 I/SahbRing(15781): center 540 1283
-10-31 07:38:30.851 I/SahbRing(15781): slice 0 JPG 540 952
-10-31 07:38:30.851 I/SahbRing(15781): slice 1 PNG 540 1613
-10-31 07:38:30.851 I/SahbRing(15781): center 540 1283
-10-31 07:38:30.885 I/SahbRing(15781): slice 0 JPG 540 952
-10-31 07:38:30.886 I/SahbRing(15781): slice 1 PNG 540 1613
-10-31 07:38:30.886 I/SahbRing(15781): center 540 1283
-10-31 07:38:31.239 I/SahbRing(15781): slice 0 JPG 540 952
-10-31 07:38:31.239 I/SahbRing(15781): slice 1 PNG 540 1613
-10-31 07:38:31.239 I/SahbRing(15781): center 540 1283
-10-31 07:38:33.234 I/SahbRing(15781): slice 0 JPG 540 952
-10-31 07:38:33.234 I/SahbRing(15781): slice 1 PNG 540 1613
-10-31 07:38:33.234 I/SahbRing(15781): center 540 1283
-10-31 07:38:37.299 D/AndroidRuntime(15881): >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
-10-31 07:38:37.331 I/AndroidRuntime(15881): Using default boot image
-10-31 07:38:37.333 I/AndroidRuntime(15881): Leaving lock profiling enabled
-10-31 07:38:40.452 I/AndroidRuntime(16170): VM exiting with result code 0, cleanup skipped.
+10-31 07:41:54.067 D/AndroidRuntime(11315): Shutting down VM
+10-31 07:41:55.892 I/MediaProvider( 5639): Open with lower FS for /storage/emulated/0/Download/Sahb/.pending-1794037315-doc_watermark.pdf. Uid: 10192
+10-31 07:41:55.894 D/MediaProvider( 5639): Moving /storage/emulated/0/Download/Sahb/.pending-1794037315-doc_watermark.pdf to /storage/emulated/0/Download/Sahb/doc_watermark.pdf
+10-31 07:41:55.900 I/MediaProvider( 5639): Open with lower FS for /storage/emulated/0/Download/Sahb/doc_watermark.pdf. Uid: 10192
+10-31 07:41:55.901 I/SahbJob (11220): OK content://media/external/downloads/1000000040
+10-31 07:41:59.268 I/SahbRing(11360): slice 0 JPG 540 952
+10-31 07:41:59.268 I/SahbRing(11360): slice 1 PNG 826 1448
+10-31 07:41:59.268 I/SahbRing(11360): slice 2 دمج 253 1448
+10-31 07:41:59.268 I/SahbRing(11360): center 540 1283
+10-31 07:41:59.269 I/SahbRing(11360): slice 0 JPG 540 952
+10-31 07:41:59.269 I/SahbRing(11360): slice 1 PNG 826 1448
+10-31 07:41:59.269 I/SahbRing(11360): slice 2 دمج 253 1448
+10-31 07:41:59.270 I/SahbRing(11360): center 540 1283
+10-31 07:41:59.321 I/SahbRing(11360): slice 0 JPG 540 952
+10-31 07:41:59.322 I/SahbRing(11360): slice 1 PNG 826 1448
+10-31 07:41:59.322 I/SahbRing(11360): slice 2 دمج 253 1448
+10-31 07:41:59.322 I/SahbRing(11360): center 540 1283
+10-31 07:41:59.727 I/SahbRing(11360): slice 0 JPG 540 952
+10-31 07:41:59.727 I/SahbRing(11360): slice 1 PNG 826 1448
+10-31 07:41:59.727 I/SahbRing(11360): slice 2 دمج 253 1448
+10-31 07:41:59.727 I/SahbRing(11360): center 540 1283
+10-31 07:42:01.727 I/SahbRing(11360): slice 0 JPG 540 952
+10-31 07:42:01.727 I/SahbRing(11360): slice 1 PNG 826 1448
+10-31 07:42:01.727 I/SahbRing(11360): slice 2 دمج 253 1448
+10-31 07:42:01.727 I/SahbRing(11360): center 540 1283
+10-31 07:42:03.653 I/MediaProvider( 5639): Open with lower FS for /storage/emulated/0/Download/Sahb/.pending-1794037323-doc_merged.pdf. Uid: 10192
+10-31 07:42:03.655 D/MediaProvider( 5639): Moving /storage/emulated/0/Download/Sahb/.pending-1794037323-doc_merged.pdf to /storage/emulated/0/Download/Sahb/doc_merged.pdf
+10-31 07:42:03.663 I/MediaProvider( 5639): Open with lower FS for /storage/emulated/0/Download/Sahb/doc_merged.pdf. Uid: 10192
+10-31 07:42:03.685 I/SahbJob (11360): OK content://media/external/downloads/1000000041
+10-31 07:42:07.821 I/SahbRing(11431): slice 0 ضغط 540 952
+10-31 07:42:07.822 I/SahbRing(11431): slice 1 الحجم 798 1077
+10-31 07:42:07.822 I/SahbRing(11431): slice 2 قص الإطار 862 1356
+10-31 07:42:07.822 I/SahbRing(11431): slice 3 اقتطاع 683 1580
+10-31 07:42:07.822 I/SahbRing(11431): slice 4 كتم الصوت 396 1580
+10-31 07:42:07.822 I/SahbRing(11431): slice 5 حذف البيانات 217 1356
+10-31 07:42:07.822 I/SahbRing(11431): slice 6 ZIP 281 1077
+10-31 07:42:07.822 I/SahbRing(11431): center 540 1283
+10-31 07:42:07.928 I/SahbRing(11431): slice 0 ضغط 540 952
+10-31 07:42:07.928 I/SahbRing(11431): slice 1 الحجم 798 1077
+10-31 07:42:07.928 I/SahbRing(11431): slice 2 قص الإطار 862 1356
+10-31 07:42:07.930 I/SahbRing(11431): slice 3 اقتطاع 683 1580
+10-31 07:42:07.930 I/SahbRing(11431): slice 4 كتم الصوت 396 1580
+10-31 07:42:07.930 I/SahbRing(11431): slice 5 حذف البيانات 217 1356
+10-31 07:42:07.930 I/SahbRing(11431): slice 6 ZIP 281 1077
+10-31 07:42:07.930 I/SahbRing(11431): center 540 1283
+10-31 07:42:08.267 I/SahbRing(11431): slice 0 ضغط 540 952
+10-31 07:42:08.267 I/SahbRing(11431): slice 1 الحجم 798 1077
+10-31 07:42:08.267 I/SahbRing(11431): slice 2 قص الإطار 862 1356
+10-31 07:42:08.269 I/SahbRing(11431): slice 3 اقتطاع 683 1580
+10-31 07:42:08.269 I/SahbRing(11431): slice 4 كتم الصوت 396 1580
+10-31 07:42:08.269 I/SahbRing(11431): slice 5 حذف البيانات 217 1356
+10-31 07:42:08.269 I/SahbRing(11431): slice 6 ZIP 281 1077
+10-31 07:42:08.269 I/SahbRing(11431): center 540 1283
+10-31 07:42:10.309 I/SahbRing(11431): slice 0 ضغط 540 952
+10-31 07:42:10.309 I/SahbRing(11431): slice 1 الحجم 798 1077
+10-31 07:42:10.309 I/SahbRing(11431): slice 2 قص الإطار 862 1356
+10-31 07:42:10.309 I/SahbRing(11431): slice 3 اقتطاع 683 1580
+10-31 07:42:10.310 I/SahbRing(11431): slice 4 كتم الصوت 396 1580
+10-31 07:42:10.310 I/SahbRing(11431): slice 5 حذف البيانات 217 1356
+10-31 07:42:10.310 I/SahbRing(11431): slice 6 ZIP 281 1077
+10-31 07:42:10.310 I/SahbRing(11431): center 540 1283
+10-31 07:42:10.501 I/SahbRing(11431): slice 0 ضغط 540 952
+10-31 07:42:10.502 I/SahbRing(11431): slice 1 الحجم 798 1077
+10-31 07:42:10.502 I/SahbRing(11431): slice 2 قص الإطار 862 1356
+10-31 07:42:10.502 I/SahbRing(11431): slice 3 اقتطاع 683 1580
+10-31 07:42:10.504 I/SahbRing(11431): slice 4 كتم الصوت 396 1580
+10-31 07:42:10.504 I/SahbRing(11431): slice 5 حذف البيانات 217 1356
+10-31 07:42:10.504 I/SahbRing(11431): slice 6 ZIP 281 1077
+10-31 07:42:10.504 I/SahbRing(11431): center 540 1283
+10-31 07:42:10.927 I/SahbRing(11431): slice 0 ضغط 540 952
+10-31 07:42:10.927 I/SahbRing(11431): slice 1 الحجم 798 1077
+10-31 07:42:10.927 I/SahbRing(11431): slice 2 قص الإطار 862 1356
+10-31 07:42:10.927 I/SahbRing(11431): slice 3 اقتطاع 683 1580
+10-31 07:42:10.928 I/SahbRing(11431): slice 4 كتم الصوت 396 1580
+10-31 07:42:10.928 I/SahbRing(11431): slice 5 حذف البيانات 217 1356
+10-31 07:42:10.928 I/SahbRing(11431): slice 6 ZIP 281 1077
+10-31 07:42:10.928 I/SahbRing(11431): center 540 1283
+10-31 07:42:11.923 D/AndroidRuntime(11487): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-31 07:42:11.926 I/AndroidRuntime(11487): Using default boot image
+10-31 07:42:11.926 I/AndroidRuntime(11487): Leaving lock profiling enabled
+10-31 07:42:12.002 D/AndroidRuntime(11487): Calling main entry com.android.commands.uiautomator.Launcher
+10-31 07:42:12.927 I/SahbRing(11431): slice 0 ضغط 540 952
+10-31 07:42:12.927 I/SahbRing(11431): slice 1 الحجم 798 1077
+10-31 07:42:12.927 I/SahbRing(11431): slice 2 قص الإطار 862 1356
+10-31 07:42:12.927 I/SahbRing(11431): slice 3 اقتطاع 683 1580
+10-31 07:42:12.928 I/SahbRing(11431): slice 4 كتم الصوت 396 1580
+10-31 07:42:12.928 I/SahbRing(11431): slice 5 حذف البيانات 217 1356
+10-31 07:42:12.928 I/SahbRing(11431): slice 6 ZIP 281 1077
+10-31 07:42:12.928 I/SahbRing(11431): center 540 1283
+10-31 07:42:13.052 D/AndroidRuntime(11487): Shutting down VM
+10-31 07:42:14.084 D/AndroidRuntime(11515): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-31 07:42:14.090 I/AndroidRuntime(11515): Using default boot image
+10-31 07:42:14.090 I/AndroidRuntime(11515): Leaving lock profiling enabled
+10-31 07:42:14.282 D/AndroidRuntime(11515): Calling main entry com.android.commands.uiautomator.Launcher
+10-31 07:42:15.333 D/AndroidRuntime(11515): Shutting down VM
+10-31 07:42:19.215 D/AndroidRuntime(11564): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+10-31 07:42:19.229 I/AndroidRuntime(11564): Using default boot image
+10-31 07:42:19.229 I/AndroidRuntime(11564): Leaving lock profiling enabled
+10-31 07:42:19.449 D/AndroidRuntime(11564): Calling main entry com.android.commands.uiautomator.Launcher
+10-31 07:42:26.173 D/AndroidRuntime(11564): Shutting down VM
+10-31 07:42:27.248 I/SahbJob (11431): CANCEL
+10-31 07:42:27.274 I/SahbRing(11431): slice 0 ضغط 540 952
+10-31 07:42:27.274 I/SahbRing(11431): slice 1 الحجم 798 1077
+10-31 07:42:27.274 I/SahbRing(11431): slice 2 قص الإطار 862 1356
+10-31 07:42:27.274 I/SahbRing(11431): slice 3 اقتطاع 683 1580
+10-31 07:42:27.274 I/SahbRing(11431): slice 4 كتم الصوت 396 1580
+10-31 07:42:27.275 I/SahbRing(11431): slice 5 حذف البيانات 217 1356
+10-31 07:42:27.275 I/SahbRing(11431): slice 6 ZIP 281 1077
+10-31 07:42:27.275 I/SahbRing(11431): center 540 1283
+10-31 07:42:31.646 D/AndroidRuntime(11801): >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+10-31 07:42:31.650 I/AndroidRuntime(11801): Using default boot image
+10-31 07:42:31.650 I/AndroidRuntime(11801): Leaving lock profiling enabled
+10-31 07:42:34.866 I/AndroidRuntime(12089): VM exiting with result code 0, cleanup skipped.
+10-31 07:43:12.245 I/SahbRing(15099): slice 0 JPG 540 952
+10-31 07:43:12.246 I/SahbRing(15099): slice 1 PNG 870 1283
+10-31 07:43:12.246 I/SahbRing(15099): slice 2 WEBP 540 1613
+10-31 07:43:12.246 I/SahbRing(15099): slice 3 PDF 209 1283
+10-31 07:43:12.246 I/SahbRing(15099): center 540 1283
+10-31 07:43:12.369 I/SahbRing(15099): slice 0 JPG 540 952
+10-31 07:43:12.370 I/SahbRing(15099): slice 1 PNG 870 1283
+10-31 07:43:12.370 I/SahbRing(15099): slice 2 WEBP 540 1613
+10-31 07:43:12.370 I/SahbRing(15099): slice 3 PDF 209 1283
+10-31 07:43:12.370 I/SahbRing(15099): center 540 1283
+10-31 07:43:12.490 I/SahbRing(15099): slice 0 JPG 540 952
+10-31 07:43:12.491 I/SahbRing(15099): slice 1 PNG 870 1283
+10-31 07:43:12.491 I/SahbRing(15099): slice 2 WEBP 540 1613
+10-31 07:43:12.491 I/SahbRing(15099): slice 3 PDF 209 1283
+10-31 07:43:12.491 I/SahbRing(15099): center 540 1283
+10-31 07:43:12.812 I/SahbRing(15099): slice 0 JPG 540 952
+10-31 07:43:12.812 I/SahbRing(15099): slice 1 PNG 870 1283
+10-31 07:43:12.812 I/SahbRing(15099): slice 2 WEBP 540 1613
+10-31 07:43:12.812 I/SahbRing(15099): slice 3 PDF 209 1283
+10-31 07:43:12.812 I/SahbRing(15099): center 540 1283
+10-31 07:43:12.879 I/SahbRing(15099): slice 0 JPG 540 952
+10-31 07:43:12.879 I/SahbRing(15099): slice 1 PNG 870 1283
+10-31 07:43:12.879 I/SahbRing(15099): slice 2 WEBP 540 1613
+10-31 07:43:12.879 I/SahbRing(15099): slice 3 PDF 209 1283
+10-31 07:43:12.879 I/SahbRing(15099): center 540 1283
+10-31 07:43:14.794 I/SahbRing(15099): slice 0 JPG 540 952
+10-31 07:43:14.794 I/SahbRing(15099): slice 1 PNG 870 1283
+10-31 07:43:14.794 I/SahbRing(15099): slice 2 WEBP 540 1613
+10-31 07:43:14.794 I/SahbRing(15099): slice 3 PDF 209 1283
+10-31 07:43:14.794 I/SahbRing(15099): center 540 1283
+10-31 07:43:14.852 I/SahbRing(15099): slice 0 JPG 540 952
+10-31 07:43:14.852 I/SahbRing(15099): slice 1 PNG 870 1283
+10-31 07:43:14.852 I/SahbRing(15099): slice 2 WEBP 540 1613
+10-31 07:43:14.852 I/SahbRing(15099): slice 3 PDF 209 1283
+10-31 07:43:14.852 I/SahbRing(15099): center 540 1283
+10-31 07:43:17.249 I/SahbRing(15099): slice 0 JPG 540 952
+10-31 07:43:17.250 I/SahbRing(15099): slice 1 PNG 870 1283
+10-31 07:43:17.250 I/SahbRing(15099): slice 2 WEBP 540 1613
+10-31 07:43:17.250 I/SahbRing(15099): slice 3 PDF 209 1283
+10-31 07:43:17.250 I/SahbRing(15099): center 540 1283
+10-31 07:43:17.761 I/SahbRing(15099): slice 0 JPG 540 952
+10-31 07:43:17.761 I/SahbRing(15099): slice 1 PNG 870 1283
+10-31 07:43:17.762 I/SahbRing(15099): slice 2 WEBP 540 1613
+10-31 07:43:17.762 I/SahbRing(15099): slice 3 PDF 209 1283
+10-31 07:43:17.762 I/SahbRing(15099): center 540 1283
+10-31 07:43:19.759 I/SahbRing(15099): slice 0 JPG 540 952
+10-31 07:43:19.759 I/SahbRing(15099): slice 1 PNG 870 1283
+10-31 07:43:19.759 I/SahbRing(15099): slice 2 WEBP 540 1613
+10-31 07:43:19.759 I/SahbRing(15099): slice 3 PDF 209 1283
+10-31 07:43:19.760 I/SahbRing(15099): center 540 1283
+10-31 07:43:24.887 I/SahbRing(15423): slice 0 Compress 540 952
+10-31 07:43:24.887 I/SahbRing(15423): slice 1 Resize 826 1117
+10-31 07:43:24.887 I/SahbRing(15423): slice 2 Crop 826 1448
+10-31 07:43:24.887 I/SahbRing(15423): slice 3 Watermark 540 1613
+10-31 07:43:24.887 I/SahbRing(15423): slice 4 Clean 253 1448
+10-31 07:43:24.887 I/SahbRing(15423): slice 5 ZIP 253 1117
+10-31 07:43:24.887 I/SahbRing(15423): center 540 1283
+10-31 07:43:25.030 I/SahbRing(15423): slice 0 Compress 540 952
+10-31 07:43:25.030 I/SahbRing(15423): slice 1 Resize 826 1117
+10-31 07:43:25.030 I/SahbRing(15423): slice 2 Crop 826 1448
+10-31 07:43:25.030 I/SahbRing(15423): slice 3 Watermark 540 1613
+10-31 07:43:25.030 I/SahbRing(15423): slice 4 Clean 253 1448
+10-31 07:43:25.030 I/SahbRing(15423): slice 5 ZIP 253 1117
+10-31 07:43:25.030 I/SahbRing(15423): center 540 1283
+10-31 07:43:25.123 I/SahbRing(15423): slice 0 Compress 540 952
+10-31 07:43:25.123 I/SahbRing(15423): slice 1 Resize 826 1117
+10-31 07:43:25.123 I/SahbRing(15423): slice 2 Crop 826 1448
+10-31 07:43:25.123 I/SahbRing(15423): slice 3 Watermark 540 1613
+10-31 07:43:25.123 I/SahbRing(15423): slice 4 Clean 253 1448
+10-31 07:43:25.123 I/SahbRing(15423): slice 5 ZIP 253 1117
+10-31 07:43:25.123 I/SahbRing(15423): center 540 1283
+10-31 07:43:25.345 I/SahbRing(15423): slice 0 Compress 540 952
+10-31 07:43:25.345 I/SahbRing(15423): slice 1 Resize 826 1117
+10-31 07:43:25.345 I/SahbRing(15423): slice 2 Crop 826 1448
+10-31 07:43:25.345 I/SahbRing(15423): slice 3 Watermark 540 1613
+10-31 07:43:25.345 I/SahbRing(15423): slice 4 Clean 253 1448
+10-31 07:43:25.345 I/SahbRing(15423): slice 5 ZIP 253 1117
+10-31 07:43:25.345 I/SahbRing(15423): center 540 1283
+10-31 07:43:26.931 I/SahbJob (15423): PAYWALL Crop
+10-31 07:43:27.494 I/SahbRing(15423): slice 0 Compress 540 952
+10-31 07:43:27.495 I/SahbRing(15423): slice 1 Resize 826 1117
+10-31 07:43:27.495 I/SahbRing(15423): slice 2 Crop 826 1448
+10-31 07:43:27.495 I/SahbRing(15423): slice 3 Watermark 540 1613
+10-31 07:43:27.495 I/SahbRing(15423): slice 4 Clean 253 1448
+10-31 07:43:27.496 I/SahbRing(15423): slice 5 ZIP 253 1117
+10-31 07:43:27.496 I/SahbRing(15423): center 540 1283
+10-31 07:43:27.496 I/SahbRing(15423): slice 0 Compress 540 952
+10-31 07:43:27.496 I/SahbRing(15423): slice 1 Resize 826 1117
+10-31 07:43:27.496 I/SahbRing(15423): slice 2 Crop 826 1448
+10-31 07:43:27.496 I/SahbRing(15423): slice 3 Watermark 540 1613
+10-31 07:43:27.501 I/SahbRing(15423): slice 4 Clean 253 1448
+10-31 07:43:27.501 I/SahbRing(15423): slice 5 ZIP 253 1117
+10-31 07:43:27.501 I/SahbRing(15423): center 540 1283
+10-31 07:43:27.501 I/SahbRing(15423): slice 0 Compress 540 952
+10-31 07:43:27.501 I/SahbRing(15423): slice 1 Resize 826 1117
+10-31 07:43:27.501 I/SahbRing(15423): slice 2 Crop 826 1448
+10-31 07:43:27.502 I/SahbRing(15423): slice 3 Watermark 540 1613
+10-31 07:43:27.502 I/SahbRing(15423): slice 4 Clean 253 1448
+10-31 07:43:27.502 I/SahbRing(15423): slice 5 ZIP 253 1117
+10-31 07:43:27.502 I/SahbRing(15423): center 540 1283
+10-31 07:43:28.009 I/SahbRing(15423): slice 0 Compress 540 952
+10-31 07:43:28.009 I/SahbRing(15423): slice 1 Resize 826 1117
+10-31 07:43:28.009 I/SahbRing(15423): slice 2 Crop 826 1448
+10-31 07:43:28.009 I/SahbRing(15423): slice 3 Watermark 540 1613
+10-31 07:43:28.009 I/SahbRing(15423): slice 4 Clean 253 1448
+10-31 07:43:28.009 I/SahbRing(15423): slice 5 ZIP 253 1117
+10-31 07:43:28.009 I/SahbRing(15423): center 540 1283
+10-31 07:43:28.228 I/SahbRing(15423): slice 0 Compress 540 952
+10-31 07:43:28.228 I/SahbRing(15423): slice 1 Resize 826 1117
+10-31 07:43:28.228 I/SahbRing(15423): slice 2 Crop 826 1448
+10-31 07:43:28.228 I/SahbRing(15423): slice 3 Watermark 540 1613
+10-31 07:43:28.228 I/SahbRing(15423): slice 4 Clean 253 1448
+10-31 07:43:28.228 I/SahbRing(15423): slice 5 ZIP 253 1117
+10-31 07:43:28.228 I/SahbRing(15423): center 540 1283
+10-31 07:43:30.019 I/SahbRing(15423): slice 0 Compress 540 952
+10-31 07:43:30.019 I/SahbRing(15423): slice 1 Resize 826 1117
+10-31 07:43:30.020 I/SahbRing(15423): slice 2 Crop 826 1448
+10-31 07:43:30.020 I/SahbRing(15423): slice 3 Watermark 540 1613
+10-31 07:43:30.020 I/SahbRing(15423): slice 4 Clean 253 1448
+10-31 07:43:30.020 I/SahbRing(15423): slice 5 ZIP 253 1117
+10-31 07:43:30.020 I/SahbRing(15423): center 540 1283
+10-31 07:43:30.264 I/SahbRing(15423): slice 0 Compress 540 952
+10-31 07:43:30.264 I/SahbRing(15423): slice 1 Resize 826 1117
+10-31 07:43:30.264 I/SahbRing(15423): slice 2 Crop 826 1448
+10-31 07:43:30.265 I/SahbRing(15423): slice 3 Watermark 540 1613
+10-31 07:43:30.265 I/SahbRing(15423): slice 4 Clean 253 1448
+10-31 07:43:30.265 I/SahbRing(15423): slice 5 ZIP 253 1117
+10-31 07:43:30.265 I/SahbRing(15423): center 540 1283
+10-31 07:43:33.654 I/SahbRing(15511): slice 0 Compress 540 952
+10-31 07:43:33.654 I/SahbRing(15511): slice 1 Resize 798 1077
+10-31 07:43:33.654 I/SahbRing(15511): slice 2 Crop 862 1356
+10-31 07:43:33.654 I/SahbRing(15511): slice 3 Trim 683 1580
+10-31 07:43:33.654 I/SahbRing(15511): slice 4 Mute 396 1580
+10-31 07:43:33.654 I/SahbRing(15511): slice 5 Clean 217 1356
+10-31 07:43:33.654 I/SahbRing(15511): slice 6 ZIP 281 1077
+10-31 07:43:33.654 I/SahbRing(15511): center 540 1283
+10-31 07:43:33.798 I/SahbRing(15511): slice 0 Compress 540 952
+10-31 07:43:33.798 I/SahbRing(15511): slice 1 Resize 798 1077
+10-31 07:43:33.798 I/SahbRing(15511): slice 2 Crop 862 1356
+10-31 07:43:33.798 I/SahbRing(15511): slice 3 Trim 683 1580
+10-31 07:43:33.799 I/SahbRing(15511): slice 4 Mute 396 1580
+10-31 07:43:33.799 I/SahbRing(15511): slice 5 Clean 217 1356
+10-31 07:43:33.799 I/SahbRing(15511): slice 6 ZIP 281 1077
+10-31 07:43:33.799 I/SahbRing(15511): center 540 1283
+10-31 07:43:33.820 I/SahbRing(15511): slice 0 Compress 540 952
+10-31 07:43:33.820 I/SahbRing(15511): slice 1 Resize 798 1077
+10-31 07:43:33.821 I/SahbRing(15511): slice 2 Crop 862 1356
+10-31 07:43:33.821 I/SahbRing(15511): slice 3 Trim 683 1580
+10-31 07:43:33.821 I/SahbRing(15511): slice 4 Mute 396 1580
+10-31 07:43:33.821 I/SahbRing(15511): slice 5 Clean 217 1356
+10-31 07:43:33.822 I/SahbRing(15511): slice 6 ZIP 281 1077
+10-31 07:43:33.822 I/SahbRing(15511): center 540 1283
+10-31 07:43:34.113 I/SahbRing(15511): slice 0 Compress 540 952
+10-31 07:43:34.114 I/SahbRing(15511): slice 1 Resize 798 1077
+10-31 07:43:34.114 I/SahbRing(15511): slice 2 Crop 862 1356
+10-31 07:43:34.114 I/SahbRing(15511): slice 3 Trim 683 1580
+10-31 07:43:34.114 I/SahbRing(15511): slice 4 Mute 396 1580
+10-31 07:43:34.114 I/SahbRing(15511): slice 5 Clean 217 1356
+10-31 07:43:34.115 I/SahbRing(15511): slice 6 ZIP 281 1077
+10-31 07:43:34.115 I/SahbRing(15511): center 540 1283
+10-31 07:43:36.027 I/SahbRing(15511): slice 0 Compress 540 952
+10-31 07:43:36.027 I/SahbRing(15511): slice 1 Resize 798 1077
+10-31 07:43:36.027 I/SahbRing(15511): slice 2 Crop 862 1356
+10-31 07:43:36.028 I/SahbRing(15511): slice 3 Trim 683 1580
+10-31 07:43:36.028 I/SahbRing(15511): slice 4 Mute 396 1580
+10-31 07:43:36.028 I/SahbRing(15511): slice 5 Clean 217 1356
+10-31 07:43:36.028 I/SahbRing(15511): slice 6 ZIP 281 1077
+10-31 07:43:36.028 I/SahbRing(15511): center 540 1283
+10-31 07:43:40.392 I/SahbRing(15573): slice 0 JPG 540 952
+10-31 07:43:40.393 I/SahbRing(15573): slice 1 PNG 540 1613
+10-31 07:43:40.393 I/SahbRing(15573): center 540 1283
+10-31 07:43:40.531 I/SahbRing(15573): slice 0 JPG 540 952
+10-31 07:43:40.531 I/SahbRing(15573): slice 1 PNG 540 1613
+10-31 07:43:40.531 I/SahbRing(15573): center 540 1283
+10-31 07:43:40.587 I/SahbRing(15573): slice 0 JPG 540 952
+10-31 07:43:40.588 I/SahbRing(15573): slice 1 PNG 540 1613
+10-31 07:43:40.588 I/SahbRing(15573): center 540 1283
+10-31 07:43:40.686 I/SahbRing(15573): slice 0 JPG 540 952
+10-31 07:43:40.686 I/SahbRing(15573): slice 1 PNG 540 1613
+10-31 07:43:40.686 I/SahbRing(15573): center 540 1283
+10-31 07:43:42.660 I/SahbRing(15573): slice 0 JPG 540 952
+10-31 07:43:42.660 I/SahbRing(15573): slice 1 PNG 540 1613
+10-31 07:43:42.660 I/SahbRing(15573): center 540 1283
+10-31 07:43:46.992 D/AndroidRuntime(15697): >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+10-31 07:43:47.023 I/AndroidRuntime(15697): Using default boot image
+10-31 07:43:47.023 I/AndroidRuntime(15697): Leaving lock profiling enabled
+10-31 07:43:50.322 I/AndroidRuntime(15999): VM exiting with result code 0, cleanup skipped.
