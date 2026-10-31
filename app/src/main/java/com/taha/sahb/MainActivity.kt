@@ -32,6 +32,8 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        if (BuildConfig.DEBUG && intent.hasExtra("pro")) Pro.debugOverride = intent.getBooleanExtra("pro", false)
+        Pro.init(this)
         // keep content clear of the status and navigation bars
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.root)) { v, insets ->
             val bars = insets.getInsets(WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout())
@@ -42,6 +44,8 @@ class MainActivity : AppCompatActivity() {
         findViewById<View>(R.id.share_hint).setOnClickListener { showHow() }
         findViewById<MaterialToolbar>(R.id.toolbar).setOnMenuItemClickListener {
             when (it.itemId) {
+                R.id.m_pro -> if (Pro.isPro) MaterialAlertDialogBuilder(this).setTitle(R.string.pro_title).setMessage(R.string.pro_active).setPositiveButton(R.string.ok, null).show()
+                              else Pro.showPaywall(this, R.string.pro_reason_general)
                 R.id.m_how -> showHow()
                 R.id.m_lang -> pickLanguage()
                 R.id.m_about -> showAbout()

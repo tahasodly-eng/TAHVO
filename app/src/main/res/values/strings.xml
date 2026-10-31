@@ -111,4 +111,23 @@
     <string name="a11y_center_convert">Showing conversion. Double-tap to show tools.</string>
     <string name="a11y_center_tools">Showing tools. Double-tap to show conversion.</string>
     <string name="unknown_size">size unknown</string>
+    <string name="pro_title">Sahb Pro</string>
+    <string name="pro_reason_tool">This tool is part of Sahb Pro.</string>
+    <string name="pro_reason_multi">Converting several files at once is part of Sahb Pro.</string>
+    <string name="pro_reason_long">Files longer than 3 minutes are part of Sahb Pro.</string>
+    <string name="pro_reason_general">Unlock every tool, for life.</string>
+    <string name="pro_features">• All tools: crop, resize, trim, mute, watermark, clean metadata\n• Full PDF tools: merge, extract pages, pages to images, compress\n• Several files at once\n• Video and audio with no length limit</string>
+    <string name="pro_buy">Unlock all tools — %1$s</string>
+    <string name="pro_buy_noprice">Unlock all tools</string>
+    <string name="pro_once">One-time purchase, linked to your Google account. It comes back automatically on a new phone.</string>
+    <string name="pro_later">Not now</string>
+    <string name="pro_thanks">Thank you! All Sahb Pro tools are unlocked.</string>
+    <string name="pro_unavailable">Purchases are not available in this copy. Install Sahb from Google Play to get Pro.</string>
+    <string name="pro_open_store">Open Google Play</string>
+    <string name="pro_pending">Payment is being processed. The tools unlock automatically when it completes.</string>
+    <string name="pro_failed">The purchase could not be completed. Please try again.</string>
+    <string name="pro_active">Sahb Pro is active. Thank you for your support!</string>
+    <string name="menu_pro">Sahb Pro</string>
+    <string name="locked_a11y">locked, part of Pro</string>
+    <string name="free_limit_note">Free: up to 3 minutes</string>
 </resources>

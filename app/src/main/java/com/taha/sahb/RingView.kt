@@ -25,7 +25,8 @@ import kotlin.math.sin
 import kotlin.math.sqrt
 
 /** One slice of the ring. Text comes from string resources; [icon] is a drawable id. */
-class RingItem(val label: String, val sub: String?, val icon: Int, val run: () -> Unit)
+/** [locked] items are shown with a lock badge (part of Pro); tapping still calls [run], which opens the paywall. */
+class RingItem(val label: String, val sub: String?, val icon: Int, val locked: Boolean = false, val run: () -> Unit)
 
 /**
  * The format ring. Every position (slice outlines, icons, labels, touch areas and the
@@ -42,11 +43,13 @@ class RingView @JvmOverloads constructor(ctx: Context, attrs: AttributeSet? = nu
     var centerHint = ""
         set(v) { field = v; invalidate() }
     var centerA11y = ""
+    var lockedA11y = ""
 
     var onPick: ((Int) -> Unit)? = null
     var onCenterTap: (() -> Unit)? = null
 
     private var icons: List<Drawable?> = emptyList()
+    private val lockIcon: Drawable? = ContextCompat.getDrawable(ctx, R.drawable.ic_lock)?.mutate()
     private var hover = -1
     private var pressedCenter = false
     private var downInCenter = false
@@ -87,7 +90,7 @@ class RingView @JvmOverloads constructor(ctx: Context, attrs: AttributeSet? = nu
                 node.setBoundsInParent(Rect((cx - rIn).toInt(), (cy - rIn).toInt(), (cx + rIn).toInt(), (cy + rIn).toInt()))
             } else {
                 val it = items[id]
-                node.contentDescription = listOfNotNull(it.label, it.sub).joinToString(", ")
+                node.contentDescription = listOfNotNull(it.label, it.sub, lockedA11y.takeIf { _ -> it.locked && lockedA11y.isNotEmpty() }).joinToString(", ")
                 val r = (rIn + rOut) / 2; val half = (rOut - rIn) / 2
                 val x = cx + (cos(midAngle(id)) * r).toFloat(); val y = cy + (sin(midAngle(id)) * r).toFloat()
                 node.setBoundsInParent(Rect((x - half).toInt(), (y - half).toInt(), (x + half).toInt(), (y + half).toInt()))
@@ -144,6 +147,17 @@ class RingView @JvmOverloads constructor(ctx: Context, attrs: AttributeSet? = nu
                 ic.setTint(if (hot) cAccent else cText)
                 ic.setBounds((x - iconSize / 2).toInt(), iconTop, (x + iconSize / 2).toInt(), iconTop + iconSize)
                 ic.draw(c)
+            }
+            if (it.locked) lockIcon?.let { lk ->
+                // small badge at the icon's top corner: a filled circle with a lock
+                val br = 9.5f * d
+                val bx = x + iconSize / 2f + 2 * d; val by = iconTop.toFloat() + 1 * d
+                fill.color = cAccent
+                c.drawCircle(bx, by, br, fill)
+                val ls = (12 * d).toInt()
+                lk.setTint(cOnAccent)
+                lk.setBounds((bx - ls / 2).toInt(), (by - ls / 2).toInt(), (bx + ls / 2).toInt(), (by + ls / 2).toInt())
+                lk.draw(c)
             }
             label.color = cText
             c.drawText(it.label, x, iconTop + iconSize + label.textSize + 2 * d, label)

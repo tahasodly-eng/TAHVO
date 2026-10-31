@@ -109,4 +109,23 @@
     <string name="a11y_center_convert">يعرض التحويل. انقر مرتين لعرض الأدوات.</string>
     <string name="a11y_center_tools">يعرض الأدوات. انقر مرتين لعرض التحويل.</string>
     <string name="unknown_size">الحجم غير معروف</string>
+    <string name="pro_title">سحب Pro</string>
+    <string name="pro_reason_tool">هذه الأداة ضمن سحب Pro.</string>
+    <string name="pro_reason_multi">تحويل عدة ملفات دفعة واحدة ضمن سحب Pro.</string>
+    <string name="pro_reason_long">الملفات الأطول من 3 دقائق ضمن سحب Pro.</string>
+    <string name="pro_reason_general">افتح كل الأدوات مدى الحياة.</string>
+    <string name="pro_features">• كل الأدوات: القص، الحجم، الاقتطاع، كتم الصوت، العلامة المائية، حذف البيانات المخفية\n• أدوات PDF كاملة: الدمج، استخراج الصفحات، تحويلها إلى صور، الضغط\n• عدة ملفات دفعة واحدة\n• فيديو وصوت بلا حد للمدة</string>
+    <string name="pro_buy">افتح كل الأدوات — %1$s</string>
+    <string name="pro_buy_noprice">افتح كل الأدوات</string>
+    <string name="pro_once">شراء لمرة واحدة، مرتبط بحساب Google، ويعود تلقائيًا إن غيّرت هاتفك.</string>
+    <string name="pro_later">ليس الآن</string>
+    <string name="pro_thanks">شكرًا لك! تم فتح كل أدوات سحب Pro.</string>
+    <string name="pro_unavailable">الشراء غير متاح في هذه النسخة. ثبّت «سحب» من Google Play للحصول على Pro.</string>
+    <string name="pro_open_store">فتح Google Play</string>
+    <string name="pro_pending">الدفع قيد المعالجة. ستُفتح الأدوات تلقائيًا عند اكتماله.</string>
+    <string name="pro_failed">تعذّر إتمام الشراء. حاول مرة أخرى.</string>
+    <string name="pro_active">سحب Pro مفعّل. شكرًا لدعمك!</string>
+    <string name="menu_pro">سحب Pro</string>
+    <string name="locked_a11y">مقفل، ضمن Pro</string>
+    <string name="free_limit_note">مجانًا: حتى 3 دقائق</string>
 </resources>

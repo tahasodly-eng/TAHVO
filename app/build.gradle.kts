@@ -11,13 +11,20 @@ android {
         applicationId = "com.taha.sahb"
         minSdk = 29
         targetSdk = 36
-        versionCode = 2
-        versionName = "1.1"
+        versionCode = 3
+        versionName = "1.2"
     }
 
     buildTypes {
+        // shrunk and obfuscated; the debug build uses the same rules so the emulator test runs the shrunk code
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
+        debug {
+            isMinifyEnabled = true
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
     buildFeatures { buildConfig = true }
@@ -41,4 +48,5 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1")
     implementation("com.tom-roush:pdfbox-android:2.0.27.0")
     implementation("androidx.customview:customview:1.1.0")
+    implementation("com.android.billingclient:billing:8.3.0")
 }

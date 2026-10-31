@@ -49,7 +49,13 @@ class RingActivity : AppCompatActivity() {
         val summary: String, val startLabel: Int,
         val options: ((LinearLayout) -> (() -> (() -> Unit)?))? = null,
         val direct: (() -> Unit)? = null,
+        /** part of Sahb Pro */
+        val pro: Boolean = true,
+        /** free use allowed up to this media length (ms); 0 = no length rule */
+        val freeMaxMs: Long = 0,
     )
+
+    private val proListener: () -> Unit = { if (findViewById<View>(R.id.picker).isVisible && srcs.isNotEmpty()) refreshChoices() }
 
     private lateinit var ring: RingView
     private var srcs: List<Src> = emptyList()
@@ -80,11 +86,22 @@ class RingActivity : AppCompatActivity() {
         ring.onPick = { i -> actions.getOrNull(i)?.let { choose(it) } }
         ring.onCenterTap = { tools = !tools; refreshChoices() }
 
+        if (BuildConfig.DEBUG && intent.hasExtra("pro")) Pro.debugOverride = intent.getBooleanExtra("pro", false)
+        Pro.init(this)
+        Pro.addListener(proListener)
+
         srcs = incomingUris().map { Engine.describe(this, it) }
         if (srcs.isEmpty()) { showFailure(getString(R.string.nothing), retry = false); return }
         tools = intent.getBooleanExtra("tools", false)
         showPicker()
     }
+
+    override fun onDestroy() { Pro.removeListener(proListener); super.onDestroy() }
+
+    override fun onResume() { super.onResume(); Pro.refresh() }
+
+    /** Free users get one file at a time and the free tools only. */
+    private fun locked(a: Action) = !Pro.isPro && (a.pro || srcs.size > 1)
 
     private fun onBack() {
         when {
@@ -210,10 +227,12 @@ class RingActivity : AppCompatActivity() {
             val a = actions[0]
             findViewById<ImageView>(R.id.single_icon).setImageResource(a.icon)
             findViewById<TextView>(R.id.single_label).text = a.label
-            findViewById<TextView>(R.id.single_sub).apply { text = a.sub ?: ""; isVisible = a.sub != null }
+            val sub = listOfNotNull(a.sub, if (locked(a)) "🔒 Pro" else if (!Pro.isPro && a.freeMaxMs > 0) getString(R.string.free_limit_note) else null).joinToString("  ·  ")
+            findViewById<TextView>(R.id.single_sub).apply { text = sub; isVisible = sub.isNotEmpty() }
             findViewById<View>(R.id.single).setOnClickListener { choose(a) }
         } else {
-            ring.items = actions.map { a -> RingItem(a.label, a.sub, a.icon) { choose(a) } }
+            ring.items = actions.map { a -> RingItem(a.label, a.sub, a.icon, locked(a)) { choose(a) } }
+            ring.lockedA11y = getString(R.string.locked_a11y)
             ring.centerTitle = getString(if (tools) R.string.tools else R.string.convert)
             ring.centerHint = getString(if (tools) R.string.tap_for_convert else R.string.tap_for_tools)
             ring.centerA11y = getString(if (tools) R.string.a11y_center_tools else R.string.a11y_center_convert)
@@ -229,19 +248,19 @@ class RingActivity : AppCompatActivity() {
             fmt("PNG") { s -> Engine.image(this, s, "png", null) },
             fmt("WEBP") { s -> Engine.image(this, s, "webp", null, quality = 88) },
             Action("PDF", getString(R.string.one_pdf), R.drawable.ic_pdf, getString(R.string.sum_pdf_join), R.string.start_convert,
-                direct = { launchJob(R.string.converting) { listOf(Engine.pdf(this, srcs)) } }),
+                direct = { launchJob(R.string.converting) { listOf(Engine.pdf(this, srcs)) } }, pro = false),
         )
         Kind.VIDEO -> listOf(
             Action("MP4", getString(R.string.compatible), R.drawable.ic_video, getString(R.string.sum_convert, one, "MP4"), R.string.start_convert,
-                direct = { media(Engine.MediaOpts(), "h264") }),
+                direct = { media(Engine.MediaOpts(), "h264") }, pro = false, freeMaxMs = FREE_MS),
             Action("M4A", getString(R.string.audio_only), R.drawable.ic_audio, getString(R.string.sum_audio, one), R.string.start_convert,
-                direct = { media(Engine.MediaOpts(removeVideo = true), null) }),
+                direct = { media(Engine.MediaOpts(removeVideo = true), null) }, pro = false, freeMaxMs = FREE_MS),
             Action(getString(R.string.snapshot), "JPG", R.drawable.ic_frame, getString(R.string.sum_snapshot, one), R.string.start_convert,
                 direct = { each { Engine.frame(this, it) } }),
         )
         Kind.AUDIO -> listOf(
             Action("M4A", "AAC", R.drawable.ic_audio, getString(R.string.sum_convert, one, "M4A"), R.string.start_convert,
-                direct = { media(Engine.MediaOpts(), null) }),
+                direct = { media(Engine.MediaOpts(), null) }, pro = false, freeMaxMs = FREE_MS),
         )
         Kind.PDF -> buildList {
             add(Action("JPG", getString(R.string.pages_as_images), R.drawable.ic_image, getString(R.string.sum_pdf_pages, one, "JPG"), R.string.start_convert,
@@ -259,7 +278,7 @@ class RingActivity : AppCompatActivity() {
         when (Engine.kindOf(srcs)) {
             Kind.IMAGE -> {
                 l += Action(getString(R.string.t_compress), getString(R.string.s_smaller), R.drawable.ic_compress, getString(R.string.sum_compress_img, one), R.string.start_compress,
-                    direct = { each { s -> val jpg = !s.mime.contains("png") && !s.mime.contains("webp"); Engine.image(this, s, if (jpg) "jpg" else "webp", "small", quality = 72, maxDim = 2560) } })
+                    direct = { each { s -> val jpg = !s.mime.contains("png") && !s.mime.contains("webp"); Engine.image(this, s, if (jpg) "jpg" else "webp", "small", quality = 72, maxDim = 2560) } }, pro = false)
                 l += Action(getString(R.string.t_resize), getString(R.string.s_scale), R.drawable.ic_resize, getString(R.string.sum_resize, one), R.string.start_resize,
                     options = scaleOptions { f -> each { Engine.image(this, it, null, "${(f * 100).toInt()}pct", scale = f) } })
                 l += Action(getString(R.string.t_crop), getString(R.string.s_aspect), R.drawable.ic_crop, getString(R.string.sum_crop, one), R.string.start_crop,
@@ -308,11 +327,28 @@ class RingActivity : AppCompatActivity() {
         direct = { launchJob(R.string.working) { listOf(Engine.zip(this, srcs)) } })
 
     private fun fmt(name: String, op: suspend (Src) -> Saved) =
-        Action(name, null, R.drawable.ic_image, getString(R.string.sum_convert, one, name), R.string.start_convert, direct = { each(op) })
+        Action(name, null, R.drawable.ic_image, getString(R.string.sum_convert, one, name), R.string.start_convert, direct = { each(op) }, pro = false)
 
     // ------------------------------------------------------------------ settings sheet
     private fun choose(a: Action) {
         if (job?.isActive == true) return
+        if (locked(a)) {
+            debugLog("PAYWALL ${a.label}")
+            Pro.showPaywall(this, if (!a.pro && srcs.size > 1) R.string.pro_reason_multi else R.string.pro_reason_tool)
+            return
+        }
+        if (!Pro.isPro && a.freeMaxMs > 0) {
+            lifecycleScope.launch {
+                val dur = withContext(Dispatchers.IO) { Engine.info(this@RingActivity, srcs[0]).first }
+                if (dur > a.freeMaxMs) { debugLog("PAYWALL long ${a.label}"); Pro.showPaywall(this@RingActivity, R.string.pro_reason_long) }
+                else open(a)
+            }
+            return
+        }
+        open(a)
+    }
+
+    private fun open(a: Action) {
         if (BuildConfig.DEBUG && intent.getBooleanExtra("auto", false) && a.direct != null) { a.direct.invoke(); return }
         val sheet = BottomSheetDialog(this)
         val v = LayoutInflater.from(this).inflate(R.layout.sheet_action, null)
@@ -496,6 +532,8 @@ class RingActivity : AppCompatActivity() {
         Log.i("SahbJob", line)
         runCatching { File(getExternalFilesDir(null), "jobs.log").appendText(line + "\n") }
     }
+
+    companion object { private const val FREE_MS = 3 * 60 * 1000L }
 
     private fun dp(v: Int) = (v * resources.displayMetrics.density).toInt()
 
