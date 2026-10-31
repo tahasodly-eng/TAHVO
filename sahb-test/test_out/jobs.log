@@ -1,18 +1,24 @@
 FAIL FileNotFoundException: /sdcard/Android/data/com.taha.sahb/files/sample.png: open failed: EACCES (Permission denied)
-OK content://media/external/downloads/1000000019
-OK content://media/external/images/media/1000000021
-OK content://media/external/images/media/1000000022
-OK content://media/external/images/media/1000000023
-OK content://media/external/video/media/1000000025
-OK content://media/external/audio/media/1000000027
-OK content://media/external/images/media/1000000028
-OK content://media/external/video/media/1000000029
-OK content://media/external/video/media/1000000030
+PAYWALL الحجم
+OK content://media/external/images/media/1000000019
+OK content://media/external/video/media/1000000021
+PAYWALL long MP4
+PAYWALL JPG
+OK content://media/external/downloads/1000000023
+OK content://media/external/images/media/1000000024
+OK content://media/external/images/media/1000000025
+OK content://media/external/images/media/1000000026
+OK content://media/external/video/media/1000000027
+OK content://media/external/audio/media/1000000029
+OK content://media/external/images/media/1000000030
 OK content://media/external/video/media/1000000031
-OK content://media/external/audio/media/1000000032
-OK content://media/external/images/media/1000000033, content://media/external/images/media/1000000034, content://media/external/images/media/1000000035
-OK content://media/external/downloads/1000000036
-OK content://media/external/downloads/1000000037
+OK content://media/external/video/media/1000000032
+OK content://media/external/video/media/1000000033
+OK content://media/external/audio/media/1000000034
+OK content://media/external/images/media/1000000035, content://media/external/images/media/1000000036, content://media/external/images/media/1000000037
 OK content://media/external/downloads/1000000038
 OK content://media/external/downloads/1000000039
+OK content://media/external/downloads/1000000040
+OK content://media/external/downloads/1000000041
 CANCEL
+PAYWALL Crop

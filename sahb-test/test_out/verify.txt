@@ -1,6 +1,6 @@
 + find test_out/files -type f
-+ sort
 + read -r f
++ sort
 ++ basename test_out/files/Download/doc_merged.pdf
 ++ stat -c%s test_out/files/Download/doc_merged.pdf
 + echo '--- doc_merged.pdf (2564 B)'
@@ -60,6 +60,16 @@ format|duration=6.037188
 stream|codec_name=aac
 stream|codec_name=h264|width=1280|height=720
 format|duration=2.018617
++ read -r f
+++ basename 'test_out/files/Movies/sample_h264 (1).mp4'
+++ stat -c%s 'test_out/files/Movies/sample_h264 (1).mp4'
++ echo '--- sample_h264 (1).mp4 (2318712 B)'
+--- sample_h264 (1).mp4 (2318712 B)
++ case "$f" in
++ ffprobe -v error -show_entries format=duration:format_tags=comment,title:stream=codec_name,width,height -of compact 'test_out/files/Movies/sample_h264 (1).mp4'
+stream|codec_name=h264|width=1280|height=720
+stream|codec_name=aac
+format|duration=6.037188
 + read -r f
 ++ basename test_out/files/Movies/sample_h264.mp4
 ++ stat -c%s test_out/files/Movies/sample_h264.mp4
@@ -142,6 +152,15 @@ format|duration=N/A
 + ffprobe -v error -show_entries format=duration:format_tags=comment,title:stream=codec_name,width,height -of compact test_out/files/Pictures/sample_frame.jpg
 stream|codec_name=mjpeg|width=1280|height=720
 format|duration=0.040000
++ read -r f
+++ basename 'test_out/files/Pictures/sample_small (1).webp'
+++ stat -c%s 'test_out/files/Pictures/sample_small (1).webp'
++ echo '--- sample_small (1).webp (2544 B)'
+--- sample_small (1).webp (2544 B)
++ case "$f" in
++ ffprobe -v error -show_entries format=duration:format_tags=comment,title:stream=codec_name,width,height -of compact 'test_out/files/Pictures/sample_small (1).webp'
+stream|codec_name=webp|width=1200|height=800
+format|duration=N/A
 + read -r f
 ++ basename test_out/files/Pictures/sample_small.webp
 ++ stat -c%s test_out/files/Pictures/sample_small.webp
