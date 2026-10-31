@@ -10,7 +10,10 @@
     <string name="menu_language">Language</string>
     <string name="menu_about">About</string>
     <string name="how_body">1. Tap «Choose a file», or share a photo, video, audio file or PDF to Sahb from any app.\n2. A ring of the formats that file supports appears. Tap one.\n3. Tap the centre of the ring to switch between conversion and tools (compress, resize, crop, trim, mute, strip metadata, watermark, PDF pages, ZIP).\n4. Check the summary, then start. The new file is saved in the «Sahb» folder; your original is not changed.</string>
-    <string name="about_body">Sahb %1$s\nDeveloped by Taha Mustafa Al-Nifati.\n\nConversions run on your phone. The app has no internet permission, so files are not uploaded, and it collects no data.</string>
+    <string name="about_body">Sahb %1$s
+Developed by Taha Mustafa Al-Nifati.
+
+Conversions run entirely on your phone: your files are never uploaded, and the app collects no data. The internet is used only by Google Play to buy Sahb Pro.</string>
     <string name="lang_system">Device language</string>
     <string name="lang_ar" translatable="false">العربية</string>
     <string name="lang_en" translatable="false">English</string>
