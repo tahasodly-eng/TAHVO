@@ -10,6 +10,11 @@ For more details see https://docs.gradle.org/8.11.1/release-notes.html
 
 To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.11.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
 Daemon will be stopped at the end of the build 
+
+> Configure project :app
+WARNING: BuildType 'debug' is both debuggable and has 'isMinifyEnabled' set to true.
+All code optimizations and obfuscation are disabled for debuggable builds.
+
 > Task :app:preBuild UP-TO-DATE
 > Task :app:preDebugBuild UP-TO-DATE
 > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
@@ -29,19 +34,18 @@ Daemon will be stopped at the end of the build
 > Task :app:processDebugMainManifest
 > Task :app:processDebugManifest
 > Task :app:javaPreCompileDebug
+> Task :app:processDebugManifestForPackage
 > Task :app:mergeDebugShaders
 > Task :app:compileDebugShaders NO-SOURCE
 > Task :app:generateDebugAssets UP-TO-DATE
 > Task :app:mergeDebugAssets
-> Task :app:desugarDebugFileDependencies
 > Task :app:compressDebugAssets
-> Task :app:mergeDebugJniLibFolders
+> Task :app:processDebugResources
 > Task :app:checkDebugDuplicateClasses
+> Task :app:extractProguardFiles
+> Task :app:mergeDebugJniLibFolders
 > Task :app:mergeDebugNativeLibs NO-SOURCE
-> Task :app:processDebugManifestForPackage
-> Task :app:mergeExtDexDebug
 > Task :app:stripDebugDebugSymbols NO-SOURCE
-> Task :app:mergeLibDexDebug
 > Task :app:validateSigningDebug
 > Task :app:writeDebugAppMetadata
 > Task :app:writeDebugSigningConfigVersions
@@ -51,76 +55,70 @@ Daemon will be stopped at the end of the build
 > Task :app:stripReleaseDebugSymbols NO-SOURCE
 > Task :app:extractReleaseNativeSymbolTables NO-SOURCE
 > Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
-> Task :app:checkReleaseDuplicateClasses
 > Task :app:buildKotlinToolingMetadata
 > Task :app:generateReleaseBuildConfig
 > Task :app:generateReleaseResValues
+> Task :app:checkReleaseDuplicateClasses
 > Task :app:checkReleaseAarMetadata
 > Task :app:mapReleaseSourceSetPaths
 > Task :app:extractReleaseSupportedLocales
 > Task :app:generateReleaseLocaleConfig
 > Task :app:generateReleaseResources
-> Task :app:processDebugResources
-> Task :app:mergeReleaseResources
 > Task :app:packageReleaseResources
 > Task :app:createReleaseCompatibleScreenManifests
-> Task :app:extractDeepLinksRelease
 > Task :app:parseReleaseLocalResources
+> Task :app:extractDeepLinksRelease
 > Task :app:processReleaseMainManifest
 > Task :app:processReleaseManifest
-> Task :app:javaPreCompileRelease
 > Task :app:processReleaseManifestForPackage
-> Task :app:desugarReleaseFileDependencies
-> Task :app:mergeReleaseStartupProfile
-> Task :app:processReleaseResources
-> Task :app:compileDebugKotlin
-w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/taha/sahb/RingView.kt:87:22 'fun setBoundsInParent(p0: Rect!): Unit' is deprecated. Deprecated in Java.
-w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/taha/sahb/RingView.kt:93:22 'fun setBoundsInParent(p0: Rect!): Unit' is deprecated. Deprecated in Java.
-
-> Task :app:mergeExtDexRelease
-> Task :app:compileDebugJavaWithJavac
-> Task :app:dexBuilderDebug
-> Task :app:mergeDebugGlobalSynthetics
-> Task :app:processDebugJavaRes
-> Task :app:mergeProjectDexDebug
+> Task :app:javaPreCompileRelease
+> Task :app:mergeReleaseResources
 > Task :app:mergeReleaseArtProfile
+> Task :app:mergeReleaseStartupProfile
 > Task :app:mergeReleaseShaders
 > Task :app:compileReleaseShaders NO-SOURCE
 > Task :app:generateReleaseAssets UP-TO-DATE
 > Task :app:mergeReleaseAssets
 > Task :app:extractReleaseVersionControlInfo
-> Task :app:extractProguardFiles
-> Task :app:compressReleaseAssets
 > Task :app:collectReleaseDependencies
 > Task :app:sdkReleaseDependencyData
 > Task :app:writeReleaseAppMetadata
 > Task :app:writeReleaseSigningConfigVersions
-> Task :app:processApplicationManifestReleaseForBundle
-> Task :app:optimizeReleaseResources
 > Task :app:configureReleaseDependencies
 > Task :app:parseReleaseIntegrityConfig
-> Task :app:mergeDebugJavaResource
-> Task :app:bundleReleaseResources
-> Task :app:packageDebug
-> Task :app:createDebugApkListingFileRedirect
-> Task :app:assembleDebug
+> Task :app:compressReleaseAssets
+> Task :app:processReleaseResources
 
 > Task :app:compileReleaseKotlin
-w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/taha/sahb/RingView.kt:87:22 'fun setBoundsInParent(p0: Rect!): Unit' is deprecated. Deprecated in Java.
-w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/taha/sahb/RingView.kt:93:22 'fun setBoundsInParent(p0: Rect!): Unit' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/taha/sahb/RingView.kt:90:22 'fun setBoundsInParent(p0: Rect!): Unit' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/taha/sahb/RingView.kt:96:22 'fun setBoundsInParent(p0: Rect!): Unit' is deprecated. Deprecated in Java.
+
+> Task :app:compileDebugKotlin
+w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/taha/sahb/RingView.kt:90:22 'fun setBoundsInParent(p0: Rect!): Unit' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/taha/sahb/RingView.kt:96:22 'fun setBoundsInParent(p0: Rect!): Unit' is deprecated. Deprecated in Java.
 
 > Task :app:compileReleaseJavaWithJavac
-> Task :app:dexBuilderRelease
-> Task :app:mergeReleaseGlobalSynthetics
-> Task :app:generateReleaseLintVitalReportModel
-> Task :app:mergeDexRelease
+> Task :app:compileDebugJavaWithJavac
+> Task :app:mergeDebugGeneratedProguardFiles
+> Task :app:processDebugJavaRes
+> Task :app:mergeReleaseGeneratedProguardFiles
 > Task :app:processReleaseJavaRes
-> Task :app:compileReleaseArtProfile
+> Task :app:expandReleaseArtProfileWildcards
+> Task :app:mergeDebugJavaResource
 > Task :app:mergeReleaseJavaResource
-> Task :app:buildReleasePreBundle
+> Task :app:generateReleaseLintVitalReportModel
+> Task :app:minifyDebugWithR8
 > Task :app:lintVitalAnalyzeRelease
 > Task :app:lintVitalReportRelease
 > Task :app:lintVitalRelease
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:assembleDebug
+> Task :app:minifyReleaseWithR8
+> Task :app:buildReleasePreBundle
+> Task :app:compileReleaseArtProfile
+> Task :app:convertShrunkResourcesToBinaryRelease
+> Task :app:optimizeReleaseResources
 > Task :app:packageRelease
 > Task :app:createReleaseApkListingFileRedirect
 > Task :app:assembleRelease
@@ -129,7 +127,7 @@ w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/taha/sahb/RingView
 > Task :app:produceReleaseBundleIdeListingFile
 > Task :app:createReleaseBundleListingFileRedirect
 > Task :app:bundleRelease
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run-1793044730707.json
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run-1793431527599.json
 
-BUILD SUCCESSFUL in 3m 6s
-94 actionable tasks: 94 executed
+BUILD SUCCESSFUL in 3m 53s
+87 actionable tasks: 87 executed

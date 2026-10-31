@@ -1,4 +1,6 @@
 == permissions in release APK
 package: com.taha.sahb
+uses-permission: name='com.android.vending.BILLING'
 permission: com.taha.sahb.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 uses-permission: name='com.taha.sahb.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'
+uses-permission: name='android.permission.INTERNET'
