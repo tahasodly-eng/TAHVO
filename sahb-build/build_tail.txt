@@ -25,16 +25,16 @@ All code optimizations and obfuscation are disabled for debuggable builds.
 > Task :app:mapDebugSourceSetPaths
 > Task :app:extractDebugSupportedLocales
 > Task :app:generateDebugResources
-> Task :app:createDebugCompatibleScreenManifests
 > Task :app:generateDebugLocaleConfig
-> Task :app:extractDeepLinksDebug
+> Task :app:createDebugCompatibleScreenManifests
 > Task :app:packageDebugResources
+> Task :app:extractDeepLinksDebug
 > Task :app:parseDebugLocalResources
 > Task :app:mergeDebugResources
 > Task :app:processDebugMainManifest
 > Task :app:processDebugManifest
-> Task :app:javaPreCompileDebug
 > Task :app:processDebugManifestForPackage
+> Task :app:javaPreCompileDebug
 > Task :app:mergeDebugShaders
 > Task :app:compileDebugShaders NO-SOURCE
 > Task :app:generateDebugAssets UP-TO-DATE
@@ -66,12 +66,12 @@ All code optimizations and obfuscation are disabled for debuggable builds.
 > Task :app:generateReleaseResources
 > Task :app:packageReleaseResources
 > Task :app:createReleaseCompatibleScreenManifests
-> Task :app:parseReleaseLocalResources
 > Task :app:extractDeepLinksRelease
+> Task :app:parseReleaseLocalResources
 > Task :app:processReleaseMainManifest
 > Task :app:processReleaseManifest
-> Task :app:processReleaseManifestForPackage
 > Task :app:javaPreCompileRelease
+> Task :app:processReleaseManifestForPackage
 > Task :app:mergeReleaseResources
 > Task :app:mergeReleaseArtProfile
 > Task :app:mergeReleaseStartupProfile
@@ -127,7 +127,7 @@ w: file:///home/runner/work/TAHVO/TAHVO/app/src/main/java/com/taha/sahb/RingView
 > Task :app:produceReleaseBundleIdeListingFile
 > Task :app:createReleaseBundleListingFileRedirect
 > Task :app:bundleRelease
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run-1793431527599.json
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run-1793431839515.json
 
-BUILD SUCCESSFUL in 3m 53s
+BUILD SUCCESSFUL in 3m 58s
 87 actionable tasks: 87 executed
